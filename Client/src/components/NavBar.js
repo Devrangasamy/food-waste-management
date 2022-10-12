@@ -11,7 +11,7 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            CodeBucks
+            Zero Waste
             <i className="fas fa-code"></i>
           </NavLink>
 
@@ -41,12 +41,12 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/blog"
+                to="/loginregister"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Blog
+                Login/Register
               </NavLink>
             </li>
             <li className="nav-item">
