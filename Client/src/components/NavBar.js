@@ -12,7 +12,6 @@ function NavBar() {
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
             Zero Waste
-            <i className="fas fa-code"></i>
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -36,6 +35,17 @@ function NavBar() {
                 onClick={handleClick}
               >
                 About Us
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/mission"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Our Mission
               </NavLink>
             </li>
             <li className="nav-item">
