@@ -1,9 +1,12 @@
 
 import * as React from 'react';
 
+
+
 export const Loginregister = () => {
-  const [food] = React.useState('fruit');
-  const [drink] = React.useState('water');
+  const [admin] = React.useState('admin');
+  const [donor] = React.useState('donor');
+  const [agent] = React.useState('agent');
   const Dropdown = ({ label, value, options, onChange }) => {
     return (
       <label className='dr'>
@@ -14,37 +17,37 @@ export const Loginregister = () => {
           ))}
         </select>
       </label>
+  
     );
   };
   
-
   return (
     <div className='drop'>
       <Dropdown 
         options={[
           { label: 'ADMIN', value: 'ADMIN' },
-          { label: 'login as existing', value: 'log' },
-          { label: 'register as new', value: 'new' },
+          { label: 'Login As Existing', value: 'log' },
+          { label: 'Register As New', value: 'new'}
         ]}
-        value={food}
+        value={admin}
       />
 
       <Dropdown 
         options={[
           { label: 'DONOR', value: 'DONOR' },
-          { label: 'login as existing', value: 'log' },
-          { label: 'register as new', value: 'new' },
+          { label: 'Login As Existing', value: 'log'},
+          { label: 'Register As New', value: 'new' },
         ]}
-        value={drink}
+        value={donor}
 
       />
             <Dropdown 
         options={[
           { label: 'AGENT', value: 'AGENT' },
-          { label: 'login as existing', value: 'log' },
-          { label: 'register as new', value: 'new' },
+          { label: 'Login As Existing', value: 'log' },
+          { label: 'Register As New', value: 'new' },
         ]}
-        value={drink}
+        value={agent}
       />
     </div>
   );

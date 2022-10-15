@@ -4,12 +4,15 @@
 }
 
 .container{
-    background: linear-gradient(135deg,#850c62,#f80759);
+    padding-top: 20px;
+    background: linear-gradient(135deg,#d27878,#BBDBD1);
     width:100%;
     min-height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
+    
 }
 .app-wrapper{
     background-color: #fff;
@@ -17,10 +20,10 @@
     min-height: 650px;
     padding: 30px;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .title{
-    color:#f80759;
+    color:#BBDBD1;
     text-align: center;
     margin:8-px 0px 40px 0px;
 
@@ -31,6 +34,13 @@
 .num{
     margin: 20px;
     color:#969292
+}
+.gender{
+    margin: 20px;
+    color:#969292
+}
+.radi{
+    margin-left: 30px;
 }
 .password{
     margin-bottom: 40px;
@@ -48,7 +58,7 @@
 
 }
 .error{
-    color:red;
+    color:yellowgreen;
 
 }
 .submit{
@@ -58,7 +68,7 @@
     border-radius:25px;
     color:white;
     padding: 10px 60px;
-    background:linear-gradient(to right,#ab1dcf,#f80759);
+    background:linear-gradient(to right,#ab1dcf,#BBDBD1);
     box-shadow: rgba(0,0,0,0.3) 0px 19px 38px, rgba(0,0,0,0.22) 0px 15px 12px;
     margin:auto;
     outline:none;
@@ -74,5 +84,5 @@ button:active{
     justify-content: center;
     margin-top: 250px;
     min-width: 370px;
-    color:#f80759;
+    color:#BBDBD1;
 }

@@ -32,23 +32,24 @@ export const Registernew = () => {
                     </div>
                     <div className='num'>
                         <label className='label'>Birth date</label>
-                        <input className='input' type="number" />
+                        <input className='input' type="date" />
                     </div>
                     <div className='name'>
                         <label className='label'>Phone Number</label>
                         <input className='input' type="text"/>
                     </div>
-                    {/* <div className="gender">
-                    <label for="branch">Branch:</label>
-                    <div className="e">
-                    <input type="radio" id="branch" name="branch" value="BE" class="branch">
-                    <label for="BE">BE</label>
+                    <div className="gender">
+                        <label className='label'>Gender:</label>
+                        <input type="radio" value="Male" name="gender" className="radi" /> Male
+                        <input type="radio" value="Female" name="gender" className="radi"/> Female            
+                        <input type="radio" value="Other" name="gender" className="radi" /> Other
                     </div>
-                    <div className="Female">
-                    <input type="radio" id="branch" name="branch" value="BTech" class="branch">
-                    <label for="branch">BTech</label>
+                    <div className='name'>
+                        <label className='label'>Address</label>
+                        <input className='input' type="textarea"/>
                     </div>
-                    </div> */}
+
+                    
                     <div >
                         <button className='submit'  value='Submit' >Sign Up</button>
                     </div>
