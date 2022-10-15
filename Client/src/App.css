@@ -10,4 +10,12 @@
   .pages {
     color: #316685;
   }
-  
+  .drop{
+    padding-left: 30%;
+  }
+  .dr{
+    color: aliceblue;
+    text-align: center;
+    background-color: black;
+    padding: 10px 20px;
+  }
