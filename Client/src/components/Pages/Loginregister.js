@@ -1,14 +1,14 @@
-
 import * as React from 'react';
 
 
 
 export const Loginregister = () => {
-  const [food] = React.useState('fruit');
-  const [drink] = React.useState('water');
+  const [admin] = React.useState('admin');
+  const [donor] = React.useState('donor');
+  const [agent] = React.useState('agent');
   const Dropdown = ({ label, value, options, onChange }) => {
     return (
-      <label>
+      <label className='dr'>
         {label}
         <select className='dr' value={value} onChange={onChange}>
           {options.map((option) => (
@@ -22,13 +22,13 @@ export const Loginregister = () => {
   
   return (
     <div className='drop'>
-      <Dropdown  className='dr'
+      <Dropdown 
         options={[
           { label: 'ADMIN', value: 'ADMIN' },
           { label: 'Login As Existing', value: 'log' },
           { label: 'Register As New', value: 'new'}
         ]}
-        value={food}
+        value={admin}
       />
 
       <Dropdown 
@@ -37,7 +37,7 @@ export const Loginregister = () => {
           { label: 'Login As Existing', value: 'log'},
           { label: 'Register As New', value: 'new' },
         ]}
-        value={drink}
+        value={donor}
 
       />
             <Dropdown 
@@ -46,10 +46,8 @@ export const Loginregister = () => {
           { label: 'Login As Existing', value: 'log' },
           { label: 'Register As New', value: 'new' },
         ]}
-        value={drink}
+        value={agent}
       />
     </div>
   );
 };
-
-
