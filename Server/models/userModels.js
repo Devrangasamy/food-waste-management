@@ -44,6 +44,22 @@ const userSchema = new mongoose.Schema({
     minlength: 8,
     maxlength: 20
   },
+  age: {
+    type: Number
+  },
+  birthdate: {
+    type: String
+  },
+  phonenumber: {
+    type: String
+  },
+  gender: {
+    type: String
+  },
+  address: {
+    type: String
+  },
+
   passwordChangedAt: Date,
   passwordResetToken: String,
   passwordResetExpires: String,
