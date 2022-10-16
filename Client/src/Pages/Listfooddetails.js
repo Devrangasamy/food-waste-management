@@ -4,13 +4,6 @@ import TodoList from '../components/TodoList';
 
 
 
-export const Listfooddetails= () => {
-  return (
-    <div className='sidebar'>
-      <h1>Listfooddetails</h1>
-    </div>
-  );
-};
 
 export const Addfood =() =>{
   return(
