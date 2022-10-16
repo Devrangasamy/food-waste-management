@@ -1,19 +1,19 @@
 import React from "react";
-import Sidebar from '../../components/Sidebar';
+import Sidebar from '../components/Sidebar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import {Dashboard} from '../Pages/Dashboard';
-import {Listfooddetails ,Add,Manage} from '../Pages/Listfooddetails';
-import { Requests, New, Pickcom, Rejected ,All} from '../Pages/Requests';
+import {AdminDashboard} from './AdminDashboard';
+import {Listfooddetails ,Addfood,Manage} from './Listfooddetails';
+import { Requests, New, Pickcom, Rejected ,All} from './Requests';
 
 export const Contact = () => {
   return (
     <Router>
       <Sidebar />
       <Switch>
-        <Route path='/dashboard' exact component={Dashboard} />
+        <Route path='/dashboard' exact component={AdminDashboard} />
         <Route path='/listfooddetails' exact component={Listfooddetails} />
-        <Route path='/listfooddetails/add' exact component={Add} />
+        <Route path='/listfooddetails/add' exact component={Addfood} />
         <Route path='/listfooddetails/manage' exact component={Manage} />
         <Route path='/request' exact component={Requests} />
         <Route path='/request/new' exact component={New} />
