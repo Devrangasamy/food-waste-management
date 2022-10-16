@@ -1,4 +1,61 @@
-import React from "react";
+import React from 'react';
+// import axios from 'axios';
+// class App extends Component{
+//     constructor(){
+//         super();
+//         this.state={
+//             fullname:'',
+//             username:'',
+//             email:'',
+//             password:''
+//         };
+//         this.changefullname = this.changefullname.bind(this);
+//         this.changeusername=this.changeusername.bind(this);
+//         this.changeemail=this.changeemail.bind(this);
+//         this.changepassword=this.changepassword.bind(this);
+//         this.onSubmit=this.onSubmit.bind(this);
+//     }
+
+//     changefullname(event){
+//         this.setState({
+//             fullname:event.target.value
+//         });
+
+//     }
+//     changeusername(event){
+//         this.setState({
+//             username:event.target.value
+//         });
+//     }
+//     changeemail(event){
+//         this.setState({
+//             email:event.target.value
+//         });
+//     }
+//     changepassword(event){
+//         this.setState({
+//             password:event.target.value
+//         });
+//     }
+
+//     onSubmit(event){
+//         event.preventDefault()
+
+//         const registered ={
+//             fullname:this.state.fullname,
+//             username:this.state.username,
+//             email:this.state.email,
+//             password:this.state.password
+//         }
+//         axios.post('http://localhost:3000/api/v1/users/signup',registered)
+//             .then(response=>console.log(response.data))
+//         this.setState({
+//             fullname:'',
+//             username:'',
+//             email:'',
+//             password:''
+//         })
+//     }
 
 export const Registernew = () => {
   return (
@@ -32,7 +89,13 @@ export const Registernew = () => {
                     </div>
                     <div className='num'>
                         <label className='label'>Birth date</label>
-                        <input className='input' type="date" />
+                        <input
+                            type="text"
+                            className='input'
+                            onChange={(e) => console.log(e.target.value)}
+                            onFocus={(e) => (e.target.type = "date")}
+                            onBlur={(e) => (e.target.type = "text")}
+                        />
                     </div>
                     <div className='name'>
                         <label className='label'>Phone Number</label>

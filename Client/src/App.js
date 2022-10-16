@@ -7,6 +7,7 @@ import { Loginregister } from "./Pages/Loginregister";
 import { Contact } from "./Pages/Contact";
 import { Ourmission } from "./Pages/Ourmission";
 import { Registernew } from "./Pages/Registernew";
+import Login from './Pages/Login';
 import "./Pages/Register.css";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <div className="pages">
           <Switch>
             <Route exact path="/" component={Registernew} />
-            <Route path="/about" component={About} />
+            <Route path="/about" component={Login} />
             <Route path="/mission" component={Ourmission} />
             <Route path="/loginregister" component={Loginregister} />
             <Route path="/contact" component={Contact} />
