@@ -42,7 +42,7 @@ function TodoForm(props) {
       ) : (
         <>
           <input
-            placeholder='Add a todo'
+            placeholder='Add Food'
             value={input}
             onChange={handleChange}
             name='text'
@@ -50,7 +50,7 @@ function TodoForm(props) {
             ref={inputRef}
           />
           <button onClick={handleSubmit} className='todo-button'>
-            Add todo
+            Add More
           </button>
         </>
       )}
@@ -72,15 +72,22 @@ export const Formend=()=>{
     </div>
     <div className='num'>
         <label className='label'>Pickup Date</label>
-        <input className='input' type="date" />
+        <input
+        type="text"
+        className='input'
+        onChange={(e) => console.log(e.target.value)}
+        onFocus={(e) => (e.target.type = "date")}
+        onBlur={(e) => (e.target.type = "text")}
+      />
     </div>
     <div className='name'>
       <label className='label'>Pickup Address</label>
       <input className='input' type="textarea"/>
     </div>
-    <div className='state'>
+    <div className='name'>
     <label className='label'>Choose State</label>
-    <select name="state" id="state" classname="stat">
+    <select name="state" id="state" className='input'>
+    <option ></option>
     <option value="Andhra Pradesh">Andhra Pradesh</option>
     <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
     <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -120,7 +127,7 @@ export const Formend=()=>{
     </select>
     </div>
     <div className='name'>
-      <label className='label'>Choose state</label>
+      <label className='label'>Choose City</label>
       <input className='input' type="text"/>
     </div>
     <div className='name'>
