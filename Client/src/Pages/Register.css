@@ -5,7 +5,7 @@
 
 .container{
     padding-top: 20px;
-    background: linear-gradient(135deg,#d27878,#BBDBD1);
+    background: linear-gradient(135deg,#C1FFF2,#BBDBD1);
     width:100%;
     min-height: 100vh;
     display:flex;
@@ -23,7 +23,7 @@
     border-radius: 10px;
 }
 .title{
-    color:#BBDBD1;
+    color:#7E78D2;
     text-align: center;
     margin:8-px 0px 40px 0px;
 
@@ -75,6 +75,8 @@
     border:none;
     cursor: pointer;
     transition: all 0.1s;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 button:active{
     transform: translateY(2px);

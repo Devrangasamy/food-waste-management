@@ -2,12 +2,12 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import { Home } from "./components/Pages/Home";
-import { About } from "./components/Pages/About";
-import { Loginregister } from "./components/Pages/Loginregister";
-import { Contact } from "./components/Pages/Contact";
-import { Ourmission } from "./components/Pages/Ourmission";
-import { Registernew } from "./components/Pages/Registernew";
-import "./components/Pages/Register.css";
+import { About } from "./Pages/About";
+import { Loginregister } from "./Pages/Loginregister";
+import { Contact } from "./Pages/Contact";
+import { Ourmission } from "./Pages/Ourmission";
+import { Registernew } from "./Pages/Registernew";
+import "./Pages/Register.css";
 
 function App() {
   return (

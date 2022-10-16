@@ -17,7 +17,6 @@ export const SidebarData = [
   },
   {
     title: 'List Food Details',
-    path: '/listfooddetails',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
