@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 
 class Login extends Component {
   constructor() {
@@ -32,22 +31,27 @@ class Login extends Component {
       email: this.state.email,
       password: this.state.password,
     };
+    const login = async (email, password) => {
+      // setLoading(true);
+      const response = await fetch(
+        "http://127.0.0.1:3000/api/v1/users/login/",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: email, password: password }),
+        }
+      );
 
-    axios.request({
-      method: "POST",
-      url: `http://localhost:3000/api/users/login`,
-      data: {
-        next_swastik: registered,
-      },
-    });
+      const json = await response.json();
+      console.log(json);
+      if (json.status === "sucess") {
+        alert("loginSuccessfully");
+      } else if (json.status === "fail") {
+        alert("json.message");
+      }
+    };
 
-    // axios
-    //   .post("http://localhost:3000/api/users/login", registered)
-    //   .then((response) => console.log("cvx", response));
-    this.setState({
-      email: "",
-      password: "",
-    });
+    login(registered.email, registered.password);
   }
   render() {
     return (
