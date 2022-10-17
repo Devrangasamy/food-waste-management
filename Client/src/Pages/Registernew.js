@@ -90,7 +90,7 @@ class Registernew extends Component{
             address:this.state.address
 
         }
-        axios.post('http://localhost:3000/api/users/signup',registered)
+        axios.post('http://localhost:3000/api/v1/users/signup',registered)
             .then(response=>console.log(response.data))
         this.setState({
             username:'',

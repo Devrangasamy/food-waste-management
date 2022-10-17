@@ -34,7 +34,7 @@ class Login extends Component{
             email:this.state.email,
             password:this.state.password
         }
-        axios.post('http://localhost:3000/api/users/login',registered)
+        axios.post('http://localhost:3000/api/v1/users/login',registered)
             .then(response=>console.log(response.data))
         this.setState({
             email:'',
