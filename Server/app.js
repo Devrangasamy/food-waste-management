@@ -49,7 +49,11 @@ app.use(
 app.use(express.static(`${__dirname}/public`));
 
 app.use((req, res, next) => {
+<<<<<<< HEAD
   console.log('Hello from the middleware 👋',req);
+=======
+  console.log('Hello from the middleware 👋', req);
+>>>>>>> ee98adbd7f719f8ab3abaaef9ea9f23650d8f11d
   next();
 });
 
