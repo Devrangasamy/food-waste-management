@@ -1,18 +1,47 @@
 {
-  "name": "server",
+  "name": "natours",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Learning node, express and mongoDB",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js",
+    "start:prod": "SET NODE_ENV=production & nodemon server.js",
+    "debug": "ndb server.js"
   },
-  "author": "",
+  "author": "Jonas Schmedtmann",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "mongoose": "^6.6.5",
-    "nodemon": "^2.0.20"
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.5.2",
+    "helmet": "^5.1.1",
+    "hpp": "^0.2.3",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.2",
+    "morgan": "^1.9.1",
+    "ndb": "^1.1.5",
+    "nodemailer": "^6.7.8",
+    "nodemon": "^2.0.20",
+    "slugify": "^1.6.5",
+    "validator": "^13.7.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.17.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   }
 }

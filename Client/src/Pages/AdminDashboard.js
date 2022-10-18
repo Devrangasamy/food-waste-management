@@ -2,9 +2,10 @@ import React from 'react';
 import img from './img.png';
 import img2 from './img2.png';
 import './Dashboard.css';
-export const Dashboard = () => {
+export const  AdminDashboard = () => {
   return (
     <div className='hiii'>
+      
     <div className='hii' style={{backgroundColor: "blue",position:'relative'}}>
       <div className='imga'>
       <img src={img} style={{height: "70px",width:"70px" ,alignItems:"center"}} />
