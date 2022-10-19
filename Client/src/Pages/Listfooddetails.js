@@ -15,10 +15,10 @@ export const Addfood =() =>{
 }
 
 
-// export const Manage= () => {
-//   return (
-//     <div className='sidebar'>
-//       <h1>Listfooddetails/Manage</h1>
-//     </div>
-//   );
-// };
+export const Manage= () => {
+  return (
+    <div className='sidebar'>
+      <h1>Listfooddetails/Manage</h1>
+    </div>
+  );
+};
