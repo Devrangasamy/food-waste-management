@@ -17,6 +17,7 @@ const DB = process.env.DATABASE.replace(
   '<PASSWORD>',
   process.env.DATABASE_PASSWORD
 );
+// console.log(env.DATABASE,env.DATABASE_PASSWORD)
 mongoose
   // .connect(process.env.DATABASE_LOCAL, {
   .connect(DB, {
@@ -26,8 +27,7 @@ mongoose
   })
   .then(con => {
     console.log('Db Connection Succesfully');
-  });
-// .catch(err => console.log('Error'));
+  }).catch(err => console.log('Error'));
 
 const port = process.env.PORT || 3001;
 const server = app.listen(port, () => {
