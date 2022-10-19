@@ -26,7 +26,7 @@ export const Loginregister = () => {
         options={[
           { label: 'ADMIN', value: 'ADMIN' },
           { label: 'Login As Existing', value: 'log' },
-          { label: 'Register As New', value: 'new'}
+          { label: 'Register As New', value: 'new' }
         ]}
         value={admin}
       />
@@ -38,7 +38,6 @@ export const Loginregister = () => {
           { label: 'Register As New', value: 'new' },
         ]}
         value={donor}
-
       />
             <Dropdown 
         options={[
