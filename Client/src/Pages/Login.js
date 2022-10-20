@@ -1,8 +1,12 @@
 import React, { Component } from "react";
+// import { Navigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 class Login extends Component {
   constructor() {
     super();
+
     this.state = {
       email: "",
       password: "",
@@ -46,9 +50,20 @@ class Login extends Component {
       console.log(json);
       if (json.status === "sucess") {
         alert("loginSuccessfully");
+        // navigate("/dashboard");
       } else if (json.status === "fail") {
         alert(json.message);
       }
+
+      // if (json.status === "sucess") {
+      //   return <Navigate replace to="/login" />;
+      // } else {
+      //   return (
+      //     <div>
+      //       <p>Welcome to your Dashboard</p>
+      //     </div>
+      //   );
+      // }
     };
 
     login(registered.email, registered.password);
