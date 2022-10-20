@@ -47,7 +47,7 @@ class Login extends Component {
       if (json.status === "sucess") {
         alert("loginSuccessfully");
       } else if (json.status === "fail") {
-        alert("json.message");
+        alert(json.message);
       }
     };
 
