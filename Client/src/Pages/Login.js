@@ -58,7 +58,7 @@ class Login extends Component {
       <div className="container">
         <div className="app-wrapper">
           <div>
-            <h2 className="title">Create Account</h2>
+            <h2 className="title">Login</h2>
           </div>
           <form className="form-wrapper" onSubmit={this.onSubmit}>
             <div className="email">
