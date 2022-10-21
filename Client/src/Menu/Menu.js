@@ -43,7 +43,7 @@ const Menu = (props) => {
   };
 
   return (
-    <div style={{ display: "flex", gap: "160px", marginLeft: "150px" }}>
+    <div style={{ display: "flex", gap: "160px" }} className="margin">
       <div className="Menu">
         <div className={"m-item m-logo"} onClick={() => setOpenMenu(!openMenu)}>
           ADMIN
