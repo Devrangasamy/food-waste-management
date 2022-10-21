@@ -88,15 +88,14 @@ class Registernew extends Component {
       address: this.state.address,
     };
 
-    const response = await fetch("http://127.0.0.1:3000/api/v1/users/signup/", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ registered }),
-    });
-    alert(await response.json());
-    // axios
-    //   .post("http://localhost:3000/api/v1/users/signup", registered)
-    //   .then((response) => console.log(response.json()));
+    // const response = await fetch("http://127.0.0.1:3000/api/v1/users/signup/", {
+    //   method: "POST",
+    //   body: JSON.stringify({ registered }),
+    // });
+    // alert(await response.json());
+    axios
+      .post("http://localhost:3000/api/v1/users/signup", registered)
+      .then((response) => console.log(response));
     this.setState({
       name: "",
       email: "",
