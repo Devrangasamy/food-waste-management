@@ -10,7 +10,7 @@ export const SidebarData = [
   },
   {
     title: 'Dashboard',
-    path: '/dashboard',
+    path: '/Adminpage/dashboard',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -24,12 +24,12 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Add State',
-        path: '/state/add',
+        path: '/Adminpage/state/add',
         icon: <IoIcons.IoIosPaper />
       },
       {
         title: 'Manage State',
-        path: '/state/manage',
+        path: '/Adminpage/state/manage',
         icon: <IoIcons.IoIosPaper />
       }
     ]
@@ -43,33 +43,33 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Add City',
-        path: '/city/add',
+        path: '/Adminpage/city/add',
         icon: <IoIcons.IoIosPaper />
       },
       {
         title: 'Manage City',
-        path: '/city/manage',
+        path: '/Adminpage/city/manage',
         icon: <IoIcons.IoIosPaper />
       }
     ]
   },
   {
     title: 'Reg Food Donors',
-    path: '/regfooddonors',
+    path: '/Adminpage/regfooddonors',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
   },
   {
     title: 'Listed Foods',
-    path: '/listed/food',
+    path: '/Adminpage/listed/food',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
   },
   {
     title: 'Food Requests',
-    path: '/request',
+    path: '/Adminpage/request',
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -77,24 +77,24 @@ export const SidebarData = [
     subNav: [
       {
         title: 'New',
-        path: '/request/new',
+        path: '/Adminpage/request/new',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Picked/Completed',
-        path: '/request/pickcom',
+        path: '/Adminpage/request/pickcom',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Rejected',
-        path: '/request/reject',
+        path: '/Adminpage/request/reject',
         icon: <IoIcons.IoIosPaper />
       },
       {
         title: 'All',
-        path: '/request/all',
+        path: '/Adminpage/request/all',
         icon: <IoIcons.IoIosPaper />
       }
     ]

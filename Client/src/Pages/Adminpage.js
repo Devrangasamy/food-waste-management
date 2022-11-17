@@ -3,7 +3,7 @@ import Sidebar from '../components/Admin/Adminsidebar';
 import { Routes, Route } from 'react-router-dom';
 
 
-// import AdminDashboard from './AdminDashboard';
+import {AdminDashboard} from './AdminDashboard';
 import {Regdonors} from './Admin/Regdonors';
 import {Addstate, Managestate } from "./Admin/State";
 import {Addcity, Managecity } from "./Admin/City";
@@ -11,12 +11,13 @@ import { Listedfoods } from "./Admin/Listedfoods";
 import { Requests, New, Pickcom, Rejected ,All} from './Admin/Requests';
 
 
-export const Ourmission = () => {
+export const Adminpage = () => {
   return (
     <div>
       <Sidebar />
-      <Routes>
-        {/* <Route path='/dashboard' exact element={<AdminDashboard></AdminDashboard>} /> */}
+      {/* <Routes>
+      <Route path="/about" element={<About></About>} />
+        <Route exact path="/dashboard" element={<AdminDashboard></AdminDashboard>} />
         <Route path='/state/add' exact element={<Addstate></Addstate>} />
         <Route path='/state/manage' exact element={<Managestate></Managestate>} />
         <Route path='/city/add' exact element={<Addcity></Addcity>} />
@@ -29,7 +30,7 @@ export const Ourmission = () => {
         <Route path='/request/reject' exact element={<Rejected></Rejected>} />
         <Route path='/request/all' exact element={<All></All>} />
 
-        </Routes>
+        </Routes> */}
 
     </div>
   );

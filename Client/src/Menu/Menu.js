@@ -1,10 +1,30 @@
 import React, { useState } from "react";
-
+import "./Menu.css";
 // router
-import { withRouter } from "react-router-dom";
+import {
+  useLocation,
+  useNavigate,
+  useParams,
+} from "react-router-dom";
+
+function withRouter(Component) {
+  function ComponentWithRouterProp(props) {
+    let location = useLocation();
+    let navigate = useNavigate();
+    let params = useParams();
+    return (
+      <Component
+        {...props}
+        router={{ location, navigate, params }}
+      />
+    );
+  }
+
+  return ComponentWithRouterProp;
+}
 
 // styling
-import "./Menu.css";
+
 
 const Menu = (props) => {
   // conditionally render dropdown affect based on this boolean

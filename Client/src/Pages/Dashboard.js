@@ -2,7 +2,7 @@ import React from 'react';
 import img from './img.png';
 import img2 from './img2.png';
 import './Dashboard.css';
-export const Dashboard = () => {
+const Dashboard = () => {
   return (
     <div className='hiii'>
     <div className='hii' style={{backgroundColor: "#FF1053",position:'relative',borderRadius:'10px',color:'black'}}>
@@ -53,3 +53,5 @@ export const Dashboard = () => {
     </div>  
   );
 };
+
+export default Dashboard;

@@ -1,7 +1,6 @@
 import React from "react";
 
-// router
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 
 // styling
 
@@ -12,18 +11,20 @@ import Registernew from "./Registernew";
 
 const Loginregister = () => {
   return (
-    <BrowserRouter>
+
       <div className="App">
-        {/* dropdown menu */}
+
         <Menu />
-        {/* routes */}
-        <Switch>
-          <Route exact path="/register" component={Registernew} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/" component={null} />
-        </Switch>
+
+  
+<Routes>
+          <Route exact path="/register" element={<Registernew></Registernew>} />
+          <Route exact path="/login" element={<Login></Login>} />
+ 
+          </Routes>
+
       </div>
-    </BrowserRouter>
+
   );
 };
 

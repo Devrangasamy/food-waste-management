@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import { SidebarData } from '../Admin/SidebarData';
-import SubMenu from '../Admin/SubMenu';
+import { SidebarData } from './SidebarData';
+import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
 
-
+import {Routes, Route } from "react-router-dom";
 
 const Nav = styled.div`
   height: 80px;
@@ -43,13 +43,13 @@ const SidebarWrap = styled.div`
   width: 100%;
 `;
 
-const Sidebar = () => {
+const Adminsidebar = () => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <>
+
       <IconContext.Provider value={{ color: 'brown' }}>
         <Nav>
           <NavIcon to='#'>
@@ -62,13 +62,18 @@ const Sidebar = () => {
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </NavIcon>
             {SidebarData.map((item, index) => {
-              return <SubMenu item={item} key={index} />;
+
+
+              return <SubMenu item={item} key={index} onClick={()=>{
+                Navigate("/dashboard");
+              }} />;
+              
             })}
           </SidebarWrap>
         </SidebarNav>
       </IconContext.Provider>
-    </>
+
   );
 };
 
-export default Sidebar;
+export default Adminsidebar;
