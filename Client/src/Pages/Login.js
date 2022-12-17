@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-// import { Navigate } from "react-router-dom";
+import { Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import { Addfood, Manage } from "./Listfooddetails";
+// impor t { Navigate } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 // import { Link, useNavigate } from "react-router-dom";
 
@@ -30,6 +33,7 @@ class Login extends Component {
 
   onSubmit(event) {
     event.preventDefault();
+    // const navigate = useNavigate();
 
     const registered = {
       email: this.state.email,
@@ -50,6 +54,7 @@ class Login extends Component {
       console.log(json);
       if (json.status === "sucess") {
         alert("loginSuccessfully");
+        <Redirect to={"/dashboard"} />;
         // navigate("/dashboard");
       } else if (json.status === "fail") {
         alert(json.message);
@@ -57,6 +62,7 @@ class Login extends Component {
     };
 
     login(registered.email, registered.password);
+    <Route path="/" Component={Addfood} />;
   }
   render() {
     return (
