@@ -2,7 +2,7 @@ import React from 'react';
 import img from './img.png';
 import img2 from './img2.png';
 import './AdminDashboard.css';
-export const  AdminDashboard = () => {
+ export const  AdminDashboard = () => {
   return (
     <div className='hiii'>
       

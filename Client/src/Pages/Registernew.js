@@ -95,7 +95,9 @@ class Registernew extends Component {
     // alert(await response.json());
     axios
       .post("http://localhost:3000/api/v1/users/signup", registered)
-      .then((response) => console.log(response));
+      .then((response) => {
+        alert(response.data.status);
+        console.log(response)});
     this.setState({
       name: "",
       email: "",

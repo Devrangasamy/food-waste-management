@@ -8,11 +8,12 @@ import { Route,Routes } from 'react-router-dom';
 import { Requests, New, Pickcom, Rejected ,All} from './Requests';
 import Dashboard  from './Dashboard'
 
-export const Contact = () => {
+export const Donarpage = () => {
   return (
     <div>
+       <Routes>
       <Sidebar />
-      <Routes>
+     
         <Route path='/dashboard' exact element={<Dashboard></Dashboard>} />
         {/* <Route path='/listfooddetails' exact component={Listfooddetails} /> */}
         {/* <Route path='/listfooddetails/add' exact element={<Addfood></Addfood>} /> */}
