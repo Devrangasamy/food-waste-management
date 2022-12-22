@@ -1,17 +1,21 @@
 const express = require('express');
 const morgan = require('morgan');
+const bodyParser = require('body-parser');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
+const cors = require('cors');
+const cookieParser = require('cookie-parser');
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
 const tourRouter = require('./routes/tourRoutes');
 const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
-const cors = require('cors');
+
 const app = express();
+app.use(bodyParser.json());
 app.use(express.json());
 app.use(helmet());
 const corsOpts = {
@@ -28,9 +32,9 @@ app.use(cors(corsOpts));
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
-
+app.use(cookieParser());
 const limiter = rateLimit({
-  max: 30,
+  max: 100000,
   windowMs: 60 * 60 * 1000,
   message: 'Too many requests from this IP,please try again in an hour !'
 });

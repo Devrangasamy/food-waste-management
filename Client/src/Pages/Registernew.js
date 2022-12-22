@@ -1,233 +1,274 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+const Registernew = () => {
+  const [userData, setUserData] = useState({
+    username: "",
+    email: "",
+    password: "",
+    passwordConfirm: "",
+    age: "",
+    birthdate: "",
+    phonenumber: "",
+    gender: "",
+    address: "",
+    typelogin: "",
+  });
 
-class Registernew extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: "",
-      email: "",
-      password: "",
-      passwordConfirm: "",
-      age: "",
-      birthdate: "",
-      phonenumber: "",
-      gender: "",
-      address: "",
-    };
-    this.changename = this.changename.bind(this);
-    this.changeemail = this.changeemail.bind(this);
-    this.changepassword = this.changepassword.bind(this);
-    this.changepasswordConfirm = this.changepasswordConfirm.bind(this);
-    this.changeage = this.changeage.bind(this);
-    this.changebirthdate = this.changebirthdate.bind(this);
-    this.changephonenumber = this.changephonenumber.bind(this);
-    this.changegender = this.changegender.bind(this);
-    this.changeaddress = this.changeaddress.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
-  }
-
-  changename(event) {
-    this.setState({
-      name: event.target.value,
-    });
-  }
-  changeemail(event) {
-    this.setState({
-      email: event.target.value,
-    });
-  }
-  changepassword(event) {
-    this.setState({
-      password: event.target.value,
-    });
-  }
-  changepasswordConfirm(event) {
-    this.setState({
-      passwordConfirm: event.target.value,
-    });
-  }
-  changeage(event) {
-    this.setState({
-      age: event.target.value,
-    });
-  }
-  changebirthdate(event) {
-    this.setState({
-      birthdate: event.target.value,
-    });
-  }
-  changephonenumber(event) {
-    this.setState({
-      phonenumber: event.target.value,
-    });
-  }
-  changegender(event) {
-    this.setState({
-      gender: event.target.value,
-    });
-  }
-  changeaddress(event) {
-    this.setState({
-      address: event.target.value,
-    });
-  }
-
-  async onSubmit(event) {
+  const Navigate = useNavigate();
+  const changeHandler = (e) => {
+    const { name, value, type } = e.target;
+    setUserData({ ...userData, [name]: value });
+  };
+  const onSubmit = (event) => {
     event.preventDefault();
+    if (userData.username === "") {
+      alert("Enter username");
+      return "";
+    } else if (userData.username.length < 8) {
+      alert("Username should be greater than 8");
+      return "";
+    }
 
-    const registered = {
-      name: this.state.name,
-      email: this.state.email,
-      password: this.state.password,
-      passwordConfirm: this.state.passwordConfirm,
-      age: this.state.age,
-      birthdate: this.state.birthdate,
-      phonenumber: this.state.phonenumber,
-      gender: this.state.gender,
-      address: this.state.address,
+    if (!userData.email) {
+      alert("Email Required");
+      return "";
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(userData.email)
+    ) {
+      alert("Invalid email address");
+      return "";
+    }
+
+    if (!userData.password) {
+      alert("Password Required");
+      return "";
+    } else if (
+      !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/i.test(
+        userData.password
+      )
+    ) {
+      alert("Provide Strong Password");
+      return "";
+    }
+    if (!userData.passwordConfirm) {
+      alert("Conform Password Required");
+      return "";
+    } else if (userData.password !== userData.passwordConfirm) {
+      alert("Password and Conform password should be same");
+      return "";
+    }
+    if (userData.age === "") {
+      alert("Please provide age");
+      return "";
+    }
+    if (userData.birthdate === "") {
+      alert("Please provide DOB");
+      return "";
+    }
+    if (userData.phonenumber === "") {
+      alert("Please provide Mobile number");
+      return "";
+    }
+    if (userData.address === "") {
+      alert("Please provide Address");
+      return "";
+    }
+    if (userData.gender === "") {
+      alert("Please choose Gender");
+      return "";
+    }
+    const login = async (userData) => {
+      console.log(userData);
+      const response = await fetch(
+        "http://127.0.0.1:3000/api/v1/users/signup/",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: userData.username,
+            email: userData.email,
+            role: userData.typelogin,
+            password: userData.password,
+            passwordConfirm: userData.passwordConfirm,
+            age: userData.age,
+            birthdate: userData.birthdate,
+            phonenumber: userData.phonenumber,
+            gender: userData.gender,
+            address: userData.address,
+          }),
+        }
+      );
+      const json = await response.json();
+      console.log(json);
+      alert(json.status);
+
+      if (json.status === "sucess") {
+        Navigate("/loginregister");
+      }
     };
+    login(userData);
+  };
 
-    // const response = await fetch("http://127.0.0.1:3000/api/v1/users/signup/", {
-    //   method: "POST",
-    //   body: JSON.stringify({ registered }),
-    // });
-    // alert(await response.json());
-    axios
-      .post("http://localhost:3000/api/v1/users/signup", registered)
-      .then((response) => {
-        alert(response.data.status);
-        console.log(response)});
-    this.setState({
-      name: "",
-      email: "",
-      password: "",
-      passwordConfirm: "",
-      age: "",
-      birthdate: "",
-      phonenumber: "",
-      gender: "",
-      address: "",
-    });
-  }
+  // const response = await fetch("http://127.0.0.1:3000/api/v1/users/signup/", {
+  //   method: "POST",
+  //   body: JSON.stringify({ registered }),
+  // });
+  // alert(await response.json());
+  // axios
+  //   .post("http://localhost:3000/api/v1/users/signup", registered)
+  //   .then((response) => {
+  //     alert(response.data.status);
+  //     console.log(response);
+  //   });
 
-  render() {
-    return (
-      <div className="container">
-        <div className="app-wrapper">
-          <div>
-            <h2 className="title">Create Account</h2>
-          </div>
-          <form className="form-wrapper" onSubmit={this.onSubmit}>
-            <div className="name">
-              <label className="label">User name</label>
-              <input
-                className="input"
-                type="text"
-                onChange={this.changename}
-                value={this.state.name}
-              />
-            </div>
-            <div className="email">
-              <label className="label">Email</label>
-              <input
-                className="input"
-                type="email"
-                onChange={this.changeemail}
-                value={this.state.email}
-              />
-            </div>
-            <div className="password">
-              <label className="label">password</label>
-              <input
-                className="input"
-                type="password"
-                onChange={this.changepassword}
-                value={this.state.password}
-              />
-            </div>
-            <div className="password">
-              <label className="label">Confirm password</label>
-              <input
-                className="input"
-                type="password"
-                onChange={this.changepasswordConfirm}
-                value={this.state.passwordConfirm}
-              />
-            </div>
-            <div className="num">
-              <label className="label">Age</label>
-              <input
-                className="input"
-                type="number"
-                onChange={this.changeage}
-                value={this.state.age}
-              />
-            </div>
-            <div className="num">
-              <label className="label">Birth date</label>
-              <input
-                type="text"
-                className="input"
-                onChange={this.changebirthdate}
-                value={this.state.birthdate}
-                onFocus={(e) => (e.target.type = "date")}
-                onBlur={(e) => (e.target.type = "text")}
-              />
-            </div>
-            <div className="name">
-              <label className="label">Phone Number</label>
-              <input
-                className="input"
-                type="text"
-                onChange={this.changephonenumber}
-                value={this.state.phonenumber}
-              />
-            </div>
-            <div className="gender">
-              <label className="label">Gender:</label>
-              <input
-                type="radio"
-                value="Male"
-                name="gender"
-                className="radi"
-              />{" "}
-              Male
-              <input
-                type="radio"
-                value="Female"
-                name="gender"
-                className="radi"
-              />{" "}
-              Female
-              <input
-                type="radio"
-                value="Other"
-                name="gender"
-                className="radi"
-              />{" "}
-              Other
-            </div>
-            <div className="name">
-              <label className="label">Address</label>
-              <input
-                className="input"
-                type="textarea"
-                onChange={this.changeaddress}
-                value={this.state.address}
-              />
-            </div>
-
-            <div>
-              <button className="submit" value="Submit">
-                Sign Up
-              </button>
-            </div>
-          </form>
+  return (
+    <div className="container">
+      <div className="app-wrapper">
+        <div>
+          <h2 className="title">Create Account</h2>
         </div>
+        <form className="form-wrapper" onSubmit={onSubmit}>
+          <div className="name">
+            <div className="gender">
+              <label className="label">Login Type:</label>
+              <input
+                onChange={(e) => changeHandler(e)}
+                type="radio"
+                value="User"
+                name="typelogin"
+                className="radi"
+              />{" "}
+              User
+              <input
+                onChange={(e) => changeHandler(e)}
+                type="radio"
+                value="Donar"
+                name="typelogin"
+                className="radi"
+              />{" "}
+              Donar
+            </div>
+
+            <label className="label">User name</label>
+            <input
+              className="input"
+              type="text"
+              name="username"
+              onChange={(e) => changeHandler(e)}
+              value={changeHandler.username}
+            />
+          </div>
+          <div className="email">
+            <label className="label">Email</label>
+            <input
+              className="input"
+              type="email"
+              name="email"
+              onChange={(e) => changeHandler(e)}
+              value={changeHandler.email}
+            />
+          </div>
+          <div className="password">
+            <label className="label">password</label>
+            <input
+              className="input"
+              type="password"
+              name="password"
+              onChange={(e) => changeHandler(e)}
+              value={changeHandler.password}
+            />
+          </div>
+          <div className="password">
+            <label className="label">Confirm password</label>
+            <input
+              className="input"
+              type="password"
+              name="passwordConfirm"
+              onChange={(e) => changeHandler(e)}
+              value={changeHandler.passwordConfirm}
+            />
+          </div>
+          <div className="num">
+            <label className="label">Age</label>
+            <input
+              className="input"
+              type="number"
+              name="age"
+              onChange={(e) => changeHandler(e)}
+              value={changeHandler.age}
+            />
+          </div>
+          <div className="num">
+            <label className="label">Birth date</label>
+            <input
+              type="text"
+              className="input"
+              name="birthdate"
+              onChange={(e) => changeHandler(e)}
+              value={changeHandler.birthdate}
+              onFocus={(e) => (e.target.type = "date")}
+              onBlur={(e) => (e.target.type = "text")}
+            />
+          </div>
+          <div className="name">
+            <label className="label">Phone Number</label>
+            <input
+              className="input"
+              type="text"
+              name="phonenumber"
+              onChange={(e) => changeHandler(e)}
+              value={changeHandler.phonenumber}
+            />
+          </div>
+          <div className="gender">
+            <label className="label">Gender:</label>
+            <input
+              onChange={(e) => changeHandler(e)}
+              type="radio"
+              value="Male"
+              name="gender"
+              className="radi"
+            />{" "}
+            Male
+            <input
+              onChange={(e) => changeHandler(e)}
+              type="radio"
+              value="Female"
+              name="gender"
+              className="radi"
+            />{" "}
+            Female
+            <input
+              onChange={(e) => changeHandler(e)}
+              type="radio"
+              value="Other"
+              name="gender"
+              className="radi"
+            />{" "}
+            Other
+          </div>
+          <div className="name">
+            <label className="label">Address</label>
+            <input
+              className="input"
+              type="textarea"
+              name="address"
+              onChange={(e) => changeHandler(e)}
+              value={changeHandler.address}
+            />
+          </div>
+
+          <div>
+            <button className="submit" value="Submit">
+              Sign Up
+            </button>
+          </div>
+        </form>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Registernew;
