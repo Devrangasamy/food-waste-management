@@ -1,11 +1,11 @@
 const crypto = require('crypto');
-const util = require('util');
+// const util = require('util');
 const jwt = require('jsonwebtoken');
 const User = require('./../models/userModels');
 const catchAsync = require('./../utils/catchAsync');
 const AppError = require('./../utils/appError');
 const sendEmail = require('./../utils/email');
-const { resolve } = require('dns');
+// const { resolve } = require('dns');
 
 const signToken = id => {
   return jwt.sign({ id }, process.env.JWT_SECRET, {
@@ -15,16 +15,21 @@ const signToken = id => {
 
 const createSendToken = (user, statuscode, res) => {
   const token = signToken(user._id);
-  const cookieOptions = {
-    expires: new Date(
-      Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
-    ),
-    // secure: true,
-    httpOnly: true
-  };
-  if (process.env.NODE_ENV === 'production') cookieOptions.secure = true;
+  // const cookieOptions = {
+  //   expires: new Date(
+  //     Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
+  //   ),
+  //   secure: false,
+  //   httpOnly: true
+  // };
+  // if (process.env.NODE_ENV === 'production') {
+  //   cookieOptions.secure = true;
+  // }
 
-  res.cookie('jwt', token, cookieOptions);
+  // console.log('fgdsgsdg');
+  // res.cookie('hiii', 'dfgdfgd', cookieOptions);
+  const jwtMaxTime = 3 * 24 * 60 * 60 * 1000;
+  res.cookie('jwt', token, { maxAge: jwtMaxTime, httpOnly: false });
   user.password = undefined;
   res.status(statuscode).json({
     status: 'sucess',
@@ -39,27 +44,62 @@ exports.signup = catchAsync(async (req, res, next) => {
   createSendToken(newUser, 201, res);
 });
 exports.login = catchAsync(async (req, res, next) => {
-  const { email, password } = req.body;
+  const { email, password, role } = req.body;
   if (!email || !password) {
     return next(new AppError('Please provide email and password!', 400));
   }
-  const user = await User.findOne({ email }).select('+password');
+  const user = await User.findOne({ email: email, role: role }).select(
+    '+password'
+  );
   if (!user || !(await user.correctPassword(password, user.password))) {
     return next(new AppError('Incorrect email or password', 401));
   }
-  createSendToken(user, 200, res);
+  // createSendToken(user, 200, res);
+  const token = signToken(user._id);
+  const jwtMaxTime = 3 * 24 * 60 * 60 * 1000;
+  res.cookie('jwt', token, { maxAge: jwtMaxTime });
+  // console.log(res);
+  user.password = undefined;
+  res.status(200).json({
+    status: 'sucess',
+    token,
+    data: {
+      user
+    }
+  });
 });
+exports.getuser = async (req, res) => {
+  const userid = req.params.id;
+  const user = await User.findById(userid);
+  res.status(200).json(user);
+};
+
+exports.me = async (req, res) => {
+  let token;
+  if (req.cookies.jwt) {
+    token = req.cookies.jwt;
+  }
+
+  if (!token) {
+    res.status(400).json({
+      status: 'failure',
+      Error: 'Pls login to continue'
+    });
+  } else {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const currentUser = await User.findById(decoded.id);
+    res.status(200).json({
+      user: currentUser
+    });
+  }
+};
 
 exports.protect = catchAsync(async (req, res, next) => {
   let token;
-  if (
-    req.headers.authorization &&
-    req.headers.authorization.startsWith('Bearer')
-  ) {
+  if (req.cookies.jwt) {
     // console.log(req.headers.authorization.split(' '));
-    token = req.headers.authorization.split(' ')[1];
+    token = req.cookies.jwt;
   }
-  // console.log(token);
   if (!token) {
     return next(
       new AppError('You are not login in! please log in get acess', 401)

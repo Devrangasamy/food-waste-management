@@ -16,10 +16,14 @@ exports.deleteOne = Model =>
 
 exports.updateOne = Model =>
   catchAsync(async (req, res, next) => {
-    const doc = await Model.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-      runValidators: true
-    });
+    const doc = await Model.findByIdAndUpdate(
+      { userid: req.params.id },
+      req.body,
+      {
+        new: true,
+        runValidators: true
+      }
+    );
 
     if (!doc) {
       return next(new AppError('No Doc found with that ID', 404));
@@ -43,10 +47,10 @@ exports.createOne = Model =>
     });
   });
 
-exports.getOne = (Model, popOptions) =>
+exports.getOne = Model =>
   catchAsync(async (req, res, next) => {
-    let query = Model.findById(req.params.id);
-    if (popOptions) query.populate(popOptions);
+    const query = Model.find({ userid: req.params.id });
+    // if (popOptions) query.populate(popOptions);
     const doc = await query;
 
     if (!doc) {
