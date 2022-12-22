@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import { SidebarData } from './SidebarData';
-import SubMenu from './SubMenu';
-import { IconContext } from 'react-icons/lib';
-
-
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+import { SidebarData } from "./SidebarData";
+import SubMenu from "./SubMenu";
+import { IconContext } from "react-icons/lib";
 
 const Nav = styled.div`
   height: 80px;
@@ -26,15 +24,15 @@ const NavIcon = styled(Link)`
 `;
 
 const SidebarNav = styled.nav`
-  background: #7C7287;
-  margin-top:80px;
+  background: #1e1b18;
+  margin-top: 80px;
   width: 250px;
   height: 100vh;
   display: flex;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
+  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
   z-index: 10;
 `;
@@ -43,22 +41,22 @@ const SidebarWrap = styled.div`
   width: 100%;
 `;
 
-const Sidebar = () => {
-  const [sidebar, setSidebar] = useState(false);
+const DonarSidebar = () => {
+  const [sidebar, setSidebar] = useState(true);
 
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
     <>
-      <IconContext.Provider value={{ color: 'brown' }}>
+      <IconContext.Provider value={{ color: "brown" }}>
         <Nav>
-          <NavIcon to='#'>
+          <NavIcon to="#">
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
-            <NavIcon to='#'>
+            <NavIcon to="#">
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </NavIcon>
             {SidebarData.map((item, index) => {
@@ -71,4 +69,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default DonarSidebar;

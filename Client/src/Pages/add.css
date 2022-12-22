@@ -2,8 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .todo-app {
@@ -24,7 +24,7 @@
 
 h1 {
   margin: 32px 0;
-  color: #7E78D2;
+  color: #7e78d2;
   font-size: 24px;
 }
 
@@ -42,17 +42,14 @@ h1 {
   border-radius: 4px 0 0 4px;
   border: 2px solid #5d0cff;
   outline: none;
-  width: 320px;
+  width: 170px;
   background: white;
-  
-  
 }
 
 .todo-input::placeholder {
   color: black;
   text-align: center;
 }
-
 
 .todo-button {
   padding: 16px;

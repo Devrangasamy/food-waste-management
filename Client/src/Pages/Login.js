@@ -1,82 +1,89 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+const Login = () => {
+  const [userData, setUserData] = useState({
+    email: "",
+    password: "",
+    type: "Admin",
+  });
 
-class Login extends Component {
-  constructor() {
-    super();
-    this.state = {
-      email: "",
-      password: "",
-    };
-
-    this.changeemail = this.changeemail.bind(this);
-    this.changepassword = this.changepassword.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
-  }
-
-  changeemail(event) {
-    this.setState({
-      email: event.target.value,
-    });
-  }
-  changepassword(event) {
-    this.setState({
-      password: event.target.value,
-    });
-  }
-
-  onSubmit(event) {
+  const Navigate = useNavigate();
+  const changeHandler = (e) => {
+    const { name, value, type } = e.target;
+    setUserData({ ...userData, [name]: value });
+  };
+  const onSubmit = (event) => {
     event.preventDefault();
 
-    const registered = {
-      email: this.state.email,
-      password: this.state.password,
-    };
-    const login = async (email, password) => {
-      // setLoading(true);
-      const response = await fetch(
-        "http://127.0.0.1:3000/api/v1/users/login/",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email: email, password: password }),
-        }
-      );
+    const login = async (email, password, type) => {
+      const response = await fetch("/api/v1/users/login/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: email,
+          password: password,
+          role: type,
+        }),
+      });
 
       const json = await response.json();
-      console.log(json);
+      console.log(response);
       if (json.status === "sucess") {
-        alert("loginSuccessfully");
+        // alert(type);
+        if (type === "Admin") {
+          Navigate("/Adminpage");
+        } else if (type === "Donar") {
+          Navigate("/Donarpage");
+        } else if (type === "User") {
+          Navigate("/Adminpage");
+        }
       } else if (json.status === "fail") {
-        alert("json.message");
+        console.log("Failed !!!");
+        alert(json.message);
       }
     };
 
-    login(registered.email, registered.password);
-  }
-  render() {
-    return (
+    login(userData.email, userData.password, userData.type);
+  };
+  return (
+    <div className="login-page">
       <div className="container">
         <div className="app-wrapper">
           <div>
             <h2 className="title">Login</h2>
           </div>
-          <form className="form-wrapper" onSubmit={this.onSubmit}>
+          <form className="form-wrapper" onSubmit={onSubmit}>
+            <div className="email">
+              <label className="label">Type</label>
+              <select
+                name="type"
+                onChange={(e) => changeHandler(e)}
+                value={changeHandler.type}
+              >
+                <option value="Admin">Admin</option>
+                <option value="Donar">Donar</option>
+                <option value="User">User</option>
+              </select>
+            </div>
             <div className="email">
               <label className="label">Email</label>
               <input
                 className="input"
                 type="email"
-                onChange={this.changeemail}
-                value={this.state.email}
+                name="email"
+                onChange={(e) => changeHandler(e)}
+                value={changeHandler.email}
               />
             </div>
             <div className="password">
               <label className="label">password</label>
               <input
                 className="input"
+                name="password"
                 type="password"
-                onChange={this.changepassword}
-                value={this.state.password}
+                onChange={(e) => changeHandler(e)}
+                value={changeHandler.password}
               />
             </div>
             <div>
@@ -85,10 +92,19 @@ class Login extends Component {
               </button>
             </div>
           </form>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              Navigate("/Registernew");
+            }}
+          >
+            <label>New user ? </label>
+            <input type="submit" value="Sign up" />
+          </form>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Login;

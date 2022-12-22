@@ -1,27 +1,28 @@
 import React from "react";
-import Sidebar from '../components/Sidebar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Sidebar from "../components/DonarSidebar";
+import { Route, Routes } from "react-router-dom";
 
 // import {AdminDashboard} from './AdminDashboard';
-import {Addfood,Manage} from './Listfooddetails';
-import { Requests, New, Pickcom, Rejected ,All} from './Requests';
-import { Dashboard } from './Dashboard'
+// import Addfood from './Listfooddetails';
+// import Manage from './Listfooddetails';
+import { Requests, New, Pickcom, Rejected, All } from "./Requests";
+// import Dashboard from "./DonarDashboard";
 
 export const Contact = () => {
   return (
-    <Router>
+    <div>
       <Sidebar />
-      <Switch>
-        <Route path='/dashboard' exact component={Dashboard} />
+      <Routes>
+        {/* <Route path="/dashboard" exact element={<Dashboard></Dashboard>} /> */}
         {/* <Route path='/listfooddetails' exact component={Listfooddetails} /> */}
-        <Route path='/listfooddetails/add' exact component={Addfood} />
-        <Route path='/listfooddetails/manage' exact component={Manage} />
-        <Route path='/request' exact component={Requests} />
-        <Route path='/request/new' exact component={New} />
-        <Route path='/request/pickcom' exact component={Pickcom} />
-        <Route path='/request/reject' exact component={Rejected} />
-        <Route path='/request/all' exact component={All} />
-      </Switch>
-    </Router>
+        {/* <Route path='/listfooddetails/add' exact element={<Addfood></Addfood>} /> */}
+        {/* <Route path='/listfooddetails/manage' exact element={<Manage></Manage>} /> */}
+        <Route path="/request" exact element={<Requests></Requests>} />
+        <Route path="/request/new" exact element={<New></New>} />
+        <Route path="/request/pickcom" exact element={<Pickcom></Pickcom>} />
+        <Route path="/request/reject" exact element={<Rejected></Rejected>} />
+        <Route path="/request/all" exact element={<All></All>} />
+      </Routes>
+    </div>
   );
 };

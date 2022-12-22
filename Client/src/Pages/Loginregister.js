@@ -1,52 +1,31 @@
-import * as React from 'react';
+import React from "react";
 
+import {Routes, Route } from "react-router-dom";
 
+// styling
 
-export const Loginregister = () => {
-  const [admin] = React.useState('admin');
-  const [donor] = React.useState('donor');
-  const [agent] = React.useState('agent');
-  const Dropdown = ({ label, value, options, onChange }) => {
-    return (
-      <label className='dr'>
-        {label}
-        <select className='dr' value={value} onChange={onChange}>
-          {options.map((option) => (
-            <option value={option.value}>{option.label}</option>
-          ))}
-        </select>
-      </label>
-  
-    );
-  };
-  
+// components
+import Menu from "./../Menu/Menu";
+import Login from "./Login";
+import Registernew from "./Registernew";
+
+const Loginregister = () => {
   return (
-    <div className='drop'>
-      <Dropdown 
-        options={[
-          { label: 'ADMIN', value: 'ADMIN' },
-          { label: 'Login As Existing', value: 'log' },
-          { label: 'Register As New', value: 'new' }
-        ]}
-        value={admin}
-      />
 
-      <Dropdown 
-        options={[
-          { label: 'DONOR', value: 'DONOR' },
-          { label: 'Login As Existing', value: 'log'},
-          { label: 'Register As New', value: 'new' },
-        ]}
-        value={donor}
-      />
-            <Dropdown 
-        options={[
-          { label: 'AGENT', value: 'AGENT' },
-          { label: 'Login As Existing', value: 'log' },
-          { label: 'Register As New', value: 'new' },
-        ]}
-        value={agent}
-      />
-    </div>
+      <div className="App">
+
+        <Menu />
+
+  
+<Routes>
+          <Route exact path="/register" element={<Registernew></Registernew>} />
+          <Route exact path="/login" element={<Login></Login>} />
+ 
+          </Routes>
+
+      </div>
+
   );
 };
+
+export default Loginregister;
