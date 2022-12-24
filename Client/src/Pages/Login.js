@@ -36,7 +36,7 @@ const Login = () => {
         } else if (type === "Donar") {
           Navigate("/Donarpage");
         } else if (type === "User") {
-          Navigate("/Adminpage");
+          Navigate("/Userpage");
         }
       } else if (json.status === "fail") {
         console.log("Failed !!!");
