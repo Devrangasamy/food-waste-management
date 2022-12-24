@@ -1,5 +1,5 @@
 import React from "react";
-import orphange from "../assets/orphange.jpg";
+import orphange from "../assets/orphans.jpeg";
 import "../styles/About.css";
 function About() {
   return (
