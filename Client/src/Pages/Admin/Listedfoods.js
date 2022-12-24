@@ -1,44 +1,45 @@
 import React, { useState, useEffect } from "react";
+import Loading from "../Loading";
 
 export const Listedfoods = () => {
+  const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
-  const fetchdata = async () => {
-    const response = await fetch("/api/v1/tours/");
-    const json = await response.json();
-    console.log(json.data.data);
 
-    return json.data.data;
-  };
   useEffect(() => {
-    let res = [];
-    const insidefunction = async () => {
-      res = await fetchdata();
+    const fetchData = async () => {
+      setLoading(true);
+      const datefind = new Date(new Date().getTime() - 5 * 60 * 60 * 1000);
+      console.log(datefind);
+      const response = await fetch("/api/v1/tours/");
+      const json = await response.json();
+
+      setData(json.data.data);
+
+      let temp = json.data.data;
+      console.log(temp[0].fooddetails[0].text);
+      setLoading(false);
     };
-    insidefunction();
-    console.log("gvghhgh", res);
-    const responsedata = [];
-    Array.from(res).forEach((r) => {
-      r.fooddetails.forEach((food) => {
-        responsedata.push({
-          text: food.text,
-          number: food.number,
-          mobile: r.mobile,
-          description: r.description,
-        });
-      });
-    });
-    setData(responsedata);
+
+    fetchData();
   }, []);
-  console.log(data);
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <div className="sidebar">
       <div>
-        {data.map((d) => (
-          <ul>
-            <li>{d.mobile}</li>
-            <li>{d.description}</li>
-          </ul>
+        {data.map((singleData) => (
+          <h1>
+            {singleData.fooddetails.map((food) => (
+              <div>
+                <p>{food.text}</p>
+                <p>{food.number}</p>
+                <p>{singleData.userid[0].name}</p>
+              </div>
+            ))}
+          </h1>
         ))}
       </div>
     </div>

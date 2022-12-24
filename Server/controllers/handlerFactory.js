@@ -49,7 +49,7 @@ exports.createOne = Model =>
 
 exports.getOne = Model =>
   catchAsync(async (req, res, next) => {
-    const query = Model.find({ userid: req.params.id });
+    const query = Model.find({ userid: req.params.id }).populate('userid');
     // if (popOptions) query.populate(popOptions);
     const doc = await query;
 
@@ -71,7 +71,10 @@ exports.getAll = Model =>
 
     if (req.params.tourId) filter = { tour: req.params.tourId };
 
-    const features = new APIFeatures(Model.find(filter), req.query)
+    const features = new APIFeatures(
+      Model.find(filter).populate('userid'),
+      req.query
+    )
       .filter()
       .sort()
       .limitFields()
