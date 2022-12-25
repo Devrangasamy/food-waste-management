@@ -29,6 +29,7 @@ import { Addcity, Managecity } from "./Pages/Admin/City";
 import { Listedfoods } from "./Pages/Admin/Listedfoods";
 import { Requests, New, Pickcom, Rejected, All } from "./Pages/Admin/Requests";
 import { UserListedfoods } from "./Pages/User/UserListedfoods";
+import { Useradd } from "./Pages/User/Useradd";
 import { UserRequests, UserNew, UserPickcom, UserRejected, UserAll } from "./Pages/User/UserRequests";
 import { DonarDashboard } from "./Pages/DonarDashboard";
 import { Addfood, Manage } from "./Pages/Listfooddetails";
@@ -259,7 +260,16 @@ function App() {
               </div>
             }
           />
-
+          <Route
+            path="/Userpage/add/food"
+            exact
+            element={
+              <div>
+                <Usersidebar></Usersidebar>
+                <Useradd></Useradd>
+              </div>
+            }
+          />
           <Route
             path="/Userpage/listed/food"
             exact

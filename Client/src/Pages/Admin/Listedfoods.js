@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Loading from "../Loading";
-
+import "./List.css"
 export const Listedfoods = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
@@ -28,20 +28,34 @@ export const Listedfoods = () => {
   }
 
   return (
-    <div className="sidebar">
-      <div>
+    <div >
+      
+      <h1 style={{ color: 'black' }} className="head">Listed Foods</h1>
+
+      <div className="car">
+      
         {data.map((singleData) => (
-          <h1>
-            {singleData.fooddetails.map((food) => (
-              <div>
-                <p>{food.text}</p>
-                <p>{food.number}</p>
-                <p>{singleData.userid[0].name}</p>
+         
+            singleData.fooddetails.map((food) => (
+              
+              <div className="containe">
+                
+                <div className="cards">
+                  <div className="card">
+                    <h3>Name:{singleData.userid[0].name}</h3>
+                    <p>Food:{food.text}</p>
+                    <p>Quantity:{food.number}</p>
+                    <p>Contact:{singleData.mobile}</p>
+                  </div>
+                </div>
               </div>
-            ))}
-          </h1>
+             
+            ))
+
+         
         ))}
-      </div>
+        </div>
+      
     </div>
   );
 };
