@@ -1,5 +1,6 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
+import { useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,7 +11,7 @@ import { Home } from "./Pages/Home";
 import About from "./Pages/About";
 import Loginregister from "./Pages/Loginregister";
 import { Contact } from "./Pages/Contact";
-import  Ourmission  from "./Pages/Ourmission";
+import Ourmission from "./Pages/Ourmission";
 import Registernew from "./Pages/Registernew";
 import Login from "./Pages/Login";
 import "./Pages/Register.css";
@@ -30,35 +31,56 @@ import { Listedfoods } from "./Pages/Admin/Listedfoods";
 import { Requests, New, Pickcom, Rejected, All } from "./Pages/Admin/Requests";
 import { UserListedfoods } from "./Pages/User/UserListedfoods";
 import { Useradd } from "./Pages/User/Useradd";
-import { UserRequests, UserNew, UserPickcom, UserRejected, UserAll } from "./Pages/User/UserRequests";
+import {
+  UserRequests,
+  UserNew,
+  UserPickcom,
+  UserRejected,
+  UserAll,
+} from "./Pages/User/UserRequests";
 import { DonarDashboard } from "./Pages/DonarDashboard";
 import { Addfood, Manage } from "./Pages/Listfooddetails";
+import { useEffect } from "react";
 
 // import Addfood from './Listfooddetails';
 // import Manage from './Listfooddetails';
 
 function App() {
+  const [login, setLogin] = useState(false);
+  useEffect(() => {
+    Loginnot();
+  }, []);
+  const Loginnot = async () => {
+    const currentuser = await fetch("/api/v1/users/me/");
+    const current = await currentuser.json();
+
+    if (current.status === "sucess") {
+      console.log(login);
+      updateUI(true);
+    }
+  };
+  const updateUI = (valid) => {
+    setLogin(valid);
+  };
   return (
     <>
-      {/* <Router> */}
-      <NavBar />
+      <NavBar isLogin={login} />
 
       <div className="pages">
-        {/* <Routes>
-          <Route path="/" exact element={Menu}></Route> 
-          </Routes> */}
-
         <Routes>
           <Route exact path="/" element={<Menu></Menu>} />
           <Route path="/about" element={<About></About>} />
           <Route path="/mission" element={<Ourmission></Ourmission>} />
-          <Route path="/loginregister" element={<Login></Login>} />
+          <Route
+            path="/loginregister"
+            element={<Login toggleLogin={updateUI}></Login>}
+          />
           <Route path="/Registernew" element={<Registernew></Registernew>} />
           <Route path="/contact" element={<Contact></Contact>} />
           <Route path="/Adminpage" element={<Adminpage></Adminpage>} />
           <Route path="/Donarpage" element={<Donarpage></Donarpage>} />
           <Route path="/Userpage" element={<Userpage></Userpage>} />
-          
+
           <Route
             path="/Donarpage/dashboard"
             exact

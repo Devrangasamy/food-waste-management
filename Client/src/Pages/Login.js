@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-const Login = () => {
+const Login = (props) => {
   const [userData, setUserData] = useState({
     email: "",
     password: "",
@@ -31,6 +31,8 @@ const Login = () => {
       console.log(response);
       if (json.status === "sucess") {
         // alert(type);
+        // console.log(props.toggleLogin);
+        props.toggleLogin(true);
         if (type === "Admin") {
           Navigate("/Adminpage");
         } else if (type === "Donar") {

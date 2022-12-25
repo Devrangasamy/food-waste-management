@@ -16,7 +16,7 @@ export const DonarDashboard = () => {
     const currentuser = await fetch("/api/v1/users/me/");
     const current = await currentuser.json();
     console.log(current.user.role);
-    if (current.status === "failure" || current.user.role!=="Donar") {
+    if (current.status === "failure" || current.user.role !== "Donar") {
       Navigate("/loginregister");
       alert(current.Error);
       return;
@@ -36,9 +36,9 @@ export const DonarDashboard = () => {
     const Listedfoods = await fetch("/api/v1/tours/" + userid);
     // console.log("/api/v1/tours/" + userid);
     const foods = await Listedfoods.json();
-    // console.log(foods);
+    console.log(foods);
     for (var i = 0; i < foods.results; i++) {
-      if (foods.data.data[i].userid !== current.user._id) {
+      if (foods.data.data[i].userid[0]._id !== current.user._id) {
         // console.log("dfhfghfgh");
         continue;
       }
@@ -46,7 +46,7 @@ export const DonarDashboard = () => {
       for (var j = 0; j < arrsize; j++) {
         food += parseInt(foods.data.data[i].fooddetails[j].number);
       }
-      // console.log(foods.data.data[i].fooddetails.length);
+      console.log(foods.data.data[i].fooddetails.length);
     }
     // setloading(true);
     // console.log(food);

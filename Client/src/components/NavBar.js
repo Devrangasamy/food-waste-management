@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
-function NavBar() {
+function NavBar(props) {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -56,7 +56,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Login/Register
+                {!props.isLogin ? "login/register" : "logout"}
               </NavLink>
             </li>
             <li className="nav-item">
