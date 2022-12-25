@@ -46,7 +46,12 @@ export const UserListedfoods = () => {
                     <p>Food:{food.text}</p>
                     <p>Quantity:{food.number}</p>
                     <p>Contact:{singleData.mobile}</p>
-                    {/* <p>{new Date(singleData.createdAt)}</p> */}
+                    <p>
+                    Date:{new Date(singleData.createdAt).toLocaleDateString()}
+                  </p>
+                  <p>
+                    Time:{new Date(singleData.createdAt).toLocaleTimeString()}
+                  </p>
                     <button className="btn">Request</button>
                   </div>
                 </div>
