@@ -1,21 +1,20 @@
 import React from "react";
-<<<<<<< HEAD
-import orphange from "../assets/o.jpg";
-=======
 import orphange from "../assets/orphans.jpeg";
->>>>>>> 6f005662f1ee081c57b9197d0292b30a68d2a1b8
 import "../styles/About.css";
 function About() {
   return (
-    <div className="about" style={{backgroundColor:"white"}}>
+    <div className="about" style={{ backgroundColor: "white" }}>
       <div
         className="aboutTop"
         style={{ backgroundImage: `url(${orphange})` }}
       ></div>
       <div className="aboutBottom">
         <h1> ABOUT US</h1>
-        <p style={{textAlign:"center"}}>
-        This website is created to help the poor needy people.In India nearly about 1000 people sleep without food who are really unfortunate to get food food and cause disease like Starvation, Malnutrition etc. So the main aim is to stop hunger and provide them with food.
+        <p style={{ textAlign: "center" }}>
+          This website is created to help the poor needy people.In India nearly
+          about 1000 people sleep without food who are really unfortunate to get
+          food food and cause disease like Starvation, Malnutrition etc. So the
+          main aim is to stop hunger and provide them with food.
         </p>
       </div>
     </div>
