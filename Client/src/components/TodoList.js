@@ -6,7 +6,6 @@ import { METHODS } from "http";
 // import { Formend } from "./TodoForm";
 
 function TodoList() {
-  
   const [todos, setTodos] = useState([]);
   const [fooddetails, setFood] = useState({
     description: "",
@@ -83,6 +82,7 @@ function TodoList() {
           state: fooddetails["state"],
           city: fooddetails["city"],
           mobile: fooddetails["mobile"],
+          createdAt: Date.now(),
         }),
       });
       const json = await response.json();
@@ -144,7 +144,7 @@ function TodoList() {
     const currentuser = await fetch("/api/v1/users/me/");
     const current = await currentuser.json();
     console.log(current);
-    if (current.status === "failure" || current.user.role!=="Donar") {
+    if (current.status === "failure" || current.user.role !== "Donar") {
       Navigate("/loginregister");
       alert(current.Error);
     }

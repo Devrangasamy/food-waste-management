@@ -97,7 +97,6 @@ const tourSchema = new Schema(
     images: [String],
     createdAt: {
       type: Date,
-      default: Date.now(),
       selected: false
     },
     startDates: [Date],
