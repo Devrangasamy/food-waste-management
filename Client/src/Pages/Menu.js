@@ -12,10 +12,8 @@ function Menu() {
         {MenuList.map((menuItem, key) => {
           return (
             <MenuItem
-              key={key}
               image={menuItem.image}
               name={menuItem.name}
-              
             />
           );
         })}
