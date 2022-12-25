@@ -31,7 +31,7 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: "Manage Food",
+        title: "Donated Food",
         path: "/Donarpage/listfooddetails/manage",
         icon: <IoIcons.IoIosPaper />,
       },
