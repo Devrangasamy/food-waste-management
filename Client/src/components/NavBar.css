@@ -39,6 +39,8 @@
   list-style: none;
   text-align: center;
   margin-right: 2rem;
+  align-items: center;
+  justify-items: center;
 }
 
 .nav-links {
