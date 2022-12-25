@@ -10,7 +10,7 @@ import { Home } from "./Pages/Home";
 import About from "./Pages/About";
 import Loginregister from "./Pages/Loginregister";
 import { Contact } from "./Pages/Contact";
-import { Ourmission } from "./Pages/Ourmission";
+import  Ourmission  from "./Pages/Ourmission";
 import Registernew from "./Pages/Registernew";
 import Login from "./Pages/Login";
 import "./Pages/Register.css";
