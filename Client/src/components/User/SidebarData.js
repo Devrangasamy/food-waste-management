@@ -17,6 +17,7 @@ export const SidebarData = [
   },
   {
     title: 'Request Food',
+    path: '/Userpage/add/food',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
