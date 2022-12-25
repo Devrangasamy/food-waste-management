@@ -8,9 +8,11 @@ export const Listedfoods = () => {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
-      const datefind = new Date(new Date().getTime() - 5 * 60 * 60 * 1000);
+      const datefind = new Date(
+        new Date().getTime() - 5 * 60 * 60 * 1000
+      ).toISOString();
       console.log(datefind);
-      const response = await fetch("/api/v1/tours/");
+      const response = await fetch("/api/v1/tours/?createdAt[gte]=" + datefind);
       const json = await response.json();
 
       setData(json.data.data);
