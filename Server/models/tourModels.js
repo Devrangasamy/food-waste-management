@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
 // const slugify = require('slugify');
+const { Schema } = mongoose;
 const User = require('./userModels');
 // const Reviews = require('./reviewModels');
 // const { Listedfoods } = require('../../Client/src/Pages/Admin/Listedfoods');
 
-const tourSchema = new mongoose.Schema(
+const tourSchema = new Schema(
   {
-    userid: { type: String },
+    userid: [{ type: Schema.Types.ObjectId, ref: User }],
     fooddetails: {
       type: [mongoose.Schema.Types.Mixed]
     },

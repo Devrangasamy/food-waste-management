@@ -13,10 +13,7 @@ export const Contact = () => {
     <div>
       <Sidebar />
       <Routes>
-        {/* <Route path="/dashboard" exact element={<Dashboard></Dashboard>} /> */}
-        {/* <Route path='/listfooddetails' exact component={Listfooddetails} /> */}
-        {/* <Route path='/listfooddetails/add' exact element={<Addfood></Addfood>} /> */}
-        {/* <Route path='/listfooddetails/manage' exact element={<Manage></Manage>} /> */}
+        
         <Route path="/request" exact element={<Requests></Requests>} />
         <Route path="/request/new" exact element={<New></New>} />
         <Route path="/request/pickcom" exact element={<Pickcom></Pickcom>} />

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import img from "./img.png";
+import img from "../img.png";
 import { Link, useNavigate } from "react-router-dom";
-import img2 from "./img2.png";
-import "./Dashboard.css";
+import img2 from "../img2.png";
+import "../Dashboard.css";
 import { RiPassportFill } from "react-icons/ri";
-export const DonarDashboard = () => {
+export const AdminDashboard = () => {
   const [foodcount, setfoodcount] = useState(0);
 
   function changefood(food) {
@@ -15,8 +15,8 @@ export const DonarDashboard = () => {
 
     const currentuser = await fetch("/api/v1/users/me/");
     const current = await currentuser.json();
-    console.log(current.user.role);
-    if (current.status === "failure" || current.user.role!=="Donar") {
+    // console.log(current);
+    if (current.status === "failure") {
       Navigate("/loginregister");
       alert(current.Error);
       return;
@@ -33,15 +33,12 @@ export const DonarDashboard = () => {
       return;
     }
     const userid = current.user._id;
-    const Listedfoods = await fetch("/api/v1/tours/" + userid);
+    const Listedfoods = await fetch("/api/v1/tours/");
     // console.log("/api/v1/tours/" + userid);
     const foods = await Listedfoods.json();
     // console.log(foods);
     for (var i = 0; i < foods.results; i++) {
-      if (foods.data.data[i].userid !== current.user._id) {
-        // console.log("dfhfghfgh");
-        continue;
-      }
+
       const arrsize = foods.data.data[i].fooddetails.length;
       for (var j = 0; j < arrsize; j++) {
         food += parseInt(foods.data.data[i].fooddetails[j].number);

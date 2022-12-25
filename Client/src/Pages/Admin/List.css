@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: white;
+    color: #111;
+}
+.container{
+    
+    max-width: 10000px;
+    width: 100%;
+    margin: auto;
+}
+
+.car{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+p,h3{
+    padding: 3px;
+}
+.card{
+    flex:0 0 calc(33.33%-20px);
+    max-width:0 0 calc(33.33%-20px);
+    width: 100%;
+    background: white;
+    border-radius: 14px;
+    padding: 30px;
+    padding-left:85px;
+    padding-right:85px;
+    margin-bottom: 20px;
+    transition: .4s;
+    border: 2px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.141) 0px 9px 18px, rgba(0, 0, 0, 0.032) 0px 9px 18px;
+    
+}
+.card:hover{
+    border-color:grey;
+    padding: 35px;
+    padding-left:90px;
+    padding-right:90px;
+}
+.head{
+    margin-left: 790px;
+}
+  @media screen and (max-width: 1400px) {
+    .car{
+        grid-template-columns: auto auto auto; 
+       }
+    .head{
+        margin-left: 700px;
+    }
+  }
+  @media screen and (max-width: 1080px) {
+    .car{
+     grid-template-columns: auto auto;
+    }
+    .head{
+        margin-left: 400px;
+    }
+   }
+   
+   @media screen and (max-width: 730px) {
+     .car{
+         grid-template-columns: auto;
+        }
+        .head{
+            margin-left: 200px;
+        }
+   }

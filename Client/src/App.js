@@ -16,17 +16,22 @@ import Login from "./Pages/Login";
 import "./Pages/Register.css";
 import Menu from "./Pages/Menu";
 import { Adminpage } from "./Pages/Adminpage";
+import { Userpage } from "./Pages/User/Userpage";
 import { Donarpage } from "./Pages/Donarpage";
-import { AdminDashboard } from "./Pages/AdminDashboard";
+import { AdminDashboard } from "./Pages/Admin/AdminDashboard";
+import { UserDashboard } from "./Pages/User/UserDashboard";
 import Adminsidebar from "./components/Admin/Adminsidebar";
 import Donarsidebar from "./components/DonarSidebar";
+import Usersidebar from "./components/User/Usersidebar";
 import { Regdonors } from "./Pages/Admin/Regdonors";
 import { Addstate, Managestate } from "./Pages/Admin/State";
 import { Addcity, Managecity } from "./Pages/Admin/City";
 import { Listedfoods } from "./Pages/Admin/Listedfoods";
 import { Requests, New, Pickcom, Rejected, All } from "./Pages/Admin/Requests";
+import { UserListedfoods } from "./Pages/User/UserListedfoods";
+import { Useradd } from "./Pages/User/Useradd";
+import { UserRequests, UserNew, UserPickcom, UserRejected, UserAll } from "./Pages/User/UserRequests";
 import { DonarDashboard } from "./Pages/DonarDashboard";
-// import { Listfooddetails } from "./Pages/Listfooddetails";
 import { Addfood, Manage } from "./Pages/Listfooddetails";
 
 // import Addfood from './Listfooddetails';
@@ -52,6 +57,8 @@ function App() {
           <Route path="/contact" element={<Contact></Contact>} />
           <Route path="/Adminpage" element={<Adminpage></Adminpage>} />
           <Route path="/Donarpage" element={<Donarpage></Donarpage>} />
+          <Route path="/Userpage" element={<Userpage></Userpage>} />
+          
           <Route
             path="/Donarpage/dashboard"
             exact
@@ -62,12 +69,6 @@ function App() {
               </div>
             }
           />
-
-          {/* <Route
-            path="/Donar/listfooddetails"
-            exact
-            component={<Listfooddetails></Listfooddetails>}
-          /> */}
           <Route
             path="/Donarpage/listfooddetails/add"
             exact
@@ -246,6 +247,86 @@ function App() {
               <div>
                 <Adminsidebar></Adminsidebar>
                 <All></All>
+              </div>
+            }
+          />
+          <Route
+            exact
+            path="/Userpage/Userdashboard"
+            element={
+              <div>
+                <Usersidebar></Usersidebar>
+                <UserDashboard></UserDashboard>
+              </div>
+            }
+          />
+          <Route
+            path="/Userpage/add/food"
+            exact
+            element={
+              <div>
+                <Usersidebar></Usersidebar>
+                <Useradd></Useradd>
+              </div>
+            }
+          />
+          <Route
+            path="/Userpage/listed/food"
+            exact
+            element={
+              <div>
+                <Usersidebar></Usersidebar>
+                <UserListedfoods></UserListedfoods>
+              </div>
+            }
+          />
+          <Route
+            path="/Userpage/request"
+            exact
+            element={
+              <div>
+                <Usersidebar></Usersidebar>
+                <UserRequests></UserRequests>
+              </div>
+            }
+          />
+          <Route
+            path="/Userpage/request/new"
+            exact
+            element={
+              <div>
+                <Usersidebar></Usersidebar>
+                <UserNew></UserNew>
+              </div>
+            }
+          />
+          <Route
+            path="/Userpage/request/pickcom"
+            exact
+            element={
+              <div>
+                <Usersidebar></Usersidebar>
+                <UserPickcom></UserPickcom>
+              </div>
+            }
+          />
+          <Route
+            path="/Userpage/request/reject"
+            exact
+            element={
+              <div>
+                <Usersidebar></Usersidebar>
+                <UserRejected></UserRejected>
+              </div>
+            }
+          />
+          <Route
+            path="/Userpage/request/all"
+            exact
+            element={
+              <div>
+                <Usersidebar></Usersidebar>
+                <UserAll></UserAll>
               </div>
             }
           />

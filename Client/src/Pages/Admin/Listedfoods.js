@@ -1,46 +1,61 @@
 import React, { useState, useEffect } from "react";
-
+import Loading from "../Loading";
+import "./List.css"
 export const Listedfoods = () => {
+  const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
-  const fetchdata = async () => {
-    const response = await fetch("/api/v1/tours/");
-    const json = await response.json();
-    console.log(json.data.data);
 
-    return json.data.data;
-  };
   useEffect(() => {
-    let res = [];
-    const insidefunction = async () => {
-      res = await fetchdata();
+    const fetchData = async () => {
+      setLoading(true);
+      const datefind = new Date(new Date().getTime() - 5 * 60 * 60 * 1000);
+      console.log(datefind);
+      const response = await fetch("/api/v1/tours/");
+      const json = await response.json();
+
+      setData(json.data.data);
+
+      let temp = json.data.data;
+      console.log(temp[0].fooddetails[0].text);
+      setLoading(false);
     };
-    insidefunction();
-    console.log("gvghhgh", res);
-    const responsedata = [];
-    Array.from(res).forEach((r) => {
-      r.fooddetails.forEach((food) => {
-        responsedata.push({
-          text: food.text,
-          number: food.number,
-          mobile: r.mobile,
-          description: r.description,
-        });
-      });
-    });
-    setData(responsedata);
+
+    fetchData();
   }, []);
-  console.log(data);
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
-    <div className="sidebar">
-      <div>
-        {data.map((d) => (
-          <ul>
-            <li>{d.mobile}</li>
-            <li>{d.description}</li>
-          </ul>
+    <div >
+      
+      <h1 style={{ color: 'black' }} className="head">Listed Foods</h1>
+
+      <div className="car">
+      
+        {data.map((singleData) => (
+         
+            singleData.fooddetails.map((food) => (
+              
+              <div className="containe">
+                
+                <div className="cards">
+                  <div className="card">
+                    <h3>Name:{singleData.userid[0].name}</h3>
+                    <p>Food:{food.text}</p>
+                    <p>Quantity:{food.number}</p>
+                    <p>Contact:{singleData.mobile}</p>
+                  </div>
+                </div>
+              </div>
+             
+            ))
+
+         
         ))}
-      </div>
+        </div>
+      
     </div>
   );
 };
