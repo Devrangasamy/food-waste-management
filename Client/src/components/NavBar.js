@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
-
+import Userprofile from "./profile/Userprofile"
 function NavBar(props) {
   const [click, setClick] = useState(false);
 
@@ -51,17 +51,6 @@ function NavBar(props) {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/loginregister"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                {!props.isLogin ? "login/register" : "logout"}
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
                 to="/contact"
                 activeClassName="active"
                 className="nav-links"
@@ -70,6 +59,18 @@ function NavBar(props) {
                 Contact Us
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to= {props.isLogin ? window.location.NavBar:"./loginregister"}
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                {!props.isLogin ? "login/register" : <Userprofile ></Userprofile>}
+              </NavLink>
+            </li>
+            
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>

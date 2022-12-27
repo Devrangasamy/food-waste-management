@@ -1,1 +1,1971 @@
-[{"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\index.js":"1","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\reportWebVitals.js":"2","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\App.js":"3","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\About.js":"4","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\NavBar.js":"5","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Login.js":"6","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Contact.js":"7","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Ourmission.js":"8","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Registernew.js":"9","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Loginregister.js":"10","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Requests.js":"11","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\AdminDashboard.js":"12","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Listfooddetails.js":"13","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Admin\\State.js":"14","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Admin\\Regdonors.js":"15","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Admin\\Listedfoods.js":"16","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Admin\\City.js":"17","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Admin\\Requests.js":"18","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\SubMenu.js":"19","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\TodoList.js":"20","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\SidebarData.js":"21","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\Admin\\SidebarData.js":"22","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\Admin\\SubMenu.js":"23","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\Todo.js":"24","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\TodoForm.js":"25","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Menu\\Menu.js":"26","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Home.js":"27","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Menu.js":"28","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\helpers\\MenuList.js":"29","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\MenuItem.js":"30","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Donarpage.js":"31","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Adminpage.js":"32","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\Admin\\Adminsidebar.js":"33","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\DonarDashboard.js":"34","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\DonarSidebar.js":"35","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Loading.jsx":"36","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\User\\Userpage.js":"37","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\User\\UserRequests.js":"38","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Admin\\AdminDashboard.js":"39","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\User\\UserListedfoods.js":"40","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\User\\UserDashboard.js":"41","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\User\\Usersidebar.js":"42","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\User\\SubMenu.js":"43","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\User\\SidebarData.js":"44","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\User\\Useradd.js":"45","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\User\\TodoList.js":"46","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\User\\Todo.js":"47","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\User\\TodoForm.js":"48"},{"size":345,"mtime":1671811831257,"results":"49","hashOfConfig":"50"},{"size":375,"mtime":1665900392680,"results":"51","hashOfConfig":"50"},{"size":10285,"mtime":1671963296934,"results":"52","hashOfConfig":"50"},{"size":813,"mtime":1671949514175,"results":"53","hashOfConfig":"50"},{"size":2399,"mtime":1671963033087,"results":"54","hashOfConfig":"50"},{"size":3399,"mtime":1671963393368,"results":"55","hashOfConfig":"50"},{"size":896,"mtime":1671884855186,"results":"56","hashOfConfig":"50"},{"size":814,"mtime":1671949467555,"results":"57","hashOfConfig":"50"},{"size":8184,"mtime":1671946676713,"results":"58","hashOfConfig":"50"},{"size":565,"mtime":1671254157104,"results":"59","hashOfConfig":"50"},{"size":674,"mtime":1665936728492,"results":"60","hashOfConfig":"50"},{"size":1739,"mtime":1671254157096,"results":"61","hashOfConfig":"50"},{"size":2245,"mtime":1671963992586,"results":"62","hashOfConfig":"50"},{"size":664,"mtime":1671254157095,"results":"63","hashOfConfig":"50"},{"size":153,"mtime":1666153281827,"results":"64","hashOfConfig":"50"},{"size":1760,"mtime":1671950147265,"results":"65","hashOfConfig":"50"},{"size":281,"mtime":1666153281827,"results":"66","hashOfConfig":"50"},{"size":674,"mtime":1666153281829,"results":"67","hashOfConfig":"50"},{"size":1667,"mtime":1665900392679,"results":"68","hashOfConfig":"50"},{"size":8852,"mtime":1671957967438,"results":"69","hashOfConfig":"50"},{"size":1694,"mtime":1671963992674,"results":"70","hashOfConfig":"50"},{"size":2493,"mtime":1671254157164,"results":"71","hashOfConfig":"50"},{"size":1724,"mtime":1666153281836,"results":"72","hashOfConfig":"50"},{"size":1269,"mtime":1671532948554,"results":"73","hashOfConfig":"50"},{"size":2252,"mtime":1671946676760,"results":"74","hashOfConfig":"50"},{"size":3636,"mtime":1671254157092,"results":"75","hashOfConfig":"50"},{"size":125,"mtime":1665936728503,"results":"76","hashOfConfig":"50"},{"size":629,"mtime":1671949467553,"results":"77","hashOfConfig":"50"},{"size":641,"mtime":1666286452383,"results":"78","hashOfConfig":"50"},{"size":265,"mtime":1666286452381,"results":"79","hashOfConfig":"50"},{"size":1641,"mtime":1671884855224,"results":"80","hashOfConfig":"50"},{"size":573,"mtime":1671884855184,"results":"81","hashOfConfig":"50"},{"size":1956,"mtime":1671521356512,"results":"82","hashOfConfig":"50"},{"size":4524,"mtime":1671955914630,"results":"83","hashOfConfig":"50"},{"size":1767,"mtime":1671521110827,"results":"84","hashOfConfig":"50"},{"size":208,"mtime":1671876853505,"results":"85","hashOfConfig":"50"},{"size":191,"mtime":1671884855272,"results":"86","hashOfConfig":"50"},{"size":694,"mtime":1671884855254,"results":"87","hashOfConfig":"50"},{"size":4352,"mtime":1671884855175,"results":"88","hashOfConfig":"50"},{"size":1824,"mtime":1671950753370,"results":"89","hashOfConfig":"50"},{"size":4351,"mtime":1671884855243,"results":"90","hashOfConfig":"50"},{"size":1954,"mtime":1671884855346,"results":"91","hashOfConfig":"50"},{"size":1724,"mtime":1671884855318,"results":"92","hashOfConfig":"50"},{"size":1609,"mtime":1671946676762,"results":"93","hashOfConfig":"50"},{"size":233,"mtime":1671946676715,"results":"94","hashOfConfig":"50"},{"size":5606,"mtime":1671946676779,"results":"95","hashOfConfig":"50"},{"size":1269,"mtime":1671946676777,"results":"96","hashOfConfig":"50"},{"size":2252,"mtime":1671946676778,"results":"97","hashOfConfig":"50"},{"filePath":"98","messages":"99","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},"13mab8x",{"filePath":"101","messages":"102","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"103","messages":"104","errorCount":0,"warningCount":5,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"105","messages":"106","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"107","messages":"108","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"109","messages":"110","errorCount":0,"warningCount":2,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"111","messages":"112","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"113","messages":"114","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"115","messages":"116","errorCount":0,"warningCount":4,"fixableErrorCount":0,"fixableWarningCount":0,"source":"117","usedDeprecatedRules":"100"},{"filePath":"118","messages":"119","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"120","messages":"121","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"122","messages":"123","errorCount":0,"warningCount":5,"fixableErrorCount":0,"fixableWarningCount":0,"source":"124","usedDeprecatedRules":"100"},{"filePath":"125","messages":"126","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"127","messages":"128","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"129","messages":"130","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"131","messages":"132","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"133","messages":"134","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"135","messages":"136","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"137","messages":"138","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"139","messages":"140","errorCount":0,"warningCount":3,"fixableErrorCount":0,"fixableWarningCount":0,"source":"141","usedDeprecatedRules":"100"},{"filePath":"142","messages":"143","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"144","messages":"145","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"146","messages":"147","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"148","messages":"149","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"150","messages":"151","errorCount":0,"warningCount":1,"fixableErrorCount":0,"fixableWarningCount":0,"source":"152","usedDeprecatedRules":"100"},{"filePath":"153","messages":"154","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"155","messages":"156","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"157","messages":"158","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"159","messages":"160","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"161","messages":"162","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"163","messages":"164","errorCount":0,"warningCount":8,"fixableErrorCount":0,"fixableWarningCount":0,"source":"165","usedDeprecatedRules":"100"},{"filePath":"166","messages":"167","errorCount":0,"warningCount":14,"fixableErrorCount":0,"fixableWarningCount":0,"source":"168","usedDeprecatedRules":"100"},{"filePath":"169","messages":"170","errorCount":0,"warningCount":2,"fixableErrorCount":0,"fixableWarningCount":0,"source":"171","usedDeprecatedRules":"100"},{"filePath":"172","messages":"173","errorCount":0,"warningCount":8,"fixableErrorCount":0,"fixableWarningCount":0,"source":"174","usedDeprecatedRules":"100"},{"filePath":"175","messages":"176","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"177","messages":"178","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"179","messages":"180","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"181","messages":"182","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"183","messages":"184","errorCount":0,"warningCount":9,"fixableErrorCount":0,"fixableWarningCount":0,"source":"185","usedDeprecatedRules":"100"},{"filePath":"186","messages":"187","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"188","messages":"189","errorCount":0,"warningCount":9,"fixableErrorCount":0,"fixableWarningCount":0,"source":"190","usedDeprecatedRules":"100"},{"filePath":"191","messages":"192","errorCount":0,"warningCount":2,"fixableErrorCount":0,"fixableWarningCount":0,"source":"193","usedDeprecatedRules":"100"},{"filePath":"194","messages":"195","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"196","messages":"197","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"198","messages":"199","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"200","messages":"201","errorCount":0,"warningCount":6,"fixableErrorCount":0,"fixableWarningCount":0,"source":"202","usedDeprecatedRules":"100"},{"filePath":"203","messages":"204","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"100"},{"filePath":"205","messages":"206","errorCount":0,"warningCount":1,"fixableErrorCount":0,"fixableWarningCount":0,"source":"207","usedDeprecatedRules":"100"},"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\index.js",[],["208","209"],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\reportWebVitals.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\App.js",["210","211","212","213","214"],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\About.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\NavBar.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Login.js",["215","216"],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Contact.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Ourmission.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Registernew.js",["217","218","219","220"],"import React, { Component } from \"react\";\r\nimport axios from \"axios\";\r\nimport { Link, useNavigate } from \"react-router-dom\";\r\nimport { useState } from \"react\";\r\nconst Registernew = () => {\r\n  const [userData, setUserData] = useState({\r\n    username: \"\",\r\n    email: \"\",\r\n    password: \"\",\r\n    passwordConfirm: \"\",\r\n    age: \"\",\r\n    birthdate: \"\",\r\n    phonenumber: \"\",\r\n    gender: \"\",\r\n    address: \"\",\r\n    typelogin: \"\",\r\n  });\r\n\r\n  const Navigate = useNavigate();\r\n  const changeHandler = (e) => {\r\n    const { name, value, type } = e.target;\r\n    setUserData({ ...userData, [name]: value });\r\n  };\r\n  const onSubmit = (event) => {\r\n    event.preventDefault();\r\n    if (userData.username === \"\") {\r\n      alert(\"Enter username\");\r\n      return \"\";\r\n    } else if (userData.username.length < 8) {\r\n      alert(\"Username should be greater than 8\");\r\n      return \"\";\r\n    }\r\n\r\n    if (!userData.email) {\r\n      alert(\"Email Required\");\r\n      return \"\";\r\n    } else if (\r\n      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$/i.test(userData.email)\r\n    ) {\r\n      alert(\"Invalid email address\");\r\n      return \"\";\r\n    }\r\n\r\n    if (!userData.password) {\r\n      alert(\"Password Required\");\r\n      return \"\";\r\n    } else if (\r\n      !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$/i.test(\r\n        userData.password\r\n      )\r\n    ) {\r\n      alert(\"Provide Strong Password\");\r\n      return \"\";\r\n    }\r\n    if (!userData.passwordConfirm) {\r\n      alert(\"Conform Password Required\");\r\n      return \"\";\r\n    } else if (userData.password !== userData.passwordConfirm) {\r\n      alert(\"Password and Conform password should be same\");\r\n      return \"\";\r\n    }\r\n    if (userData.age === \"\") {\r\n      alert(\"Please provide age\");\r\n      return \"\";\r\n    }\r\n    if (userData.birthdate === \"\") {\r\n      alert(\"Please provide DOB\");\r\n      return \"\";\r\n    }\r\n    if (userData.phonenumber === \"\") {\r\n      alert(\"Please provide Mobile number\");\r\n      return \"\";\r\n    }\r\n    if (userData.address === \"\") {\r\n      alert(\"Please provide Address\");\r\n      return \"\";\r\n    }\r\n    if (userData.gender === \"\") {\r\n      alert(\"Please choose Gender\");\r\n      return \"\";\r\n    }\r\n    const login = async (userData) => {\r\n      console.log(userData);\r\n      const response = await fetch(\r\n        \"http://127.0.0.1:3000/api/v1/users/signup/\",\r\n        {\r\n          method: \"POST\",\r\n          headers: { \"Content-Type\": \"application/json\" },\r\n          body: JSON.stringify({\r\n            name: userData.username,\r\n            email: userData.email,\r\n            role: userData.typelogin,\r\n            password: userData.password,\r\n            passwordConfirm: userData.passwordConfirm,\r\n            age: userData.age,\r\n            birthdate: userData.birthdate,\r\n            phonenumber: userData.phonenumber,\r\n            gender: userData.gender,\r\n            address: userData.address,\r\n          }),\r\n        }\r\n      );\r\n      const json = await response.json();\r\n      console.log(json);\r\n      alert(json.status);\r\n\r\n      if (json.status === \"sucess\") {\r\n        Navigate(\"/loginregister\");\r\n      }\r\n    };\r\n    login(userData);\r\n  };\r\n\r\n  // const response = await fetch(\"http://127.0.0.1:3000/api/v1/users/signup/\", {\r\n  //   method: \"POST\",\r\n  //   body: JSON.stringify({ registered }),\r\n  // });\r\n  // alert(await response.json());\r\n  // axios\r\n  //   .post(\"http://localhost:3000/api/v1/users/signup\", registered)\r\n  //   .then((response) => {\r\n  //     alert(response.data.status);\r\n  //     console.log(response);\r\n  //   });\r\n\r\n  return (\r\n    <div className=\"container\">\r\n      <div className=\"app-wrapper\">\r\n        <div>\r\n          <h2 className=\"title\">Create Account</h2>\r\n        </div>\r\n        <form className=\"form-wrapper\" onSubmit={onSubmit}>\r\n          <div className=\"name\">\r\n            <div className=\"gender\">\r\n              <label className=\"label\">Login Type:</label>\r\n              <input\r\n                onChange={(e) => changeHandler(e)}\r\n                type=\"radio\"\r\n                value=\"User\"\r\n                name=\"typelogin\"\r\n                className=\"radi\"\r\n              />{\" \"}\r\n              User\r\n              <input\r\n                onChange={(e) => changeHandler(e)}\r\n                type=\"radio\"\r\n                value=\"Donar\"\r\n                name=\"typelogin\"\r\n                className=\"radi\"\r\n              />{\" \"}\r\n              Donar\r\n            </div>\r\n\r\n            <label className=\"label\">User name</label>\r\n            <input\r\n              className=\"input\"\r\n              type=\"text\"\r\n              name=\"username\"\r\n              onChange={(e) => changeHandler(e)}\r\n              value={changeHandler.username}\r\n            />\r\n          </div>\r\n          <div className=\"email\">\r\n            <label className=\"label\">Email</label>\r\n            <input\r\n              className=\"input\"\r\n              type=\"email\"\r\n              name=\"email\"\r\n              onChange={(e) => changeHandler(e)}\r\n              value={changeHandler.email}\r\n            />\r\n          </div>\r\n          <div className=\"password\">\r\n            <label className=\"label\">password</label>\r\n            <input\r\n              className=\"input\"\r\n              type=\"password\"\r\n              name=\"password\"\r\n              onChange={(e) => changeHandler(e)}\r\n              value={changeHandler.password}\r\n            />\r\n          </div>\r\n          <div className=\"password\">\r\n            <label className=\"label\">Confirm password</label>\r\n            <input\r\n              className=\"input\"\r\n              type=\"password\"\r\n              name=\"passwordConfirm\"\r\n              onChange={(e) => changeHandler(e)}\r\n              value={changeHandler.passwordConfirm}\r\n            />\r\n          </div>\r\n          <div className=\"num\">\r\n            <label className=\"label\">Age</label>\r\n            <input\r\n              className=\"input\"\r\n              type=\"number\"\r\n              name=\"age\"\r\n              onChange={(e) => changeHandler(e)}\r\n              value={changeHandler.age}\r\n            />\r\n          </div>\r\n          <div className=\"num\">\r\n            <label className=\"label\">Birth date</label>\r\n            <input\r\n              type=\"text\"\r\n              className=\"input\"\r\n              name=\"birthdate\"\r\n              onChange={(e) => changeHandler(e)}\r\n              value={changeHandler.birthdate}\r\n              onFocus={(e) => (e.target.type = \"date\")}\r\n              onBlur={(e) => (e.target.type = \"text\")}\r\n            />\r\n          </div>\r\n          <div className=\"name\">\r\n            <label className=\"label\">Phone Number</label>\r\n            <input\r\n              className=\"input\"\r\n              type=\"text\"\r\n              name=\"phonenumber\"\r\n              onChange={(e) => changeHandler(e)}\r\n              value={changeHandler.phonenumber}\r\n            />\r\n          </div>\r\n          <div className=\"gender\">\r\n            <label className=\"label\">Gender:</label>\r\n            <input\r\n              onChange={(e) => changeHandler(e)}\r\n              type=\"radio\"\r\n              value=\"Male\"\r\n              name=\"gender\"\r\n              className=\"radi\"\r\n            />{\" \"}\r\n            Male\r\n            <input\r\n              onChange={(e) => changeHandler(e)}\r\n              type=\"radio\"\r\n              value=\"Female\"\r\n              name=\"gender\"\r\n              className=\"radi\"\r\n            />{\" \"}\r\n            Female\r\n            <input\r\n              onChange={(e) => changeHandler(e)}\r\n              type=\"radio\"\r\n              value=\"Other\"\r\n              name=\"gender\"\r\n              className=\"radi\"\r\n            />{\" \"}\r\n            Other\r\n          </div>\r\n          <div className=\"name\">\r\n            <label className=\"label\">Address</label>\r\n            <input\r\n              className=\"input\"\r\n              type=\"textarea\"\r\n              name=\"address\"\r\n              onChange={(e) => changeHandler(e)}\r\n              value={changeHandler.address}\r\n            />\r\n          </div>\r\n\r\n          <div>\r\n            <button className=\"submit\" value=\"Submit\">\r\n              Sign Up\r\n            </button>\r\n          </div>\r\n        </form>\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default Registernew;\r\n","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Loginregister.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Requests.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\AdminDashboard.js",["221","222","223","224","225"],"import React from 'react';\r\nimport img from './img.png';\r\nimport img2 from './img2.png';\r\nimport './AdminDashboard.css';\r\nexport const  AdminDashboard = () => {\r\n  return (\r\n    <div className='hiii'>\r\n      \r\n    <div className='hii' style={{backgroundColor: \"blue\",position:'relative'}}>\r\n      <div className='imga'>\r\n      <img src={img} style={{height: \"70px\",width:\"70px\" ,alignItems:\"center\"}} />\r\n      </div>\r\n      <div className='hibro'>\r\n      <h2>Total Listed Food</h2>\r\n      <h1>0</h1>\r\n      </div>\r\n    </div>\r\n    <div className='hii' style={{backgroundColor: \"green\" ,position:'relative'}}>\r\n    <div className='imga'>\r\n      <img src={img2} style={{height: \"70px\",width:\"70px\" ,alignItems:\"center\"}} />\r\n      </div>\r\n    <div>\r\n      <h2>Request Completed</h2>\r\n      <h1>0</h1>\r\n      </div>\r\n    </div>\r\n    <div className='hii' style={{backgroundColor: \"red\" ,position:'relative'}}>\r\n    <div className='imga'>\r\n      <img src={img2} style={{height: \"70px\",width:\"70px\" ,alignItems:\"center\"}} />\r\n      </div>\r\n    <div >\r\n      <h2>Rejected Requests</h2>\r\n      <h1>0</h1>\r\n      </div>\r\n    </div>\r\n    <div className='hii' style={{backgroundColor: \"black\", position:'relative'}}>\r\n    <div className='imga'>\r\n      <img src={img2} style={{height: \"70px\",width:\"70px\" ,alignItems:\"center\"}} />\r\n      </div>\r\n    <div >\r\n      <h2>All Requests</h2>\r\n      <h1>0</h1>\r\n      </div>\r\n    </div>\r\n    <div className='hii' style={{backgroundColor: \"grey\" ,position:'relative'}}>\r\n    <div className='imga'>\r\n      <img src={img2} style={{height: \"70px\",width:\"70px\" ,alignItems:\"center\"}} />\r\n      </div>\r\n    <div >\r\n      <h2>New Requests</h2>\r\n      <h1>0</h1>\r\n      </div>\r\n    </div>\r\n    </div>  \r\n  );\r\n};\r\n","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Listfooddetails.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Admin\\State.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Admin\\Regdonors.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Admin\\Listedfoods.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Admin\\City.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Admin\\Requests.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\SubMenu.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\TodoList.js",["226","227","228"],"import React, { useState } from \"react\";\r\nimport { Link, useNavigate } from \"react-router-dom\";\r\nimport TodoForm from \"./TodoForm\";\r\nimport Todo from \"./Todo\";\r\nimport { METHODS } from \"http\";\r\n// import { Formend } from \"./TodoForm\";\r\n\r\nfunction TodoList() {\r\n  const [todos, setTodos] = useState([]);\r\n  const [fooddetails, setFood] = useState({\r\n    description: \"\",\r\n    date: \"\",\r\n    address: \"\",\r\n    state: \"\",\r\n    city: \"\",\r\n    mobile: \"\",\r\n  });\r\n  const Navigate = useNavigate();\r\n  const changeHandler = (e) => {\r\n    e.preventDefault();\r\n    const { name, value, type } = e.target;\r\n    // console.log(name, value);\r\n    setFood({ ...fooddetails, [name]: value });\r\n  };\r\n\r\n  const OnSubmit = (event) => {\r\n    event.preventDefault();\r\n    if (todos.length <= 0) {\r\n      alert(\"Pls Enter atleast one food\");\r\n      return;\r\n    }\r\n    if (!fooddetails.address) {\r\n      alert(\"Pls Enter Address !!!\");\r\n      return;\r\n    }\r\n    if (!fooddetails.city) {\r\n      alert(\"Pls Enter City !!\");\r\n      return;\r\n    }\r\n    if (!fooddetails.date) {\r\n      alert(\"Pls Enter Date!!!\");\r\n      return;\r\n    }\r\n    if (!fooddetails.description) {\r\n      alert(\"Pls Enter Description about food !!!\");\r\n      return;\r\n    }\r\n    if (!fooddetails.mobile) {\r\n      alert(\"Pls Enter mobile number to contact !!!\");\r\n      return;\r\n    }\r\n    if (!fooddetails.state) {\r\n      alert(\"Pls enter State !!\");\r\n      return;\r\n    }\r\n    console.log(fooddetails);\r\n    console.log(todos);\r\n    console.log({\r\n      fooddetails: todos,\r\n      description: fooddetails[\"description\"],\r\n      data: fooddetails[\"date\"],\r\n      address: fooddetails[\"address\"],\r\n      state: fooddetails[\"state\"],\r\n      city: fooddetails[\"city\"],\r\n      mobile: fooddetails[\"mobile\"],\r\n    });\r\n\r\n    const addfood = async (todos, fooddetails) => {\r\n      const currentuser = await fetch(\"/api/v1/users/me/\");\r\n      const current = await currentuser.json();\r\n      console.log(\"todos\", todos);\r\n      console.log(\"food details\", fooddetails);\r\n      const response = await fetch(\"/api/v1/tours/\", {\r\n        method: \"POST\",\r\n        headers: { \"Content-type\": \"application/json\" },\r\n        body: JSON.stringify({\r\n          userid: current.user._id,\r\n          fooddetails: todos,\r\n          description: fooddetails[\"description\"],\r\n          data: fooddetails[\"data\"],\r\n          address: fooddetails[\"address\"],\r\n          state: fooddetails[\"state\"],\r\n          city: fooddetails[\"city\"],\r\n          mobile: fooddetails[\"mobile\"],\r\n          createdAt: Date.now(),\r\n        }),\r\n      });\r\n      const json = await response.json();\r\n\r\n      if (json.status === \"success\") {\r\n        alert(\"Successfully Added your Food\");\r\n        Navigate(\"/Donarpage/dashboard\");\r\n      } else {\r\n        alert(json.status);\r\n      }\r\n      // console.log(json);\r\n      // alert(json.status);\r\n    };\r\n\r\n    addfood(todos, fooddetails);\r\n  };\r\n\r\n  const addTodo = (todo) => {\r\n    if (!todo.text || /^\\s*$/.test(todo.text)) {\r\n      return;\r\n    }\r\n    if (!todo.number || /^\\s*$/.test(todo.number)) {\r\n      return;\r\n    }\r\n    const newTodos = [todo, ...todos];\r\n\r\n    setTodos(newTodos);\r\n    console.log(...todos);\r\n    // alert(...todos);\r\n  };\r\n\r\n  const updateTodo = (todoId, newValue) => {\r\n    if (!newValue.text || /^\\s*$/.test(newValue.text)) {\r\n      return;\r\n    }\r\n\r\n    setTodos((prev) =>\r\n      prev.map((item) => (item.id === todoId ? newValue : item))\r\n    );\r\n  };\r\n\r\n  const removeTodo = (id) => {\r\n    const removedArr = [...todos].filter((todo) => todo.id !== id);\r\n\r\n    setTodos(removedArr);\r\n  };\r\n\r\n  const completeTodo = (id) => {\r\n    let updatedTodos = todos.map((todo) => {\r\n      if (todo.id === id) {\r\n        todo.isComplete = !todo.isComplete;\r\n      }\r\n      return todo;\r\n    });\r\n    setTodos(updatedTodos);\r\n  };\r\n\r\n  const Loginnot = async () => {\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    console.log(current);\r\n    if (current.status === \"failure\" || current.user.role !== \"Donar\") {\r\n      Navigate(\"/loginregister\");\r\n      alert(current.Error);\r\n    }\r\n  };\r\n  Loginnot();\r\n\r\n  return (\r\n    <>\r\n      <h1>List Your Food Details</h1>\r\n      <TodoForm onSubmit={addTodo} />\r\n      <Todo\r\n        todos={todos}\r\n        completeTodo={completeTodo}\r\n        removeTodo={removeTodo}\r\n        updateTodo={updateTodo}\r\n      />\r\n      <form onSubmit={OnSubmit}>\r\n        <div className=\"name\">\r\n          <label className=\"label\">Description</label>\r\n          <input\r\n            className=\"input\"\r\n            type=\"textarea\"\r\n            name=\"description\"\r\n            onChange={(e) => changeHandler(e)}\r\n            value={changeHandler.description}\r\n          />\r\n        </div>\r\n        <div className=\"num\">\r\n          <label className=\"label\">Pickup Date</label>\r\n          <input\r\n            type=\"text\"\r\n            className=\"input\"\r\n            name=\"date\"\r\n            onChange={(e) => changeHandler(e)}\r\n            onFocus={(e) => (e.target.type = \"date\")}\r\n            onBlur={(e) => (e.target.type = \"text\")}\r\n          />\r\n        </div>\r\n        <div className=\"name\">\r\n          <label className=\"label\">Pickup Address</label>\r\n          <input\r\n            className=\"input\"\r\n            name=\"address\"\r\n            type=\"textarea\"\r\n            onChange={(e) => changeHandler(e)}\r\n          />\r\n        </div>\r\n        <div className=\"name\">\r\n          <label className=\"label\">Choose State</label>\r\n          <select\r\n            name=\"state\"\r\n            id=\"state\"\r\n            className=\"input\"\r\n            onChange={(e) => changeHandler(e)}\r\n          >\r\n            <option></option>\r\n            <option value=\"Andhra Pradesh\">Andhra Pradesh</option>\r\n            <option value=\"Andaman and Nicobar Islands\">\r\n              Andaman and Nicobar Islands\r\n            </option>\r\n            <option value=\"Arunachal Pradesh\">Arunachal Pradesh</option>\r\n            <option value=\"Assam\">Assam</option>\r\n            <option value=\"Bihar\">Bihar</option>\r\n            <option value=\"Chandigarh\">Chandigarh</option>\r\n            <option value=\"Chhattisgarh\">Chhattisgarh</option>\r\n            <option value=\"Dadar and Nagar Haveli\">\r\n              Dadar and Nagar Haveli\r\n            </option>\r\n            <option value=\"Daman and Diu\">Daman and Diu</option>\r\n            <option value=\"Delhi\">Delhi</option>\r\n            <option value=\"Lakshadweep\">Lakshadweep</option>\r\n            <option value=\"Puducherry\">Puducherry</option>\r\n            <option value=\"Goa\">Goa</option>\r\n            <option value=\"Gujarat\">Gujarat</option>\r\n            <option value=\"Haryana\">Haryana</option>\r\n            <option value=\"Himachal Pradesh\">Himachal Pradesh</option>\r\n            <option value=\"Jammu and Kashmir\">Jammu and Kashmir</option>\r\n            <option value=\"Jharkhand\">Jharkhand</option>\r\n            <option value=\"Karnataka\">Karnataka</option>\r\n            <option value=\"Kerala\">Kerala</option>\r\n            <option value=\"Madhya Pradesh\">Madhya Pradesh</option>\r\n            <option value=\"Maharashtra\">Maharashtra</option>\r\n            <option value=\"Manipur\">Manipur</option>\r\n            <option value=\"Meghalaya\">Meghalaya</option>\r\n            <option value=\"Mizoram\">Mizoram</option>\r\n            <option value=\"Nagaland\">Nagaland</option>\r\n            <option value=\"Odisha\">Odisha</option>\r\n            <option value=\"Punjab\">Punjab</option>\r\n            <option value=\"Rajasthan\">Rajasthan</option>\r\n            <option value=\"Sikkim\">Sikkim</option>\r\n            <option value=\"Tamil Nadu\">Tamil Nadu</option>\r\n            <option value=\"Telangana\">Telangana</option>\r\n            <option value=\"Tripura\">Tripura</option>\r\n            <option value=\"Uttar Pradesh\">Uttar Pradesh</option>\r\n            <option value=\"Uttarakhand\">Uttarakhand</option>\r\n            <option value=\"West Bengal\">West Bengal</option>\r\n          </select>\r\n        </div>\r\n        <div className=\"name\">\r\n          <label className=\"label\">Choose City</label>\r\n          <input\r\n            className=\"input\"\r\n            type=\"text\"\r\n            name=\"city\"\r\n            onChange={(e) => changeHandler(e)}\r\n          />\r\n        </div>\r\n        <div className=\"name\">\r\n          <label className=\"label\">Contact person mobile number</label>\r\n          <input\r\n            className=\"input\"\r\n            type=\"number\"\r\n            name=\"mobile\"\r\n            onChange={(e) => changeHandler(e)}\r\n          />\r\n        </div>\r\n        <div className=\"name\">\r\n          <label className=\"label\">Pictures:</label>\r\n          <input className=\"input\" type=\"file\" />\r\n        </div>\r\n        <div>\r\n          <button className=\"submit\" value=\"Submit\">\r\n            Submit\r\n          </button>\r\n        </div>\r\n      </form>\r\n    </>\r\n  );\r\n}\r\n\r\nexport default TodoList;\r\n","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\SidebarData.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\Admin\\SidebarData.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\Admin\\SubMenu.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\Todo.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\TodoForm.js",["229"],"import React, { useState, useEffect, useRef } from \"react\";\r\n\r\nfunction TodoForm(props) {\r\n  const [input, setInput] = useState(props.edit ? props.edit.value : \"\");\r\n  const [input1, setInput1] = useState(props.edit ? props.edit.number : \"\");\r\n\r\n  const inputRef = useRef(null);\r\n  const inputRef1 = useRef(null);\r\n\r\n  // useEffect(() => {\r\n  //   inputRef.current.focus();\r\n  // });\r\n\r\n  const handleChange = (e) => {\r\n    setInput(e.target.value);\r\n  };\r\n  const handleChange1 = (e) => {\r\n    setInput1(e.target.value);\r\n  };\r\n  const handleSubmit = (e) => {\r\n    e.preventDefault();\r\n\r\n    props.onSubmit({\r\n      id: Math.floor(Math.random() * 10000),\r\n      text: input,\r\n      number: input1,\r\n    });\r\n    setInput(\"\");\r\n    setInput1(\"\");\r\n  };\r\n\r\n  return (\r\n    <form onSubmit={handleSubmit} className=\"todo-form\">\r\n      {props.edit ? (\r\n        <>\r\n          <input\r\n            placeholder=\"Update your item\"\r\n            value={input}\r\n            onChange={handleChange}\r\n            name=\"text\"\r\n            ref={inputRef}\r\n            className=\"todo-input edit\"\r\n          />\r\n          <input\r\n            placeholder=\"Update your person\"\r\n            value={input1}\r\n            onChange={handleChange1}\r\n            name=\"number\"\r\n            type={\"number\"}\r\n            ref={inputRef1}\r\n            className=\"todo-input edit\"\r\n          />\r\n\r\n          <button onClick={handleSubmit} className=\"todo-button edit\">\r\n            Update\r\n          </button>\r\n        </>\r\n      ) : (\r\n        <>\r\n          <div>\r\n            <input\r\n              placeholder=\"Add Food\"\r\n              value={input}\r\n              onChange={handleChange}\r\n              name=\"text\"\r\n              className=\"todo-input\"\r\n              ref={inputRef}\r\n            />\r\n            <input\r\n              placeholder=\"Add No of Person\"\r\n              value={input1}\r\n              type={\"number\"}\r\n              onChange={handleChange1}\r\n              name=\"number\"\r\n              className=\"todo-input\"\r\n              ref={inputRef1}\r\n            />\r\n          </div>\r\n          <button onClick={handleSubmit} className=\"todo-button\">\r\n            Add More\r\n          </button>\r\n        </>\r\n      )}\r\n    </form>\r\n  );\r\n}\r\n\r\nexport default TodoForm;\r\n\r\nexport const Formend = () => {\r\n  return (\r\n    <form>\r\n      <div className=\"name\">\r\n        <label className=\"label\">Description</label>\r\n        <input className=\"input\" type=\"textarea\" />\r\n      </div>\r\n      <div className=\"num\">\r\n        <label className=\"label\">Pickup Date</label>\r\n        <input\r\n          type=\"text\"\r\n          className=\"input\"\r\n          onChange={(e) => console.log(e.target.value)}\r\n          onFocus={(e) => (e.target.type = \"date\")}\r\n          onBlur={(e) => (e.target.type = \"text\")}\r\n        />\r\n      </div>\r\n      <div className=\"name\">\r\n        <label className=\"label\">Pickup Address</label>\r\n        <input className=\"input\" type=\"textarea\" />\r\n      </div>\r\n      <div className=\"name\">\r\n        <label className=\"label\">Choose State</label>\r\n        <select name=\"state\" id=\"state\" className=\"input\">\r\n          <option></option>\r\n          <option value=\"Andhra Pradesh\">Andhra Pradesh</option>\r\n          <option value=\"Andaman and Nicobar Islands\">\r\n            Andaman and Nicobar Islands\r\n          </option>\r\n          <option value=\"Arunachal Pradesh\">Arunachal Pradesh</option>\r\n          <option value=\"Assam\">Assam</option>\r\n          <option value=\"Bihar\">Bihar</option>\r\n          <option value=\"Chandigarh\">Chandigarh</option>\r\n          <option value=\"Chhattisgarh\">Chhattisgarh</option>\r\n          <option value=\"Dadar and Nagar Haveli\">Dadar and Nagar Haveli</option>\r\n          <option value=\"Daman and Diu\">Daman and Diu</option>\r\n          <option value=\"Delhi\">Delhi</option>\r\n          <option value=\"Lakshadweep\">Lakshadweep</option>\r\n          <option value=\"Puducherry\">Puducherry</option>\r\n          <option value=\"Goa\">Goa</option>\r\n          <option value=\"Gujarat\">Gujarat</option>\r\n          <option value=\"Haryana\">Haryana</option>\r\n          <option value=\"Himachal Pradesh\">Himachal Pradesh</option>\r\n          <option value=\"Jammu and Kashmir\">Jammu and Kashmir</option>\r\n          <option value=\"Jharkhand\">Jharkhand</option>\r\n          <option value=\"Karnataka\">Karnataka</option>\r\n          <option value=\"Kerala\">Kerala</option>\r\n          <option value=\"Madhya Pradesh\">Madhya Pradesh</option>\r\n          <option value=\"Maharashtra\">Maharashtra</option>\r\n          <option value=\"Manipur\">Manipur</option>\r\n          <option value=\"Meghalaya\">Meghalaya</option>\r\n          <option value=\"Mizoram\">Mizoram</option>\r\n          <option value=\"Nagaland\">Nagaland</option>\r\n          <option value=\"Odisha\">Odisha</option>\r\n          <option value=\"Punjab\">Punjab</option>\r\n          <option value=\"Rajasthan\">Rajasthan</option>\r\n          <option value=\"Sikkim\">Sikkim</option>\r\n          <option value=\"Tamil Nadu\">Tamil Nadu</option>\r\n          <option value=\"Telangana\">Telangana</option>\r\n          <option value=\"Tripura\">Tripura</option>\r\n          <option value=\"Uttar Pradesh\">Uttar Pradesh</option>\r\n          <option value=\"Uttarakhand\">Uttarakhand</option>\r\n          <option value=\"West Bengal\">West Bengal</option>\r\n        </select>\r\n      </div>\r\n      <div className=\"name\">\r\n        <label className=\"label\">Choose City</label>\r\n        <input className=\"input\" type=\"text\" />\r\n      </div>\r\n      <div className=\"name\">\r\n        <label className=\"label\">Contact person mobile number</label>\r\n        <input className=\"input\" type=\"number\" />\r\n      </div>\r\n      <div className=\"name\">\r\n        <label className=\"label\">Pictures:</label>\r\n        <input className=\"input\" type=\"file\" />\r\n      </div>\r\n      <div>\r\n        <button className=\"submit\" value=\"Submit\">\r\n          Submit\r\n        </button>\r\n      </div>\r\n    </form>\r\n  );\r\n};\r\n","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Menu\\Menu.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Home.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Menu.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\helpers\\MenuList.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\MenuItem.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Donarpage.js",["230","231","232","233","234","235","236","237"],"import React from \"react\";\r\nimport { Link, useNavigate } from \"react-router-dom\";\r\nimport Sidebar from \"../components/DonarSidebar\";\r\nimport { Route, Routes } from \"react-router-dom\";\r\n\r\n// import {AdminDashboard} from './AdminDashboard';\r\n// import Addfood from './Listfooddetails';\r\n// import Manage from './Listfooddetails';\r\nimport { Requests, New, Pickcom, Rejected, All } from \"./Requests\";\r\n// import Dashboard from \"./DonarDashboard\";\r\n\r\nexport const Donarpage = () => {\r\n  const Loginnot = async () => {\r\n    const Navigate = useNavigate();\r\n\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    console.log(current);\r\n    if (current.status === \"failure\") {\r\n      Navigate(\"/loginregister\");\r\n      alert(current.Error);\r\n    }\r\n  };\r\n  Loginnot();\r\n  return (\r\n    <div>\r\n      <Sidebar />\r\n      {/* <Routes>\r\n        <Route path=\"/dashboard\" exact element={<Dashboard></Dashboard>} />\r\n        <Route path='/listfooddetails' exact component={Listfooddetails} />\r\n        <Route path='/listfooddetails/add' exact element={<Addfood></Addfood>} />\r\n        <Route path='/listfooddetails/manage' exact element={<Manage></Manage>} />\r\n        <Route path=\"/request\" exact element={<Requests></Requests>} />\r\n        <Route path=\"/request/new\" exact element={<New></New>} />\r\n        <Route path=\"/request/pickcom\" exact element={<Pickcom></Pickcom>} />\r\n        <Route path=\"/request/reject\" exact element={<Rejected></Rejected>} />\r\n        <Route path=\"/request/all\" exact element={<All></All>} />\r\n      </Routes> */}\r\n    </div>\r\n  );\r\n};\r\n","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Adminpage.js",["238","239","240","241","242","243","244","245","246","247","248","249","250","251"],"import React from \"react\";\r\nimport Sidebar from '../components/Admin/Adminsidebar';\r\nimport { Routes, Route } from 'react-router-dom';\r\n\r\n\r\nimport {AdminDashboard} from './AdminDashboard';\r\nimport {Regdonors} from './Admin/Regdonors';\r\nimport {Addstate, Managestate } from \"./Admin/State\";\r\nimport {Addcity, Managecity } from \"./Admin/City\";\r\nimport { Listedfoods } from \"./Admin/Listedfoods\";\r\nimport { Requests, New, Pickcom, Rejected ,All} from './Admin/Requests';\r\n\r\n\r\nexport const Adminpage = () => {\r\n  return (\r\n    <div>\r\n      <Sidebar />\r\n      {/* <Routes>\r\n      <Route path=\"/about\" element={<About></About>} />\r\n        <Route exact path=\"/dashboard\" element={<AdminDashboard></AdminDashboard>} />\r\n        <Route path='/state/add' exact element={<Addstate></Addstate>} />\r\n        <Route path='/state/manage' exact element={<Managestate></Managestate>} />\r\n        <Route path='/city/add' exact element={<Addcity></Addcity>} />\r\n        <Route path='/city/manage' exact element={<Managecity></Managecity>} />\r\n        <Route path='/regfooddonors' exact element={<Regdonors></Regdonors>} />\r\n        <Route path='/listed/food' exact element={<Listedfoods></Listedfoods>} />\r\n        <Route path='/request' exact element={<Requests></Requests>} />\r\n        <Route path='/request/new' exact element={<New></New>} />\r\n        <Route path='/request/pickcom' exact element={<Pickcom></Pickcom>} />\r\n        <Route path='/request/reject' exact element={<Rejected></Rejected>} />\r\n        <Route path='/request/all' exact element={<All></All>} />\r\n\r\n        </Routes> */}\r\n\r\n    </div>\r\n  );\r\n};\r\n","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\Admin\\Adminsidebar.js",["252","253"],"import React, { useState } from \"react\";\r\nimport styled from \"styled-components\";\r\nimport { Link, Navigate } from \"react-router-dom\";\r\nimport * as FaIcons from \"react-icons/fa\";\r\nimport * as AiIcons from \"react-icons/ai\";\r\nimport { SidebarData } from \"./SidebarData\";\r\nimport SubMenu from \"./SubMenu\";\r\nimport { IconContext } from \"react-icons/lib\";\r\n\r\nimport { Routes, Route } from \"react-router-dom\";\r\n\r\nconst Nav = styled.div`\r\n  height: 80px;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n`;\r\n\r\nconst NavIcon = styled(Link)`\r\n  margin-left: 2rem;\r\n  font-size: 2rem;\r\n  height: 80px;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n`;\r\n\r\nconst SidebarNav = styled.nav`\r\n  background: #1e1b18;\r\n  margin-top: 72px;\r\n  width: 250px;\r\n  height: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n  position: absolute;\r\n  top: 0;\r\n  left: ${({ sidebar }) => (sidebar ? \"0\" : \"-100%\")};\r\n  transition: 350ms;\r\n  z-index: 10;\r\n`;\r\n\r\nconst SidebarWrap = styled.div`\r\n  width: 100%;\r\n`;\r\n\r\nconst Adminsidebar = () => {\r\n  const [sidebar, setSidebar] = useState(true);\r\n\r\n  const showSidebar = () => setSidebar(!sidebar);\r\n\r\n  return (\r\n    <IconContext.Provider value={{ color: \"brown\" }}>\r\n      <Nav>\r\n        <NavIcon to=\"#\">\r\n          <FaIcons.FaBars onClick={showSidebar} />\r\n        </NavIcon>\r\n      </Nav>\r\n      <SidebarNav sidebar={sidebar}>\r\n        <SidebarWrap>\r\n          <NavIcon to=\"#\">\r\n            <AiIcons.AiOutlineClose onClick={showSidebar} />\r\n          </NavIcon>\r\n          {SidebarData.map((item, index) => {\r\n            return (\r\n              <SubMenu\r\n                item={item}\r\n                key={index}\r\n                onClick={() => {\r\n                  Navigate(\"/dashboard\");\r\n                }}\r\n              />\r\n            );\r\n          })}\r\n        </SidebarWrap>\r\n      </SidebarNav>\r\n    </IconContext.Provider>\r\n  );\r\n};\r\n\r\nexport default Adminsidebar;\r\n","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\DonarDashboard.js",["254","255","256","257","258","259","260","261"],"import React, { useState } from \"react\";\r\nimport img from \"./img.png\";\r\nimport { Link, useNavigate } from \"react-router-dom\";\r\nimport img2 from \"./img2.png\";\r\nimport \"./Dashboard.css\";\r\nimport { RiPassportFill } from \"react-icons/ri\";\r\nexport const DonarDashboard = () => {\r\n  const [foodcount, setfoodcount] = useState(0);\r\n\r\n  function changefood(food) {\r\n    setfoodcount(foodcount + food);\r\n  }\r\n  const Loginnot = async () => {\r\n    const Navigate = useNavigate();\r\n\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    console.log(current.user.role);\r\n    if (current.status === \"failure\" || current.user.role !== \"Donar\") {\r\n      Navigate(\"/loginregister\");\r\n      alert(current.Error);\r\n      return;\r\n    }\r\n  };\r\n  Loginnot();\r\n\r\n  // const [foodcount, setfoodcount] = useState(0);\r\n  var food = 0;\r\n  const Listfood = async () => {\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    if (current.status === \"failure\") {\r\n      return;\r\n    }\r\n    const userid = current.user._id;\r\n    const Listedfoods = await fetch(\"/api/v1/tours/\" + userid);\r\n    // console.log(\"/api/v1/tours/\" + userid);\r\n    const foods = await Listedfoods.json();\r\n    console.log(foods);\r\n    for (var i = 0; i < foods.results; i++) {\r\n      if (foods.data.data[i].userid[0]._id !== current.user._id) {\r\n        // console.log(\"dfhfghfgh\");\r\n        continue;\r\n      }\r\n      const arrsize = foods.data.data[i].fooddetails.length;\r\n      for (var j = 0; j < arrsize; j++) {\r\n        food += parseInt(foods.data.data[i].fooddetails[j].number);\r\n      }\r\n      console.log(foods.data.data[i].fooddetails.length);\r\n    }\r\n    // setloading(true);\r\n    // console.log(food);\r\n    setfoodcount(food);\r\n  };\r\n  // setfoodcount(food);\r\n  Listfood();\r\n\r\n  return (\r\n    <div className=\"hiii\">\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#FF1053\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div className=\"hibro\">\r\n          <h2>Total Listed Food</h2>\r\n          <h1 style={{ color: \"black\" }}>{foodcount}</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#6C6EA0\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>Request Completed</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#66C7F4\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>Rejected Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#C1CAD6\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>All Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#FFFFFF\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>New Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\DonarSidebar.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Loading.jsx",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\User\\Userpage.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\User\\UserRequests.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\Admin\\AdminDashboard.js",["262","263","264","265","266","267","268","269","270"],"import React, { useState } from \"react\";\r\nimport img from \"../img.png\";\r\nimport { Link, useNavigate } from \"react-router-dom\";\r\nimport img2 from \"../img2.png\";\r\nimport \"../Dashboard.css\";\r\nimport { RiPassportFill } from \"react-icons/ri\";\r\nexport const AdminDashboard = () => {\r\n  const [foodcount, setfoodcount] = useState(0);\r\n\r\n  function changefood(food) {\r\n    setfoodcount(foodcount + food);\r\n  }\r\n  const Loginnot = async () => {\r\n    const Navigate = useNavigate();\r\n\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    // console.log(current);\r\n    if (current.status === \"failure\") {\r\n      Navigate(\"/loginregister\");\r\n      alert(current.Error);\r\n      return;\r\n    }\r\n  };\r\n  Loginnot();\r\n\r\n  // const [foodcount, setfoodcount] = useState(0);\r\n  var food = 0;\r\n  const Listfood = async () => {\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    if (current.status === \"failure\") {\r\n      return;\r\n    }\r\n    const userid = current.user._id;\r\n    const Listedfoods = await fetch(\"/api/v1/tours/\");\r\n    // console.log(\"/api/v1/tours/\" + userid);\r\n    const foods = await Listedfoods.json();\r\n    // console.log(foods);\r\n    for (var i = 0; i < foods.results; i++) {\r\n\r\n      const arrsize = foods.data.data[i].fooddetails.length;\r\n      for (var j = 0; j < arrsize; j++) {\r\n        food += parseInt(foods.data.data[i].fooddetails[j].number);\r\n      }\r\n      // console.log(foods.data.data[i].fooddetails.length);\r\n    }\r\n    // setloading(true);\r\n    // console.log(food);\r\n    setfoodcount(food);\r\n  };\r\n  // setfoodcount(food);\r\n  Listfood();\r\n\r\n  return (\r\n    <div className=\"hiii\">\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#FF1053\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div className=\"hibro\">\r\n          <h2>Total Listed Food</h2>\r\n          <h1 style={{ color: \"black\" }}>{foodcount}</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#6C6EA0\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>Request Completed</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#66C7F4\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>Rejected Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#C1CAD6\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>All Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#FFFFFF\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>New Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\User\\UserListedfoods.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\User\\UserDashboard.js",["271","272","273","274","275","276","277","278","279"],"import React, { useState } from \"react\";\r\nimport img from \"../img.png\";\r\nimport { Link, useNavigate } from \"react-router-dom\";\r\nimport img2 from \"../img2.png\";\r\nimport \"../Dashboard.css\";\r\nimport { RiPassportFill } from \"react-icons/ri\";\r\nexport const UserDashboard = () => {\r\n  const [foodcount, setfoodcount] = useState(0);\r\n\r\n  function changefood(food) {\r\n    setfoodcount(foodcount + food);\r\n  }\r\n  const Loginnot = async () => {\r\n    const Navigate = useNavigate();\r\n\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    // console.log(current);\r\n    if (current.status === \"failure\") {\r\n      Navigate(\"/loginregister\");\r\n      alert(current.Error);\r\n      return;\r\n    }\r\n  };\r\n  Loginnot();\r\n\r\n  // const [foodcount, setfoodcount] = useState(0);\r\n  var food = 0;\r\n  const Listfood = async () => {\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    if (current.status === \"failure\") {\r\n      return;\r\n    }\r\n    const userid = current.user._id;\r\n    const Listedfoods = await fetch(\"/api/v1/tours/\");\r\n    // console.log(\"/api/v1/tours/\" + userid);\r\n    const foods = await Listedfoods.json();\r\n    // console.log(foods);\r\n    for (var i = 0; i < foods.results; i++) {\r\n\r\n      const arrsize = foods.data.data[i].fooddetails.length;\r\n      for (var j = 0; j < arrsize; j++) {\r\n        food += parseInt(foods.data.data[i].fooddetails[j].number);\r\n      }\r\n      // console.log(foods.data.data[i].fooddetails.length);\r\n    }\r\n    // setloading(true);\r\n    // console.log(food);\r\n    setfoodcount(food);\r\n  };\r\n  // setfoodcount(food);\r\n  Listfood();\r\n\r\n  return (\r\n    <div className=\"hiii\">\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#FF1053\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div className=\"hibro\">\r\n          <h2>Total Listed Food</h2>\r\n          <h1 style={{ color: \"black\" }}>{foodcount}</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#6C6EA0\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>Request Completed</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#66C7F4\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>Rejected Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#C1CAD6\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>All Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#FFFFFF\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>New Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\User\\Usersidebar.js",["280","281"],"import React, { useState } from \"react\";\r\nimport styled from \"styled-components\";\r\nimport { Link, Navigate } from \"react-router-dom\";\r\nimport * as FaIcons from \"react-icons/fa\";\r\nimport * as AiIcons from \"react-icons/ai\";\r\nimport { SidebarData } from \"./SidebarData\";\r\nimport SubMenu from \"./SubMenu\";\r\nimport { IconContext } from \"react-icons/lib\";\r\n\r\nimport { Routes, Route } from \"react-router-dom\";\r\n\r\nconst Nav = styled.div`\r\n  height: 80px;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n`;\r\n\r\nconst NavIcon = styled(Link)`\r\n  margin-left: 2rem;\r\n  font-size: 2rem;\r\n  height: 80px;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n`;\r\n\r\nconst SidebarNav = styled.nav`\r\n  background: #1e1b18;\r\n  margin-top: 72px;\r\n  width: 250px;\r\n  height: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n  position: absolute;\r\n  top: 0;\r\n  left: ${({ sidebar }) => (sidebar ? \"0\" : \"-100%\")};\r\n  transition: 350ms;\r\n  z-index: 10;\r\n`;\r\n\r\nconst SidebarWrap = styled.div`\r\n  width: 100%;\r\n`;\r\n\r\nconst Usersidebar = () => {\r\n  const [sidebar, setSidebar] = useState(true);\r\n\r\n  const showSidebar = () => setSidebar(!sidebar);\r\n\r\n  return (\r\n    <IconContext.Provider value={{ color: \"brown\" }}>\r\n      <Nav>\r\n        <NavIcon to=\"#\">\r\n          <FaIcons.FaBars onClick={showSidebar} />\r\n        </NavIcon>\r\n      </Nav>\r\n      <SidebarNav sidebar={sidebar}>\r\n        <SidebarWrap>\r\n          <NavIcon to=\"#\">\r\n            <AiIcons.AiOutlineClose onClick={showSidebar} />\r\n          </NavIcon>\r\n          {SidebarData.map((item, index) => {\r\n            return (\r\n              <SubMenu\r\n                item={item}\r\n                key={index}\r\n                onClick={() => {\r\n                  Navigate(\"/dashboard\");\r\n                }}\r\n              />\r\n            );\r\n          })}\r\n        </SidebarWrap>\r\n      </SidebarNav>\r\n    </IconContext.Provider>\r\n  );\r\n};\r\n\r\nexport default Usersidebar;\r\n","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\User\\SubMenu.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\User\\SidebarData.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\Pages\\User\\Useradd.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\User\\TodoList.js",["282","283","284","285","286","287"],"import React, { useState } from \"react\";\r\nimport { Link, useNavigate } from \"react-router-dom\";\r\nimport TodoForm from \"./TodoForm\";\r\nimport Todo from \"./Todo\";\r\nimport { METHODS } from \"http\";\r\nimport \"./add.css\";\r\nimport { default as ReactSelect } from \"react-select\";\r\nimport { components } from \"react-select\";\r\n\r\n// import { Formend } from \"./TodoForm\";\r\n\r\nconst Option = (props) => {\r\n  return (\r\n    <div>\r\n      <components.Option {...props}>\r\n        <input\r\n          type=\"checkbox\"\r\n          checked={props.isSelected}\r\n          onChange={() => null}\r\n        />{\" \"}\r\n        <label>{props.label}</label>\r\n      </components.Option>\r\n      \r\n    </div>\r\n  );\r\n};\r\n\r\nfunction TodoList() {\r\n  const colourOptions = [\r\n    { value: \"ocean1\", label: \"Ocean\" },\r\n    { value: \"blue\", label: \"Blue\" },\r\n    { value: \"purple\", label: \"Purple\" },\r\n    { value: \"red\", label: \"Red\" },\r\n    { value: \"orange\", label: \"Orange\" },\r\n    { value: \"yellow\", label: \"Yellow\" },\r\n    { value: \"green\", label: \"Green\" },\r\n    { value: \"forest\", label: \"Forest\" },\r\n    { value: \"slate\", label: \"Slate\" },\r\n    { value: \"silver\", label: \"Silver\" }\r\n  ];\r\n  \r\n\r\n  const [fooddetails, setFood] = useState({\r\n    description: \"\",\r\n    date: \"\",\r\n    address: \"\",\r\n    mobile: \"\",\r\n  });\r\n  const Navigate = useNavigate();\r\n  const changeHandler = (e) => {\r\n    e.preventDefault();\r\n    const { name, value, type } = e.target;\r\n    // console.log(name, value);\r\n    setFood({ ...fooddetails, [name]: value });\r\n  };\r\n\r\n  const OnSubmit = (event) => {\r\n    event.preventDefault();\r\n\r\n    if (!fooddetails.address) {\r\n      alert(\"Pls Enter Address !!!\");\r\n      return;\r\n    }\r\n    if (!fooddetails.date) {\r\n      alert(\"Pls Enter Time!!!\");\r\n      return;\r\n    }\r\n    if (!fooddetails.description) {\r\n      alert(\"Pls Enter No Persons\");\r\n      return;\r\n    }\r\n    if (!fooddetails.mobile) {\r\n      alert(\"Pls Enter mobile number to contact !!!\");\r\n      return;\r\n    }\r\n\r\n\r\n    console.log(fooddetails);\r\n    console.log({\r\n      description: fooddetails[\"description\"],\r\n      data: fooddetails[\"date\"],\r\n      address: fooddetails[\"address\"],\r\n      mobile: fooddetails[\"mobile\"],\r\n    });\r\n\r\n    const addfood = async (todos, fooddetails) => {\r\n      const currentuser = await fetch(\"/api/v1/users/me/\");\r\n      const current = await currentuser.json();\r\n      console.log(\"food details\", fooddetails);\r\n      const response = await fetch(\"/api/v1/tours/\", {\r\n        method: \"POST\",\r\n        headers: { \"Content-type\": \"application/json\" },\r\n        body: JSON.stringify({\r\n          userid: current.user._id,\r\n          description: fooddetails[\"description\"],\r\n          data: fooddetails[\"data\"],\r\n          address: fooddetails[\"address\"],\r\n          mobile: fooddetails[\"mobile\"],\r\n        }),\r\n      });\r\n      const json = await response.json();\r\n\r\n      if (json.status === \"success\") {\r\n        alert(\"Successfully Added your Food\");\r\n        Navigate(\"/Donarpage/dashboard\");\r\n      } else {\r\n        alert(json.status);\r\n      }\r\n      // console.log(json);\r\n      // alert(json.status);\r\n    };\r\n\r\n\r\n  };\r\n  const Loginnot = async () => {\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    console.log(current);\r\n    if (current.status === \"failure\" || current.user.role!==\"User\") {\r\n      Navigate(\"/loginregister\");\r\n      alert(current.Error);\r\n    }\r\n  };\r\n  Loginnot();\r\n\r\n  return (\r\n    <>\r\n      \r\n      <form onSubmit={OnSubmit}>\r\n      <div className=\"name\">\r\n          <label className=\"label\" >Available foods</label>\r\n          <span\r\n        class=\"d-inline-block\"\r\n        data-toggle=\"popover\"\r\n        data-trigger=\"focus\"\r\n        data-content=\"Please selecet account(s)\"\r\n      >\r\n        <ReactSelect \r\n          options={colourOptions}\r\n          isMulti\r\n          closeMenuOnSelect={false}\r\n          hideSelectedOptions={false}\r\n          components={{\r\n            Option\r\n          }}\r\n          // onChange={this.handleChange}\r\n          allowSelectAll={true}\r\n          // value={this.state.optionSelected}\r\n        />\r\n      </span>\r\n          \r\n\r\n\r\n        </div>\r\n        <div className=\"name\">\r\n          <label className=\"label\">Persons Required Food:</label>\r\n          <input\r\n            className=\"input\"\r\n            type=\"number\"\r\n            name=\"description\"\r\n            onChange={(e) => changeHandler(e)}\r\n            value={changeHandler.description}\r\n          />\r\n        </div>\r\n        <div className=\"num\">\r\n          <label className=\"label\">Pickup Time</label>\r\n          <input\r\n            type=\"text\"\r\n            className=\"input\"\r\n            name=\"date\"\r\n            onChange={(e) => changeHandler(e)}\r\n            onFocus={(e) => (e.target.type = \"time\")}\r\n            onBlur={(e) => (e.target.type = \"text\")}\r\n          />\r\n        </div>\r\n        <div className=\"name\">\r\n          <label className=\"label\"> Address</label>\r\n          <input\r\n            className=\"input\"\r\n            name=\"address\"\r\n            type=\"textarea\"\r\n            onChange={(e) => changeHandler(e)}\r\n          />\r\n        </div>\r\n      \r\n        <div className=\"name\">\r\n          <label className=\"label\">Contact</label>\r\n          <input\r\n            className=\"input\"\r\n            type=\"number\"\r\n            name=\"mobile\"\r\n            onChange={(e) => changeHandler(e)}\r\n          />\r\n        </div>\r\n       \r\n        <div>\r\n          <button className=\"submit\" value=\"Submit\">\r\n            Submit\r\n          </button>\r\n        </div>\r\n      </form>\r\n    </>\r\n  );\r\n}\r\n\r\nexport default TodoList;\r\n","E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\User\\Todo.js",[],"E:\\Zerowaste\\foodwastemanagement\\Client\\src\\components\\User\\TodoForm.js",["288"],"import React, { useState, useEffect, useRef } from \"react\";\r\n\r\nfunction TodoForm(props) {\r\n  const [input, setInput] = useState(props.edit ? props.edit.value : \"\");\r\n  const [input1, setInput1] = useState(props.edit ? props.edit.number : \"\");\r\n\r\n  const inputRef = useRef(null);\r\n  const inputRef1 = useRef(null);\r\n\r\n  // useEffect(() => {\r\n  //   inputRef.current.focus();\r\n  // });\r\n\r\n  const handleChange = (e) => {\r\n    setInput(e.target.value);\r\n  };\r\n  const handleChange1 = (e) => {\r\n    setInput1(e.target.value);\r\n  };\r\n  const handleSubmit = (e) => {\r\n    e.preventDefault();\r\n\r\n    props.onSubmit({\r\n      id: Math.floor(Math.random() * 10000),\r\n      text: input,\r\n      number: input1,\r\n    });\r\n    setInput(\"\");\r\n    setInput1(\"\");\r\n  };\r\n\r\n  return (\r\n    <form onSubmit={handleSubmit} className=\"todo-form\">\r\n      {props.edit ? (\r\n        <>\r\n          <input\r\n            placeholder=\"Update your item\"\r\n            value={input}\r\n            onChange={handleChange}\r\n            name=\"text\"\r\n            ref={inputRef}\r\n            className=\"todo-input edit\"\r\n          />\r\n          <input\r\n            placeholder=\"Update your person\"\r\n            value={input1}\r\n            onChange={handleChange1}\r\n            name=\"number\"\r\n            type={\"number\"}\r\n            ref={inputRef1}\r\n            className=\"todo-input edit\"\r\n          />\r\n\r\n          <button onClick={handleSubmit} className=\"todo-button edit\">\r\n            Update\r\n          </button>\r\n        </>\r\n      ) : (\r\n        <>\r\n          <div>\r\n            <input\r\n              placeholder=\"Add Food\"\r\n              value={input}\r\n              onChange={handleChange}\r\n              name=\"text\"\r\n              className=\"todo-input\"\r\n              ref={inputRef}\r\n            />\r\n            <input\r\n              placeholder=\"Add No of Person\"\r\n              value={input1}\r\n              type={\"number\"}\r\n              onChange={handleChange1}\r\n              name=\"number\"\r\n              className=\"todo-input\"\r\n              ref={inputRef1}\r\n            />\r\n          </div>\r\n          <button onClick={handleSubmit} className=\"todo-button\">\r\n            Add More\r\n          </button>\r\n        </>\r\n      )}\r\n    </form>\r\n  );\r\n}\r\n\r\nexport default TodoForm;",{"ruleId":"289","replacedBy":"290"},{"ruleId":"291","replacedBy":"292"},{"ruleId":"293","severity":1,"message":"294","line":5,"column":20,"nodeType":"295","messageId":"296","endLine":5,"endColumn":26},{"ruleId":"293","severity":1,"message":"297","line":8,"column":3,"nodeType":"295","messageId":"296","endLine":8,"endColumn":16},{"ruleId":"293","severity":1,"message":"298","line":10,"column":10,"nodeType":"295","messageId":"296","endLine":10,"endColumn":14},{"ruleId":"293","severity":1,"message":"299","line":12,"column":8,"nodeType":"295","messageId":"296","endLine":12,"endColumn":21},{"ruleId":"300","severity":1,"message":"301","line":52,"column":6,"nodeType":"302","endLine":52,"endColumn":8,"suggestions":"303"},{"ruleId":"293","severity":1,"message":"304","line":2,"column":10,"nodeType":"295","messageId":"296","endLine":2,"endColumn":14},{"ruleId":"293","severity":1,"message":"305","line":13,"column":26,"nodeType":"295","messageId":"296","endLine":13,"endColumn":30},{"ruleId":"293","severity":1,"message":"306","line":1,"column":17,"nodeType":"295","messageId":"296","endLine":1,"endColumn":26},{"ruleId":"293","severity":1,"message":"307","line":2,"column":8,"nodeType":"295","messageId":"296","endLine":2,"endColumn":13},{"ruleId":"293","severity":1,"message":"304","line":3,"column":10,"nodeType":"295","messageId":"296","endLine":3,"endColumn":14},{"ruleId":"293","severity":1,"message":"305","line":21,"column":26,"nodeType":"295","messageId":"296","endLine":21,"endColumn":30},{"ruleId":"308","severity":1,"message":"309","line":11,"column":7,"nodeType":"310","endLine":11,"endColumn":83},{"ruleId":"308","severity":1,"message":"309","line":20,"column":7,"nodeType":"310","endLine":20,"endColumn":84},{"ruleId":"308","severity":1,"message":"309","line":29,"column":7,"nodeType":"310","endLine":29,"endColumn":84},{"ruleId":"308","severity":1,"message":"309","line":38,"column":7,"nodeType":"310","endLine":38,"endColumn":84},{"ruleId":"308","severity":1,"message":"309","line":47,"column":7,"nodeType":"310","endLine":47,"endColumn":84},{"ruleId":"293","severity":1,"message":"304","line":2,"column":10,"nodeType":"295","messageId":"296","endLine":2,"endColumn":14},{"ruleId":"293","severity":1,"message":"311","line":5,"column":10,"nodeType":"295","messageId":"296","endLine":5,"endColumn":17},{"ruleId":"293","severity":1,"message":"305","line":21,"column":26,"nodeType":"295","messageId":"296","endLine":21,"endColumn":30},{"ruleId":"293","severity":1,"message":"312","line":1,"column":27,"nodeType":"295","messageId":"296","endLine":1,"endColumn":36},{"ruleId":"293","severity":1,"message":"304","line":2,"column":10,"nodeType":"295","messageId":"296","endLine":2,"endColumn":14},{"ruleId":"293","severity":1,"message":"313","line":4,"column":10,"nodeType":"295","messageId":"296","endLine":4,"endColumn":15},{"ruleId":"293","severity":1,"message":"314","line":4,"column":17,"nodeType":"295","messageId":"296","endLine":4,"endColumn":23},{"ruleId":"293","severity":1,"message":"315","line":9,"column":10,"nodeType":"295","messageId":"296","endLine":9,"endColumn":18},{"ruleId":"293","severity":1,"message":"316","line":9,"column":20,"nodeType":"295","messageId":"296","endLine":9,"endColumn":23},{"ruleId":"293","severity":1,"message":"317","line":9,"column":25,"nodeType":"295","messageId":"296","endLine":9,"endColumn":32},{"ruleId":"293","severity":1,"message":"318","line":9,"column":34,"nodeType":"295","messageId":"296","endLine":9,"endColumn":42},{"ruleId":"293","severity":1,"message":"319","line":9,"column":44,"nodeType":"295","messageId":"296","endLine":9,"endColumn":47},{"ruleId":"293","severity":1,"message":"314","line":3,"column":10,"nodeType":"295","messageId":"296","endLine":3,"endColumn":16},{"ruleId":"293","severity":1,"message":"313","line":3,"column":18,"nodeType":"295","messageId":"296","endLine":3,"endColumn":23},{"ruleId":"293","severity":1,"message":"320","line":6,"column":9,"nodeType":"295","messageId":"296","endLine":6,"endColumn":23},{"ruleId":"293","severity":1,"message":"321","line":7,"column":9,"nodeType":"295","messageId":"296","endLine":7,"endColumn":18},{"ruleId":"293","severity":1,"message":"322","line":8,"column":9,"nodeType":"295","messageId":"296","endLine":8,"endColumn":17},{"ruleId":"293","severity":1,"message":"323","line":8,"column":19,"nodeType":"295","messageId":"296","endLine":8,"endColumn":30},{"ruleId":"293","severity":1,"message":"324","line":9,"column":9,"nodeType":"295","messageId":"296","endLine":9,"endColumn":16},{"ruleId":"293","severity":1,"message":"325","line":9,"column":18,"nodeType":"295","messageId":"296","endLine":9,"endColumn":28},{"ruleId":"293","severity":1,"message":"326","line":10,"column":10,"nodeType":"295","messageId":"296","endLine":10,"endColumn":21},{"ruleId":"293","severity":1,"message":"315","line":11,"column":10,"nodeType":"295","messageId":"296","endLine":11,"endColumn":18},{"ruleId":"293","severity":1,"message":"316","line":11,"column":20,"nodeType":"295","messageId":"296","endLine":11,"endColumn":23},{"ruleId":"293","severity":1,"message":"317","line":11,"column":25,"nodeType":"295","messageId":"296","endLine":11,"endColumn":32},{"ruleId":"293","severity":1,"message":"318","line":11,"column":34,"nodeType":"295","messageId":"296","endLine":11,"endColumn":42},{"ruleId":"293","severity":1,"message":"319","line":11,"column":44,"nodeType":"295","messageId":"296","endLine":11,"endColumn":47},{"ruleId":"293","severity":1,"message":"314","line":10,"column":10,"nodeType":"295","messageId":"296","endLine":10,"endColumn":16},{"ruleId":"293","severity":1,"message":"313","line":10,"column":18,"nodeType":"295","messageId":"296","endLine":10,"endColumn":23},{"ruleId":"293","severity":1,"message":"304","line":3,"column":10,"nodeType":"295","messageId":"296","endLine":3,"endColumn":14},{"ruleId":"293","severity":1,"message":"327","line":6,"column":10,"nodeType":"295","messageId":"296","endLine":6,"endColumn":24},{"ruleId":"293","severity":1,"message":"328","line":10,"column":12,"nodeType":"295","messageId":"296","endLine":10,"endColumn":22},{"ruleId":"308","severity":1,"message":"309","line":70,"column":11,"nodeType":"310","endLine":73,"endColumn":13},{"ruleId":"308","severity":1,"message":"309","line":90,"column":11,"nodeType":"310","endLine":93,"endColumn":13},{"ruleId":"308","severity":1,"message":"309","line":110,"column":11,"nodeType":"310","endLine":113,"endColumn":13},{"ruleId":"308","severity":1,"message":"309","line":130,"column":11,"nodeType":"310","endLine":133,"endColumn":13},{"ruleId":"308","severity":1,"message":"309","line":150,"column":11,"nodeType":"310","endLine":153,"endColumn":13},{"ruleId":"293","severity":1,"message":"304","line":3,"column":10,"nodeType":"295","messageId":"296","endLine":3,"endColumn":14},{"ruleId":"293","severity":1,"message":"327","line":6,"column":10,"nodeType":"295","messageId":"296","endLine":6,"endColumn":24},{"ruleId":"293","severity":1,"message":"328","line":10,"column":12,"nodeType":"295","messageId":"296","endLine":10,"endColumn":22},{"ruleId":"293","severity":1,"message":"329","line":35,"column":11,"nodeType":"295","messageId":"296","endLine":35,"endColumn":17},{"ruleId":"308","severity":1,"message":"309","line":67,"column":11,"nodeType":"310","endLine":70,"endColumn":13},{"ruleId":"308","severity":1,"message":"309","line":87,"column":11,"nodeType":"310","endLine":90,"endColumn":13},{"ruleId":"308","severity":1,"message":"309","line":107,"column":11,"nodeType":"310","endLine":110,"endColumn":13},{"ruleId":"308","severity":1,"message":"309","line":127,"column":11,"nodeType":"310","endLine":130,"endColumn":13},{"ruleId":"308","severity":1,"message":"309","line":147,"column":11,"nodeType":"310","endLine":150,"endColumn":13},{"ruleId":"293","severity":1,"message":"304","line":3,"column":10,"nodeType":"295","messageId":"296","endLine":3,"endColumn":14},{"ruleId":"293","severity":1,"message":"327","line":6,"column":10,"nodeType":"295","messageId":"296","endLine":6,"endColumn":24},{"ruleId":"293","severity":1,"message":"328","line":10,"column":12,"nodeType":"295","messageId":"296","endLine":10,"endColumn":22},{"ruleId":"293","severity":1,"message":"329","line":35,"column":11,"nodeType":"295","messageId":"296","endLine":35,"endColumn":17},{"ruleId":"308","severity":1,"message":"309","line":67,"column":11,"nodeType":"310","endLine":70,"endColumn":13},{"ruleId":"308","severity":1,"message":"309","line":87,"column":11,"nodeType":"310","endLine":90,"endColumn":13},{"ruleId":"308","severity":1,"message":"309","line":107,"column":11,"nodeType":"310","endLine":110,"endColumn":13},{"ruleId":"308","severity":1,"message":"309","line":127,"column":11,"nodeType":"310","endLine":130,"endColumn":13},{"ruleId":"308","severity":1,"message":"309","line":147,"column":11,"nodeType":"310","endLine":150,"endColumn":13},{"ruleId":"293","severity":1,"message":"314","line":10,"column":10,"nodeType":"295","messageId":"296","endLine":10,"endColumn":16},{"ruleId":"293","severity":1,"message":"313","line":10,"column":18,"nodeType":"295","messageId":"296","endLine":10,"endColumn":23},{"ruleId":"293","severity":1,"message":"304","line":2,"column":10,"nodeType":"295","messageId":"296","endLine":2,"endColumn":14},{"ruleId":"293","severity":1,"message":"330","line":3,"column":8,"nodeType":"295","messageId":"296","endLine":3,"endColumn":16},{"ruleId":"293","severity":1,"message":"331","line":4,"column":8,"nodeType":"295","messageId":"296","endLine":4,"endColumn":12},{"ruleId":"293","severity":1,"message":"311","line":5,"column":10,"nodeType":"295","messageId":"296","endLine":5,"endColumn":17},{"ruleId":"293","severity":1,"message":"305","line":52,"column":26,"nodeType":"295","messageId":"296","endLine":52,"endColumn":30},{"ruleId":"293","severity":1,"message":"332","line":86,"column":11,"nodeType":"295","messageId":"296","endLine":86,"endColumn":18},{"ruleId":"293","severity":1,"message":"312","line":1,"column":27,"nodeType":"295","messageId":"296","endLine":1,"endColumn":36},"no-native-reassign",["333"],"no-negated-in-lhs",["334"],"no-unused-vars","'Router' is defined but never used.","Identifier","unusedVar","'BrowserRouter' is defined but never used.","'Home' is defined but never used.","'Loginregister' is defined but never used.","react-hooks/exhaustive-deps","React Hook useEffect has a missing dependency: 'Loginnot'. Either include it or remove the dependency array.","ArrayExpression",["335"],"'Link' is defined but never used.","'type' is assigned a value but never used.","'Component' is defined but never used.","'axios' is defined but never used.","jsx-a11y/alt-text","img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.","JSXOpeningElement","'METHODS' is defined but never used.","'useEffect' is defined but never used.","'Route' is defined but never used.","'Routes' is defined but never used.","'Requests' is defined but never used.","'New' is defined but never used.","'Pickcom' is defined but never used.","'Rejected' is defined but never used.","'All' is defined but never used.","'AdminDashboard' is defined but never used.","'Regdonors' is defined but never used.","'Addstate' is defined but never used.","'Managestate' is defined but never used.","'Addcity' is defined but never used.","'Managecity' is defined but never used.","'Listedfoods' is defined but never used.","'RiPassportFill' is defined but never used.","'changefood' is defined but never used.","'userid' is assigned a value but never used.","'TodoForm' is defined but never used.","'Todo' is defined but never used.","'addfood' is assigned a value but never used.","no-global-assign","no-unsafe-negation",{"desc":"336","fix":"337"},"Update the dependencies array to be: [Loginnot]",{"range":"338","text":"339"},[1919,1921],"[Loginnot]"]
+[
+  {
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\index.js": "1",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\reportWebVitals.js": "2",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\App.js": "3",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Home.js": "4",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Menu.js": "5",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Loginregister.js": "6",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Ourmission.js": "7",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\NavBar.js": "8",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Admin\\Regdonors.js": "9",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Admin\\City.js": "10",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Admin\\State.js": "11",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Admin\\Requests.js": "12",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Contact.js": "13",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\About.js": "14",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\DonarDashboard.js": "15",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Login.js": "16",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Adminpage.js": "17",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Donarpage.js": "18",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Listfooddetails.js": "19",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Registernew.js": "20",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\User\\UserDashboard.js": "21",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\User\\UserRequests.js": "22",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\User\\UserListedfoods.js": "23",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\User\\Userpage.js": "24",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Admin\\AdminDashboard.js": "25",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Admin\\Listedfoods.js": "26",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\User\\Usersidebar.js": "27",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\DonarSidebar.js": "28",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\Admin\\Adminsidebar.js": "29",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\MenuItem.js": "30",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Requests.js": "31",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\AdminDashboard.js": "32",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\helpers\\MenuList.js": "33",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Menu\\Menu.js": "34",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\Admin\\SubMenu.js": "35",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\SubMenu.js": "36",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\Admin\\SidebarData.js": "37",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\TodoList.js": "38",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\User\\SidebarData.js": "39",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\User\\SubMenu.js": "40",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\SidebarData.js": "41",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Loading.jsx": "42",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\Todo.js": "43",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\TodoForm.js": "44",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\User\\Useradd.js": "45",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\User\\TodoList.js": "46",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\User\\TodoForm.js": "47",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\User\\Todo.js": "48",
+    "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\profile\\Userprofile.js": "49"
+  },
+  {
+    "size": 345,
+    "mtime": 1671885153692,
+    "results": "50",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 375,
+    "mtime": 1665577850608,
+    "results": "52",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 10329,
+    "mtime": 1671964942247,
+    "results": "53",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 125,
+    "mtime": 1665577850605,
+    "results": "54",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 629,
+    "mtime": 1671949441682,
+    "results": "55",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 565,
+    "mtime": 1668088901723,
+    "results": "56",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 814,
+    "mtime": 1671949441701,
+    "results": "57",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 2523,
+    "mtime": 1671968551726,
+    "results": "58",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 153,
+    "mtime": 1666114238851,
+    "results": "59",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 281,
+    "mtime": 1666113851766,
+    "results": "60",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 664,
+    "mtime": 1666417682125,
+    "results": "61",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 674,
+    "mtime": 1665768707651,
+    "results": "62",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 896,
+    "mtime": 1671712971307,
+    "results": "63",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 813,
+    "mtime": 1671949652517,
+    "results": "64",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 4524,
+    "mtime": 1671963846826,
+    "results": "65",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 3401,
+    "mtime": 1671964446642,
+    "results": "66",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 573,
+    "mtime": 1671713496907,
+    "results": "67",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1641,
+    "mtime": 1671716439248,
+    "results": "68",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 2245,
+    "mtime": 1671955853908,
+    "results": "69",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 8184,
+    "mtime": 1671941286036,
+    "results": "70",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 4351,
+    "mtime": 1671713409471,
+    "results": "71",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 694,
+    "mtime": 1671714056729,
+    "results": "72",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1824,
+    "mtime": 1671963846868,
+    "results": "73",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 191,
+    "mtime": 1671715148658,
+    "results": "74",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 4352,
+    "mtime": 1671712585115,
+    "results": "75",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1760,
+    "mtime": 1671950369628,
+    "results": "76",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1954,
+    "mtime": 1671715033087,
+    "results": "77",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1767,
+    "mtime": 1671710204172,
+    "results": "78",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1956,
+    "mtime": 1671710204024,
+    "results": "79",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 265,
+    "mtime": 1666284194619,
+    "results": "80",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 674,
+    "mtime": 1665768707651,
+    "results": "81",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1739,
+    "mtime": 1671712766028,
+    "results": "82",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 641,
+    "mtime": 1666285389053,
+    "results": "83",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 3636,
+    "mtime": 1668087666070,
+    "results": "84",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1724,
+    "mtime": 1666117102706,
+    "results": "85",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1667,
+    "mtime": 1665667498257,
+    "results": "86",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 2493,
+    "mtime": 1668653288714,
+    "results": "87",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 8852,
+    "mtime": 1671963846908,
+    "results": "88",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1609,
+    "mtime": 1671939163574,
+    "results": "89",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1724,
+    "mtime": 1666117102706,
+    "results": "90",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1694,
+    "mtime": 1671950837726,
+    "results": "91",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 208,
+    "mtime": 1671885153677,
+    "results": "92",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1269,
+    "mtime": 1671710204045,
+    "results": "93",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 2252,
+    "mtime": 1671894172901,
+    "results": "94",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 233,
+    "mtime": 1671894880325,
+    "results": "95",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 5606,
+    "mtime": 1671944619804,
+    "results": "96",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 2252,
+    "mtime": 1671894172901,
+    "results": "97",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1269,
+    "mtime": 1671710204045,
+    "results": "98",
+    "hashOfConfig": "51"
+  },
+  {
+    "size": 1895,
+    "mtime": 1671967300037,
+    "results": "99",
+    "hashOfConfig": "51"
+  },
+  {
+    "filePath": "100",
+    "messages": "101",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  "1kuq2i9",
+  {
+    "filePath": "103",
+    "messages": "104",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "105",
+    "messages": "106",
+    "errorCount": 0,
+    "warningCount": 5,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "107",
+    "messages": "108",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "109",
+    "messages": "110",
+    "errorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "111",
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "112",
+    "messages": "113",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "114",
+    "messages": "115",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "116",
+    "messages": "117",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "118",
+    "messages": "119",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "120",
+    "messages": "121",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "122",
+    "messages": "123",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "124",
+    "messages": "125",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "126",
+    "messages": "127",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "128",
+    "messages": "129",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "130",
+    "messages": "131",
+    "errorCount": 0,
+    "warningCount": 8,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "132",
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "133",
+    "messages": "134",
+    "errorCount": 0,
+    "warningCount": 2,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "135",
+    "messages": "136",
+    "errorCount": 0,
+    "warningCount": 14,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "137",
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "138",
+    "messages": "139",
+    "errorCount": 0,
+    "warningCount": 8,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "140",
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "141",
+    "messages": "142",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "143",
+    "messages": "144",
+    "errorCount": 0,
+    "warningCount": 4,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "145",
+    "messages": "146",
+    "errorCount": 0,
+    "warningCount": 9,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "147",
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "148",
+    "messages": "149",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "150",
+    "messages": "151",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "152",
+    "messages": "153",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "154",
+    "messages": "155",
+    "errorCount": 0,
+    "warningCount": 9,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "156",
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "157",
+    "messages": "158",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "159",
+    "messages": "160",
+    "errorCount": 0,
+    "warningCount": 2,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "161",
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "162",
+    "messages": "163",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "164",
+    "messages": "165",
+    "errorCount": 0,
+    "warningCount": 2,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "166",
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "167",
+    "messages": "168",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "169",
+    "messages": "170",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "171",
+    "messages": "172",
+    "errorCount": 0,
+    "warningCount": 5,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "173",
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "174",
+    "messages": "175",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "176",
+    "messages": "177",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "178",
+    "messages": "179",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "180",
+    "messages": "181",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "182",
+    "messages": "183",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "184",
+    "messages": "185",
+    "errorCount": 0,
+    "warningCount": 3,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "186",
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "187",
+    "messages": "188",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "189",
+    "messages": "190",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "191",
+    "messages": "192",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "193",
+    "messages": "194",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "195",
+    "messages": "196",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "197",
+    "messages": "198",
+    "errorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "199",
+    "usedDeprecatedRules": "102"
+  },
+  {
+    "filePath": "200",
+    "messages": "201",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "202",
+    "messages": "203",
+    "errorCount": 0,
+    "warningCount": 6,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "204",
+    "messages": "205",
+    "errorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "206",
+    "messages": "207",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "208",
+    "messages": "209",
+    "errorCount": 0,
+    "warningCount": 3,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\index.js",
+  [],
+  [
+    "210",
+    "211"
+  ],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\reportWebVitals.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\App.js",
+  [
+    "212",
+    "213",
+    "214",
+    "215",
+    "216"
+  ],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Home.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Menu.js",
+  [
+    "217"
+  ],
+  "import React from \"react\";\r\nimport { MenuList } from \"../helpers/MenuList\";\r\nimport MenuItem from \"../components/MenuItem\";\r\nimport \"../styles/Menu.css\";\r\nimport {Home} from './Home'\r\n\r\nfunction Menu() {\r\n  return (\r\n    <div className=\"menu\" style={{backgroundColor:\"white\"}}>\r\n      <h1 className=\"menuTitle\">Donor Donation</h1>\r\n      <div className=\"menuList\">\r\n        {MenuList.map((menuItem, key) => {\r\n          return (\r\n            <MenuItem\r\n              key={key}\r\n              image={menuItem.image}\r\n              name={menuItem.name}\r\n              \r\n            />\r\n          );\r\n        })}\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default Menu;\r\n",
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Loginregister.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Ourmission.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\NavBar.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Admin\\Regdonors.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Admin\\City.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Admin\\State.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Admin\\Requests.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Contact.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\About.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\DonarDashboard.js",
+  [
+    "218",
+    "219",
+    "220",
+    "221",
+    "222",
+    "223",
+    "224",
+    "225"
+  ],
+  "import React, { useState } from \"react\";\r\nimport img from \"./img.png\";\r\nimport { Link, useNavigate } from \"react-router-dom\";\r\nimport img2 from \"./img2.png\";\r\nimport \"./Dashboard.css\";\r\nimport { RiPassportFill } from \"react-icons/ri\";\r\nexport const DonarDashboard = () => {\r\n  const [foodcount, setfoodcount] = useState(0);\r\n\r\n  function changefood(food) {\r\n    setfoodcount(foodcount + food);\r\n  }\r\n  const Loginnot = async () => {\r\n    const Navigate = useNavigate();\r\n\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    console.log(current.user.role);\r\n    if (current.status === \"failure\" || current.user.role!==\"Donar\") {\r\n      Navigate(\"/loginregister\");\r\n      alert(current.Error);\r\n      return;\r\n    }\r\n  };\r\n  Loginnot();\r\n\r\n  // const [foodcount, setfoodcount] = useState(0);\r\n  var food = 0;\r\n  const Listfood = async () => {\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    if (current.status === \"failure\") {\r\n      return;\r\n    }\r\n    const userid = current.user._id;\r\n    const Listedfoods = await fetch(\"/api/v1/tours/\" + userid);\r\n    // console.log(\"/api/v1/tours/\" + userid);\r\n    const foods = await Listedfoods.json();\r\n    // console.log(foods);\r\n    for (var i = 0; i < foods.results; i++) {\r\n      if (foods.data.data[i].userid !== current.user._id) {\r\n        // console.log(\"dfhfghfgh\");\r\n        continue;\r\n      }\r\n      const arrsize = foods.data.data[i].fooddetails.length;\r\n      for (var j = 0; j < arrsize; j++) {\r\n        food += parseInt(foods.data.data[i].fooddetails[j].number);\r\n      }\r\n      // console.log(foods.data.data[i].fooddetails.length);\r\n    }\r\n    // setloading(true);\r\n    // console.log(food);\r\n    setfoodcount(food);\r\n  };\r\n  // setfoodcount(food);\r\n  Listfood();\r\n\r\n  return (\r\n    <div className=\"hiii\">\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#FF1053\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div className=\"hibro\">\r\n          <h2>Total Listed Food</h2>\r\n          <h1 style={{ color: \"black\" }}>{foodcount}</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#6C6EA0\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>Request Completed</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#66C7F4\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>Rejected Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#C1CAD6\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>All Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#FFFFFF\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>New Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n",
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Login.js",
+  [
+    "226",
+    "227"
+  ],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Adminpage.js",
+  [
+    "228",
+    "229",
+    "230",
+    "231",
+    "232",
+    "233",
+    "234",
+    "235",
+    "236",
+    "237",
+    "238",
+    "239",
+    "240",
+    "241"
+  ],
+  "import React from \"react\";\r\nimport Sidebar from '../components/Admin/Adminsidebar';\r\nimport { Routes, Route } from 'react-router-dom';\r\n\r\n\r\nimport {AdminDashboard} from './AdminDashboard';\r\nimport {Regdonors} from './Admin/Regdonors';\r\nimport {Addstate, Managestate } from \"./Admin/State\";\r\nimport {Addcity, Managecity } from \"./Admin/City\";\r\nimport { Listedfoods } from \"./Admin/Listedfoods\";\r\nimport { Requests, New, Pickcom, Rejected ,All} from './Admin/Requests';\r\n\r\n\r\nexport const Adminpage = () => {\r\n  return (\r\n    <div>\r\n      <Sidebar />\r\n\r\n    </div>\r\n  );\r\n};\r\n",
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Donarpage.js",
+  [
+    "242",
+    "243",
+    "244",
+    "245",
+    "246",
+    "247",
+    "248",
+    "249"
+  ],
+  "import React from \"react\";\r\nimport { Link, useNavigate } from \"react-router-dom\";\r\nimport Sidebar from \"../components/DonarSidebar\";\r\nimport { Route, Routes } from \"react-router-dom\";\r\n\r\n// import {AdminDashboard} from './AdminDashboard';\r\n// import Addfood from './Listfooddetails';\r\n// import Manage from './Listfooddetails';\r\nimport { Requests, New, Pickcom, Rejected, All } from \"./Requests\";\r\n// import Dashboard from \"./DonarDashboard\";\r\n\r\nexport const Donarpage = () => {\r\n  const Loginnot = async () => {\r\n    const Navigate = useNavigate();\r\n\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    console.log(current);\r\n    if (current.status === \"failure\"|| current.user.role!==\"Donar\") {\r\n      Navigate(\"/loginregister\");\r\n      alert(current.Error);\r\n    }\r\n  };\r\n  Loginnot();\r\n  return (\r\n    <div>\r\n      <Sidebar />\r\n      {/* <Routes>\r\n        <Route path=\"/dashboard\" exact element={<Dashboard></Dashboard>} />\r\n        <Route path='/listfooddetails' exact component={Listfooddetails} />\r\n        <Route path='/listfooddetails/add' exact element={<Addfood></Addfood>} />\r\n        <Route path='/listfooddetails/manage' exact element={<Manage></Manage>} />\r\n        <Route path=\"/request\" exact element={<Requests></Requests>} />\r\n        <Route path=\"/request/new\" exact element={<New></New>} />\r\n        <Route path=\"/request/pickcom\" exact element={<Pickcom></Pickcom>} />\r\n        <Route path=\"/request/reject\" exact element={<Rejected></Rejected>} />\r\n        <Route path=\"/request/all\" exact element={<All></All>} />\r\n      </Routes> */}\r\n    </div>\r\n  );\r\n};\r\n",
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Listfooddetails.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Registernew.js",
+  [
+    "250",
+    "251",
+    "252",
+    "253"
+  ],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\User\\UserDashboard.js",
+  [
+    "254",
+    "255",
+    "256",
+    "257",
+    "258",
+    "259",
+    "260",
+    "261",
+    "262"
+  ],
+  "import React, { useState } from \"react\";\r\nimport img from \"../img.png\";\r\nimport { Link, useNavigate } from \"react-router-dom\";\r\nimport img2 from \"../img2.png\";\r\nimport \"../Dashboard.css\";\r\nimport { RiPassportFill } from \"react-icons/ri\";\r\nexport const UserDashboard = () => {\r\n  const [foodcount, setfoodcount] = useState(0);\r\n\r\n  function changefood(food) {\r\n    setfoodcount(foodcount + food);\r\n  }\r\n  const Loginnot = async () => {\r\n    const Navigate = useNavigate();\r\n\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    // console.log(current);\r\n    if (current.status === \"failure\") {\r\n      Navigate(\"/loginregister\");\r\n      alert(current.Error);\r\n      return;\r\n    }\r\n  };\r\n  Loginnot();\r\n\r\n  // const [foodcount, setfoodcount] = useState(0);\r\n  var food = 0;\r\n  const Listfood = async () => {\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    if (current.status === \"failure\") {\r\n      return;\r\n    }\r\n    const userid = current.user._id;\r\n    const Listedfoods = await fetch(\"/api/v1/tours/\");\r\n    // console.log(\"/api/v1/tours/\" + userid);\r\n    const foods = await Listedfoods.json();\r\n    // console.log(foods);\r\n    for (var i = 0; i < foods.results; i++) {\r\n\r\n      const arrsize = foods.data.data[i].fooddetails.length;\r\n      for (var j = 0; j < arrsize; j++) {\r\n        food += parseInt(foods.data.data[i].fooddetails[j].number);\r\n      }\r\n      // console.log(foods.data.data[i].fooddetails.length);\r\n    }\r\n    // setloading(true);\r\n    // console.log(food);\r\n    setfoodcount(food);\r\n  };\r\n  // setfoodcount(food);\r\n  Listfood();\r\n\r\n  return (\r\n    <div className=\"hiii\">\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#FF1053\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div className=\"hibro\">\r\n          <h2>Total Listed Food</h2>\r\n          <h1 style={{ color: \"black\" }}>{foodcount}</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#6C6EA0\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>Request Completed</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#66C7F4\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>Rejected Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#C1CAD6\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>All Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#FFFFFF\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>New Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n",
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\User\\UserRequests.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\User\\UserListedfoods.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\User\\Userpage.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Admin\\AdminDashboard.js",
+  [
+    "263",
+    "264",
+    "265",
+    "266",
+    "267",
+    "268",
+    "269",
+    "270",
+    "271"
+  ],
+  "import React, { useState } from \"react\";\r\nimport img from \"../img.png\";\r\nimport { Link, useNavigate } from \"react-router-dom\";\r\nimport img2 from \"../img2.png\";\r\nimport \"../Dashboard.css\";\r\nimport { RiPassportFill } from \"react-icons/ri\";\r\nexport const AdminDashboard = () => {\r\n  const [foodcount, setfoodcount] = useState(0);\r\n\r\n  function changefood(food) {\r\n    setfoodcount(foodcount + food);\r\n  }\r\n  const Loginnot = async () => {\r\n    const Navigate = useNavigate();\r\n\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    // console.log(current);\r\n    if (current.status === \"failure\") {\r\n      Navigate(\"/loginregister\");\r\n      alert(current.Error);\r\n      return;\r\n    }\r\n  };\r\n  Loginnot();\r\n\r\n  // const [foodcount, setfoodcount] = useState(0);\r\n  var food = 0;\r\n  const Listfood = async () => {\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    if (current.status === \"failure\") {\r\n      return;\r\n    }\r\n    const userid = current.user._id;\r\n    const Listedfoods = await fetch(\"/api/v1/tours/\");\r\n    // console.log(\"/api/v1/tours/\" + userid);\r\n    const foods = await Listedfoods.json();\r\n    // console.log(foods);\r\n    for (var i = 0; i < foods.results; i++) {\r\n\r\n      const arrsize = foods.data.data[i].fooddetails.length;\r\n      for (var j = 0; j < arrsize; j++) {\r\n        food += parseInt(foods.data.data[i].fooddetails[j].number);\r\n      }\r\n      // console.log(foods.data.data[i].fooddetails.length);\r\n    }\r\n    // setloading(true);\r\n    // console.log(food);\r\n    setfoodcount(food);\r\n  };\r\n  // setfoodcount(food);\r\n  Listfood();\r\n\r\n  return (\r\n    <div className=\"hiii\">\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#FF1053\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div className=\"hibro\">\r\n          <h2>Total Listed Food</h2>\r\n          <h1 style={{ color: \"black\" }}>{foodcount}</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#6C6EA0\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>Request Completed</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#66C7F4\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>Rejected Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#C1CAD6\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>All Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n      <div\r\n        className=\"hii\"\r\n        style={{\r\n          backgroundColor: \"#FFFFFF\",\r\n          position: \"relative\",\r\n          borderRadius: \"10px\",\r\n          color: \"black\",\r\n        }}\r\n      >\r\n        <div className=\"imga\">\r\n          <img\r\n            src={img2}\r\n            style={{ height: \"70px\", width: \"70px\", alignItems: \"center\" }}\r\n          />\r\n        </div>\r\n        <div>\r\n          <h2>New Requests</h2>\r\n          <h1 style={{ color: \"black\" }}>0</h1>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n",
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Admin\\Listedfoods.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\User\\Usersidebar.js",
+  [
+    "272",
+    "273"
+  ],
+  "import React, { useState } from \"react\";\r\nimport styled from \"styled-components\";\r\nimport { Link, Navigate } from \"react-router-dom\";\r\nimport * as FaIcons from \"react-icons/fa\";\r\nimport * as AiIcons from \"react-icons/ai\";\r\nimport { SidebarData } from \"./SidebarData\";\r\nimport SubMenu from \"./SubMenu\";\r\nimport { IconContext } from \"react-icons/lib\";\r\n\r\nimport { Routes, Route } from \"react-router-dom\";\r\n\r\nconst Nav = styled.div`\r\n  height: 80px;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n`;\r\n\r\nconst NavIcon = styled(Link)`\r\n  margin-left: 2rem;\r\n  font-size: 2rem;\r\n  height: 80px;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n`;\r\n\r\nconst SidebarNav = styled.nav`\r\n  background: #1e1b18;\r\n  margin-top: 72px;\r\n  width: 250px;\r\n  height: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n  position: absolute;\r\n  top: 0;\r\n  left: ${({ sidebar }) => (sidebar ? \"0\" : \"-100%\")};\r\n  transition: 350ms;\r\n  z-index: 10;\r\n`;\r\n\r\nconst SidebarWrap = styled.div`\r\n  width: 100%;\r\n`;\r\n\r\nconst Usersidebar = () => {\r\n  const [sidebar, setSidebar] = useState(true);\r\n\r\n  const showSidebar = () => setSidebar(!sidebar);\r\n\r\n  return (\r\n    <IconContext.Provider value={{ color: \"brown\" }}>\r\n      <Nav>\r\n        <NavIcon to=\"#\">\r\n          <FaIcons.FaBars onClick={showSidebar} />\r\n        </NavIcon>\r\n      </Nav>\r\n      <SidebarNav sidebar={sidebar}>\r\n        <SidebarWrap>\r\n          <NavIcon to=\"#\">\r\n            <AiIcons.AiOutlineClose onClick={showSidebar} />\r\n          </NavIcon>\r\n          {SidebarData.map((item, index) => {\r\n            return (\r\n              <SubMenu\r\n                item={item}\r\n                key={index}\r\n                onClick={() => {\r\n                  Navigate(\"/dashboard\");\r\n                }}\r\n              />\r\n            );\r\n          })}\r\n        </SidebarWrap>\r\n      </SidebarNav>\r\n    </IconContext.Provider>\r\n  );\r\n};\r\n\r\nexport default Usersidebar;\r\n",
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\DonarSidebar.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\Admin\\Adminsidebar.js",
+  [
+    "274",
+    "275"
+  ],
+  "import React, { useState } from \"react\";\r\nimport styled from \"styled-components\";\r\nimport { Link, Navigate } from \"react-router-dom\";\r\nimport * as FaIcons from \"react-icons/fa\";\r\nimport * as AiIcons from \"react-icons/ai\";\r\nimport { SidebarData } from \"./SidebarData\";\r\nimport SubMenu from \"./SubMenu\";\r\nimport { IconContext } from \"react-icons/lib\";\r\n\r\nimport { Routes, Route } from \"react-router-dom\";\r\n\r\nconst Nav = styled.div`\r\n  height: 80px;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n`;\r\n\r\nconst NavIcon = styled(Link)`\r\n  margin-left: 2rem;\r\n  font-size: 2rem;\r\n  height: 80px;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n`;\r\n\r\nconst SidebarNav = styled.nav`\r\n  background: #1e1b18;\r\n  margin-top: 72px;\r\n  width: 250px;\r\n  height: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n  position: absolute;\r\n  top: 0;\r\n  left: ${({ sidebar }) => (sidebar ? \"0\" : \"-100%\")};\r\n  transition: 350ms;\r\n  z-index: 10;\r\n`;\r\n\r\nconst SidebarWrap = styled.div`\r\n  width: 100%;\r\n`;\r\n\r\nconst Adminsidebar = () => {\r\n  const [sidebar, setSidebar] = useState(true);\r\n\r\n  const showSidebar = () => setSidebar(!sidebar);\r\n\r\n  return (\r\n    <IconContext.Provider value={{ color: \"brown\" }}>\r\n      <Nav>\r\n        <NavIcon to=\"#\">\r\n          <FaIcons.FaBars onClick={showSidebar} />\r\n        </NavIcon>\r\n      </Nav>\r\n      <SidebarNav sidebar={sidebar}>\r\n        <SidebarWrap>\r\n          <NavIcon to=\"#\">\r\n            <AiIcons.AiOutlineClose onClick={showSidebar} />\r\n          </NavIcon>\r\n          {SidebarData.map((item, index) => {\r\n            return (\r\n              <SubMenu\r\n                item={item}\r\n                key={index}\r\n                onClick={() => {\r\n                  Navigate(\"/dashboard\");\r\n                }}\r\n              />\r\n            );\r\n          })}\r\n        </SidebarWrap>\r\n      </SidebarNav>\r\n    </IconContext.Provider>\r\n  );\r\n};\r\n\r\nexport default Adminsidebar;\r\n",
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\MenuItem.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Requests.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\AdminDashboard.js",
+  [
+    "276",
+    "277",
+    "278",
+    "279",
+    "280"
+  ],
+  "import React from 'react';\r\nimport img from './img.png';\r\nimport img2 from './img2.png';\r\nimport './AdminDashboard.css';\r\n export const  AdminDashboard = () => {\r\n  return (\r\n    <div className='hiii'>\r\n      \r\n    <div className='hii' style={{backgroundColor: \"blue\",position:'relative'}}>\r\n      <div className='imga'>\r\n      <img src={img} style={{height: \"70px\",width:\"70px\" ,alignItems:\"center\"}} />\r\n      </div>\r\n      <div className='hibro'>\r\n      <h2>Total Listed Food</h2>\r\n      <h1>0</h1>\r\n      </div>\r\n    </div>\r\n    <div className='hii' style={{backgroundColor: \"green\" ,position:'relative'}}>\r\n    <div className='imga'>\r\n      <img src={img2} style={{height: \"70px\",width:\"70px\" ,alignItems:\"center\"}} />\r\n      </div>\r\n    <div>\r\n      <h2>Request Completed</h2>\r\n      <h1>0</h1>\r\n      </div>\r\n    </div>\r\n    <div className='hii' style={{backgroundColor: \"red\" ,position:'relative'}}>\r\n    <div className='imga'>\r\n      <img src={img2} style={{height: \"70px\",width:\"70px\" ,alignItems:\"center\"}} />\r\n      </div>\r\n    <div >\r\n      <h2>Rejected Requests</h2>\r\n      <h1>0</h1>\r\n      </div>\r\n    </div>\r\n    <div className='hii' style={{backgroundColor: \"black\", position:'relative'}}>\r\n    <div className='imga'>\r\n      <img src={img2} style={{height: \"70px\",width:\"70px\" ,alignItems:\"center\"}} />\r\n      </div>\r\n    <div >\r\n      <h2>All Requests</h2>\r\n      <h1>0</h1>\r\n      </div>\r\n    </div>\r\n    <div className='hii' style={{backgroundColor: \"grey\" ,position:'relative'}}>\r\n    <div className='imga'>\r\n      <img src={img2} style={{height: \"70px\",width:\"70px\" ,alignItems:\"center\"}} />\r\n      </div>\r\n    <div >\r\n      <h2>New Requests</h2>\r\n      <h1>0</h1>\r\n      </div>\r\n    </div>\r\n    </div>  \r\n  );\r\n};\r\n",
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\helpers\\MenuList.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Menu\\Menu.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\Admin\\SubMenu.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\SubMenu.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\Admin\\SidebarData.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\TodoList.js",
+  [
+    "281",
+    "282",
+    "283"
+  ],
+  "import React, { useState } from \"react\";\r\nimport { Link, useNavigate } from \"react-router-dom\";\r\nimport TodoForm from \"./TodoForm\";\r\nimport Todo from \"./Todo\";\r\nimport { METHODS } from \"http\";\r\n// import { Formend } from \"./TodoForm\";\r\n\r\nfunction TodoList() {\r\n  \r\n  const [todos, setTodos] = useState([]);\r\n  const [fooddetails, setFood] = useState({\r\n    description: \"\",\r\n    date: \"\",\r\n    address: \"\",\r\n    state: \"\",\r\n    city: \"\",\r\n    mobile: \"\",\r\n  });\r\n  const Navigate = useNavigate();\r\n  const changeHandler = (e) => {\r\n    e.preventDefault();\r\n    const { name, value, type } = e.target;\r\n    // console.log(name, value);\r\n    setFood({ ...fooddetails, [name]: value });\r\n  };\r\n\r\n  const OnSubmit = (event) => {\r\n    event.preventDefault();\r\n    if (todos.length <= 0) {\r\n      alert(\"Pls Enter atleast one food\");\r\n      return;\r\n    }\r\n    if (!fooddetails.address) {\r\n      alert(\"Pls Enter Address !!!\");\r\n      return;\r\n    }\r\n    if (!fooddetails.city) {\r\n      alert(\"Pls Enter City !!\");\r\n      return;\r\n    }\r\n    if (!fooddetails.date) {\r\n      alert(\"Pls Enter Date!!!\");\r\n      return;\r\n    }\r\n    if (!fooddetails.description) {\r\n      alert(\"Pls Enter Description about food !!!\");\r\n      return;\r\n    }\r\n    if (!fooddetails.mobile) {\r\n      alert(\"Pls Enter mobile number to contact !!!\");\r\n      return;\r\n    }\r\n    if (!fooddetails.state) {\r\n      alert(\"Pls enter State !!\");\r\n      return;\r\n    }\r\n    console.log(fooddetails);\r\n    console.log(todos);\r\n    console.log({\r\n      fooddetails: todos,\r\n      description: fooddetails[\"description\"],\r\n      data: fooddetails[\"date\"],\r\n      address: fooddetails[\"address\"],\r\n      state: fooddetails[\"state\"],\r\n      city: fooddetails[\"city\"],\r\n      mobile: fooddetails[\"mobile\"],\r\n    });\r\n\r\n    const addfood = async (todos, fooddetails) => {\r\n      const currentuser = await fetch(\"/api/v1/users/me/\");\r\n      const current = await currentuser.json();\r\n      console.log(\"todos\", todos);\r\n      console.log(\"food details\", fooddetails);\r\n      const response = await fetch(\"/api/v1/tours/\", {\r\n        method: \"POST\",\r\n        headers: { \"Content-type\": \"application/json\" },\r\n        body: JSON.stringify({\r\n          userid: current.user._id,\r\n          fooddetails: todos,\r\n          description: fooddetails[\"description\"],\r\n          data: fooddetails[\"data\"],\r\n          address: fooddetails[\"address\"],\r\n          state: fooddetails[\"state\"],\r\n          city: fooddetails[\"city\"],\r\n          mobile: fooddetails[\"mobile\"],\r\n        }),\r\n      });\r\n      const json = await response.json();\r\n\r\n      if (json.status === \"success\") {\r\n        alert(\"Successfully Added your Food\");\r\n        Navigate(\"/Donarpage/dashboard\");\r\n      } else {\r\n        alert(json.status);\r\n      }\r\n      // console.log(json);\r\n      // alert(json.status);\r\n    };\r\n\r\n    addfood(todos, fooddetails);\r\n  };\r\n\r\n  const addTodo = (todo) => {\r\n    if (!todo.text || /^\\s*$/.test(todo.text)) {\r\n      return;\r\n    }\r\n    if (!todo.number || /^\\s*$/.test(todo.number)) {\r\n      return;\r\n    }\r\n    const newTodos = [todo, ...todos];\r\n\r\n    setTodos(newTodos);\r\n    console.log(...todos);\r\n    // alert(...todos);\r\n  };\r\n\r\n  const updateTodo = (todoId, newValue) => {\r\n    if (!newValue.text || /^\\s*$/.test(newValue.text)) {\r\n      return;\r\n    }\r\n\r\n    setTodos((prev) =>\r\n      prev.map((item) => (item.id === todoId ? newValue : item))\r\n    );\r\n  };\r\n\r\n  const removeTodo = (id) => {\r\n    const removedArr = [...todos].filter((todo) => todo.id !== id);\r\n\r\n    setTodos(removedArr);\r\n  };\r\n\r\n  const completeTodo = (id) => {\r\n    let updatedTodos = todos.map((todo) => {\r\n      if (todo.id === id) {\r\n        todo.isComplete = !todo.isComplete;\r\n      }\r\n      return todo;\r\n    });\r\n    setTodos(updatedTodos);\r\n  };\r\n\r\n  const Loginnot = async () => {\r\n    const currentuser = await fetch(\"/api/v1/users/me/\");\r\n    const current = await currentuser.json();\r\n    console.log(current);\r\n    if (current.status === \"failure\" || current.user.role!==\"Donar\") {\r\n      Navigate(\"/loginregister\");\r\n      alert(current.Error);\r\n    }\r\n  };\r\n  Loginnot();\r\n\r\n  return (\r\n    <>\r\n      <h1>List Your Food Details</h1>\r\n      <TodoForm onSubmit={addTodo} />\r\n      <Todo\r\n        todos={todos}\r\n        completeTodo={completeTodo}\r\n        removeTodo={removeTodo}\r\n        updateTodo={updateTodo}\r\n      />\r\n      <form onSubmit={OnSubmit}>\r\n        <div className=\"name\">\r\n          <label className=\"label\">Description</label>\r\n          <input\r\n            className=\"input\"\r\n            type=\"textarea\"\r\n            name=\"description\"\r\n            onChange={(e) => changeHandler(e)}\r\n            value={changeHandler.description}\r\n          />\r\n        </div>\r\n        <div className=\"num\">\r\n          <label className=\"label\">Pickup Date</label>\r\n          <input\r\n            type=\"text\"\r\n            className=\"input\"\r\n            name=\"date\"\r\n            onChange={(e) => changeHandler(e)}\r\n            onFocus={(e) => (e.target.type = \"date\")}\r\n            onBlur={(e) => (e.target.type = \"text\")}\r\n          />\r\n        </div>\r\n        <div className=\"name\">\r\n          <label className=\"label\">Pickup Address</label>\r\n          <input\r\n            className=\"input\"\r\n            name=\"address\"\r\n            type=\"textarea\"\r\n            onChange={(e) => changeHandler(e)}\r\n          />\r\n        </div>\r\n        <div className=\"name\">\r\n          <label className=\"label\">Choose State</label>\r\n          <select\r\n            name=\"state\"\r\n            id=\"state\"\r\n            className=\"input\"\r\n            onChange={(e) => changeHandler(e)}\r\n          >\r\n            <option></option>\r\n            <option value=\"Andhra Pradesh\">Andhra Pradesh</option>\r\n            <option value=\"Andaman and Nicobar Islands\">\r\n              Andaman and Nicobar Islands\r\n            </option>\r\n            <option value=\"Arunachal Pradesh\">Arunachal Pradesh</option>\r\n            <option value=\"Assam\">Assam</option>\r\n            <option value=\"Bihar\">Bihar</option>\r\n            <option value=\"Chandigarh\">Chandigarh</option>\r\n            <option value=\"Chhattisgarh\">Chhattisgarh</option>\r\n            <option value=\"Dadar and Nagar Haveli\">\r\n              Dadar and Nagar Haveli\r\n            </option>\r\n            <option value=\"Daman and Diu\">Daman and Diu</option>\r\n            <option value=\"Delhi\">Delhi</option>\r\n            <option value=\"Lakshadweep\">Lakshadweep</option>\r\n            <option value=\"Puducherry\">Puducherry</option>\r\n            <option value=\"Goa\">Goa</option>\r\n            <option value=\"Gujarat\">Gujarat</option>\r\n            <option value=\"Haryana\">Haryana</option>\r\n            <option value=\"Himachal Pradesh\">Himachal Pradesh</option>\r\n            <option value=\"Jammu and Kashmir\">Jammu and Kashmir</option>\r\n            <option value=\"Jharkhand\">Jharkhand</option>\r\n            <option value=\"Karnataka\">Karnataka</option>\r\n            <option value=\"Kerala\">Kerala</option>\r\n            <option value=\"Madhya Pradesh\">Madhya Pradesh</option>\r\n            <option value=\"Maharashtra\">Maharashtra</option>\r\n            <option value=\"Manipur\">Manipur</option>\r\n            <option value=\"Meghalaya\">Meghalaya</option>\r\n            <option value=\"Mizoram\">Mizoram</option>\r\n            <option value=\"Nagaland\">Nagaland</option>\r\n            <option value=\"Odisha\">Odisha</option>\r\n            <option value=\"Punjab\">Punjab</option>\r\n            <option value=\"Rajasthan\">Rajasthan</option>\r\n            <option value=\"Sikkim\">Sikkim</option>\r\n            <option value=\"Tamil Nadu\">Tamil Nadu</option>\r\n            <option value=\"Telangana\">Telangana</option>\r\n            <option value=\"Tripura\">Tripura</option>\r\n            <option value=\"Uttar Pradesh\">Uttar Pradesh</option>\r\n            <option value=\"Uttarakhand\">Uttarakhand</option>\r\n            <option value=\"West Bengal\">West Bengal</option>\r\n          </select>\r\n        </div>\r\n        <div className=\"name\">\r\n          <label className=\"label\">Choose City</label>\r\n          <input\r\n            className=\"input\"\r\n            type=\"text\"\r\n            name=\"city\"\r\n            onChange={(e) => changeHandler(e)}\r\n          />\r\n        </div>\r\n        <div className=\"name\">\r\n          <label className=\"label\">Contact person mobile number</label>\r\n          <input\r\n            className=\"input\"\r\n            type=\"number\"\r\n            name=\"mobile\"\r\n            onChange={(e) => changeHandler(e)}\r\n          />\r\n        </div>\r\n        <div className=\"name\">\r\n          <label className=\"label\">Pictures:</label>\r\n          <input className=\"input\" type=\"file\" />\r\n        </div>\r\n        <div>\r\n          <button className=\"submit\" value=\"Submit\">\r\n            Submit\r\n          </button>\r\n        </div>\r\n      </form>\r\n    </>\r\n  );\r\n}\r\n\r\nexport default TodoList;\r\n",
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\User\\SidebarData.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\User\\SubMenu.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\SidebarData.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\Loading.jsx",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\Todo.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\TodoForm.js",
+  [
+    "284"
+  ],
+  "import React, { useState, useEffect, useRef } from \"react\";\r\n\r\nfunction TodoForm(props) {\r\n  const [input, setInput] = useState(props.edit ? props.edit.value : \"\");\r\n  const [input1, setInput1] = useState(props.edit ? props.edit.number : \"\");\r\n\r\n  const inputRef = useRef(null);\r\n  const inputRef1 = useRef(null);\r\n\r\n  // useEffect(() => {\r\n  //   inputRef.current.focus();\r\n  // });\r\n\r\n  const handleChange = (e) => {\r\n    setInput(e.target.value);\r\n  };\r\n  const handleChange1 = (e) => {\r\n    setInput1(e.target.value);\r\n  };\r\n  const handleSubmit = (e) => {\r\n    e.preventDefault();\r\n\r\n    props.onSubmit({\r\n      id: Math.floor(Math.random() * 10000),\r\n      text: input,\r\n      number: input1,\r\n    });\r\n    setInput(\"\");\r\n    setInput1(\"\");\r\n  };\r\n\r\n  return (\r\n    <form onSubmit={handleSubmit} className=\"todo-form\">\r\n      {props.edit ? (\r\n        <>\r\n          <input\r\n            placeholder=\"Update your item\"\r\n            value={input}\r\n            onChange={handleChange}\r\n            name=\"text\"\r\n            ref={inputRef}\r\n            className=\"todo-input edit\"\r\n          />\r\n          <input\r\n            placeholder=\"Update your person\"\r\n            value={input1}\r\n            onChange={handleChange1}\r\n            name=\"number\"\r\n            type={\"number\"}\r\n            ref={inputRef1}\r\n            className=\"todo-input edit\"\r\n          />\r\n\r\n          <button onClick={handleSubmit} className=\"todo-button edit\">\r\n            Update\r\n          </button>\r\n        </>\r\n      ) : (\r\n        <>\r\n          <div>\r\n            <input\r\n              placeholder=\"Add Food\"\r\n              value={input}\r\n              onChange={handleChange}\r\n              name=\"text\"\r\n              className=\"todo-input\"\r\n              ref={inputRef}\r\n            />\r\n            <input\r\n              placeholder=\"Add No of Person\"\r\n              value={input1}\r\n              type={\"number\"}\r\n              onChange={handleChange1}\r\n              name=\"number\"\r\n              className=\"todo-input\"\r\n              ref={inputRef1}\r\n            />\r\n          </div>\r\n          <button onClick={handleSubmit} className=\"todo-button\">\r\n            Add More\r\n          </button>\r\n        </>\r\n      )}\r\n    </form>\r\n  );\r\n}\r\n\r\nexport default TodoForm;",
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\Pages\\User\\Useradd.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\User\\TodoList.js",
+  [
+    "285",
+    "286",
+    "287",
+    "288",
+    "289",
+    "290"
+  ],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\User\\TodoForm.js",
+  [
+    "291"
+  ],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\User\\Todo.js",
+  [],
+  "C:\\Users\\Selvaswin\\Desktop\\node\\food waste management\\foodwastemanagement\\Client\\src\\components\\profile\\Userprofile.js",
+  [
+    "292",
+    "293",
+    "294"
+  ],
+  {
+    "ruleId": "295",
+    "replacedBy": "296"
+  },
+  {
+    "ruleId": "297",
+    "replacedBy": "298"
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "300",
+    "line": 5,
+    "column": 20,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 5,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "303",
+    "line": 8,
+    "column": 3,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 8,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "304",
+    "line": 10,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 10,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "305",
+    "line": 12,
+    "column": 8,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 12,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "306",
+    "severity": 1,
+    "message": "307",
+    "line": 52,
+    "column": 6,
+    "nodeType": "308",
+    "endLine": 52,
+    "endColumn": 8,
+    "suggestions": "309"
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "304",
+    "line": 5,
+    "column": 9,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 5,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "310",
+    "line": 3,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 3,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "311",
+    "line": 6,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 6,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "312",
+    "line": 10,
+    "column": 12,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 10,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 70,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 73,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 90,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 93,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 110,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 113,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 130,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 133,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 150,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 153,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "310",
+    "line": 2,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 2,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "316",
+    "line": 14,
+    "column": 26,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 14,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "317",
+    "line": 3,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 3,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "318",
+    "line": 3,
+    "column": 18,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 3,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "319",
+    "line": 6,
+    "column": 9,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 6,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "320",
+    "line": 7,
+    "column": 9,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 7,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "321",
+    "line": 8,
+    "column": 9,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 8,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "322",
+    "line": 8,
+    "column": 19,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 8,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "323",
+    "line": 9,
+    "column": 9,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 9,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "324",
+    "line": 9,
+    "column": 18,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 9,
+    "endColumn": 28
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "325",
+    "line": 10,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 10,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "326",
+    "line": 11,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 11,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "327",
+    "line": 11,
+    "column": 20,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 11,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "328",
+    "line": 11,
+    "column": 25,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 11,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "329",
+    "line": 11,
+    "column": 34,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 11,
+    "endColumn": 42
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "330",
+    "line": 11,
+    "column": 44,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 11,
+    "endColumn": 47
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "310",
+    "line": 2,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 2,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "318",
+    "line": 4,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 4,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "317",
+    "line": 4,
+    "column": 17,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 4,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "326",
+    "line": 9,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 9,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "327",
+    "line": 9,
+    "column": 20,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 9,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "328",
+    "line": 9,
+    "column": 25,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 9,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "329",
+    "line": 9,
+    "column": 34,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 9,
+    "endColumn": 42
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "330",
+    "line": 9,
+    "column": 44,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 9,
+    "endColumn": 47
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "331",
+    "line": 1,
+    "column": 17,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 1,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "332",
+    "line": 2,
+    "column": 8,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 2,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "310",
+    "line": 3,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 3,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "316",
+    "line": 22,
+    "column": 26,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 22,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "310",
+    "line": 3,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 3,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "311",
+    "line": 6,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 6,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "312",
+    "line": 10,
+    "column": 12,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 10,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "333",
+    "line": 35,
+    "column": 11,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 35,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 67,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 70,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 87,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 90,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 107,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 110,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 127,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 130,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 147,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 150,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "310",
+    "line": 3,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 3,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "311",
+    "line": 6,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 6,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "312",
+    "line": 10,
+    "column": 12,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 10,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "333",
+    "line": 35,
+    "column": 11,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 35,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 67,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 70,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 87,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 90,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 107,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 110,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 127,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 130,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 147,
+    "column": 11,
+    "nodeType": "315",
+    "endLine": 150,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "317",
+    "line": 10,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 10,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "318",
+    "line": 10,
+    "column": 18,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 10,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "317",
+    "line": 10,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 10,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "318",
+    "line": 10,
+    "column": 18,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 10,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 11,
+    "column": 7,
+    "nodeType": "315",
+    "endLine": 11,
+    "endColumn": 83
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 20,
+    "column": 7,
+    "nodeType": "315",
+    "endLine": 20,
+    "endColumn": 84
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 29,
+    "column": 7,
+    "nodeType": "315",
+    "endLine": 29,
+    "endColumn": 84
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 38,
+    "column": 7,
+    "nodeType": "315",
+    "endLine": 38,
+    "endColumn": 84
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 47,
+    "column": 7,
+    "nodeType": "315",
+    "endLine": 47,
+    "endColumn": 84
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "310",
+    "line": 2,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 2,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "334",
+    "line": 5,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 5,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "316",
+    "line": 22,
+    "column": 26,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 22,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "335",
+    "line": 1,
+    "column": 27,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 1,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "310",
+    "line": 2,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 2,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "336",
+    "line": 3,
+    "column": 8,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 3,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "337",
+    "line": 4,
+    "column": 8,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 4,
+    "endColumn": 12
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "334",
+    "line": 5,
+    "column": 10,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 5,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "316",
+    "line": 52,
+    "column": 26,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 52,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "338",
+    "line": 86,
+    "column": 11,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 86,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "299",
+    "severity": 1,
+    "message": "335",
+    "line": 1,
+    "column": 27,
+    "nodeType": "301",
+    "messageId": "302",
+    "endLine": 1,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 39,
+    "column": 13,
+    "nodeType": "315",
+    "endLine": 39,
+    "endColumn": 29
+  },
+  {
+    "ruleId": "313",
+    "severity": 1,
+    "message": "314",
+    "line": 61,
+    "column": 9,
+    "nodeType": "315",
+    "endLine": 61,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "339",
+    "severity": 1,
+    "message": "340",
+    "line": 62,
+    "column": 9,
+    "nodeType": "315",
+    "endLine": 62,
+    "endColumn": 12
+  },
+  "no-native-reassign",
+  [
+    "341"
+  ],
+  "no-negated-in-lhs",
+  [
+    "342"
+  ],
+  "no-unused-vars",
+  "'Router' is defined but never used.",
+  "Identifier",
+  "unusedVar",
+  "'BrowserRouter' is defined but never used.",
+  "'Home' is defined but never used.",
+  "'Loginregister' is defined but never used.",
+  "react-hooks/exhaustive-deps",
+  "React Hook useEffect has a missing dependency: 'Loginnot'. Either include it or remove the dependency array.",
+  "ArrayExpression",
+  [
+    "343"
+  ],
+  "'Link' is defined but never used.",
+  "'RiPassportFill' is defined but never used.",
+  "'changefood' is defined but never used.",
+  "jsx-a11y/alt-text",
+  "img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.",
+  "JSXOpeningElement",
+  "'type' is assigned a value but never used.",
+  "'Routes' is defined but never used.",
+  "'Route' is defined but never used.",
+  "'AdminDashboard' is defined but never used.",
+  "'Regdonors' is defined but never used.",
+  "'Addstate' is defined but never used.",
+  "'Managestate' is defined but never used.",
+  "'Addcity' is defined but never used.",
+  "'Managecity' is defined but never used.",
+  "'Listedfoods' is defined but never used.",
+  "'Requests' is defined but never used.",
+  "'New' is defined but never used.",
+  "'Pickcom' is defined but never used.",
+  "'Rejected' is defined but never used.",
+  "'All' is defined but never used.",
+  "'Component' is defined but never used.",
+  "'axios' is defined but never used.",
+  "'userid' is assigned a value but never used.",
+  "'METHODS' is defined but never used.",
+  "'useEffect' is defined but never used.",
+  "'TodoForm' is defined but never used.",
+  "'Todo' is defined but never used.",
+  "'addfood' is assigned a value but never used.",
+  "jsx-a11y/anchor-is-valid",
+  "The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md",
+  "no-global-assign",
+  "no-unsafe-negation",
+  {
+    "desc": "344",
+    "fix": "345"
+  },
+  "Update the dependencies array to be: [Loginnot]",
+  {
+    "range": "346",
+    "text": "347"
+  },
+  [
+    1963,
+    1965
+  ],
+  "[Loginnot]"
+]
