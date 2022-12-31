@@ -7,8 +7,6 @@ import { SidebarData } from "./SidebarData";
 import SubMenu from "./SubMenu";
 import { IconContext } from "react-icons/lib";
 
-import { Routes, Route } from "react-router-dom";
-
 const Nav = styled.div`
   height: 80px;
   display: flex;

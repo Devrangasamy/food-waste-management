@@ -1,15 +1,11 @@
 import React, { useState } from "react";
 import img from "./img.png";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import img2 from "./img2.png";
 import "./Dashboard.css";
-import { RiPassportFill } from "react-icons/ri";
 export const DonarDashboard = () => {
   const [foodcount, setfoodcount] = useState(0);
 
-  function changefood(food) {
-    setfoodcount(foodcount + food);
-  }
   const Loginnot = async () => {
     const Navigate = useNavigate();
 
@@ -69,6 +65,7 @@ export const DonarDashboard = () => {
         <div className="imga">
           <img
             src={img}
+            alt={"Spoon"}
             style={{ height: "70px", width: "70px", alignItems: "center" }}
           />
         </div>
@@ -89,6 +86,7 @@ export const DonarDashboard = () => {
         <div className="imga">
           <img
             src={img2}
+            alt={"Document"}
             style={{ height: "70px", width: "70px", alignItems: "center" }}
           />
         </div>
@@ -109,6 +107,7 @@ export const DonarDashboard = () => {
         <div className="imga">
           <img
             src={img2}
+            alt={"Document"}
             style={{ height: "70px", width: "70px", alignItems: "center" }}
           />
         </div>
@@ -129,6 +128,7 @@ export const DonarDashboard = () => {
         <div className="imga">
           <img
             src={img2}
+            alt={"Document"}
             style={{ height: "70px", width: "70px", alignItems: "center" }}
           />
         </div>
@@ -149,6 +149,7 @@ export const DonarDashboard = () => {
         <div className="imga">
           <img
             src={img2}
+            alt={"Document"}
             style={{ height: "70px", width: "70px", alignItems: "center" }}
           />
         </div>

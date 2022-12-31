@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Login = (props) => {
@@ -11,7 +11,7 @@ const Login = (props) => {
 
   const Navigate = useNavigate();
   const changeHandler = (e) => {
-    const { name, value, type } = e.target;
+    const { name, value } = e.target;
     setUserData({ ...userData, [name]: value });
   };
   const onSubmit = (event) => {

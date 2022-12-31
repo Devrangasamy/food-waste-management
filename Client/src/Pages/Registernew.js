@@ -1,10 +1,8 @@
-import React, { Component } from "react";
-import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 const Registernew = () => {
   const [userData, setUserData] = useState({
-    
     username: "",
     email: "",
     password: "",
@@ -19,7 +17,7 @@ const Registernew = () => {
 
   const Navigate = useNavigate();
   const changeHandler = (e) => {
-    const { name, value, type } = e.target;
+    const { name, value } = e.target;
     setUserData({ ...userData, [name]: value });
   };
   const onSubmit = (event) => {

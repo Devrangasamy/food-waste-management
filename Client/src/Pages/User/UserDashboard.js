@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 import img from "../img.png";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import img2 from "../img2.png";
 import "../Dashboard.css";
-import { RiPassportFill } from "react-icons/ri";
 export const UserDashboard = () => {
   const [foodcount, setfoodcount] = useState(0);
-
-  function changefood(food) {
-    setfoodcount(foodcount + food);
-  }
   const Loginnot = async () => {
     const Navigate = useNavigate();
 
@@ -32,13 +27,12 @@ export const UserDashboard = () => {
     if (current.status === "failure") {
       return;
     }
-    const userid = current.user._id;
+    // const userid = current.user._id;
     const Listedfoods = await fetch("/api/v1/tours/");
     // console.log("/api/v1/tours/" + userid);
     const foods = await Listedfoods.json();
     // console.log(foods);
     for (var i = 0; i < foods.results; i++) {
-
       const arrsize = foods.data.data[i].fooddetails.length;
       for (var j = 0; j < arrsize; j++) {
         food += parseInt(foods.data.data[i].fooddetails[j].number);
@@ -66,6 +60,7 @@ export const UserDashboard = () => {
         <div className="imga">
           <img
             src={img}
+            alt={"Spoon"}
             style={{ height: "70px", width: "70px", alignItems: "center" }}
           />
         </div>
@@ -86,6 +81,7 @@ export const UserDashboard = () => {
         <div className="imga">
           <img
             src={img2}
+            alt={"Document"}
             style={{ height: "70px", width: "70px", alignItems: "center" }}
           />
         </div>
@@ -106,6 +102,7 @@ export const UserDashboard = () => {
         <div className="imga">
           <img
             src={img2}
+            alt={"Document"}
             style={{ height: "70px", width: "70px", alignItems: "center" }}
           />
         </div>
@@ -126,6 +123,7 @@ export const UserDashboard = () => {
         <div className="imga">
           <img
             src={img2}
+            alt={"Document"}
             style={{ height: "70px", width: "70px", alignItems: "center" }}
           />
         </div>
@@ -146,6 +144,7 @@ export const UserDashboard = () => {
         <div className="imga">
           <img
             src={img2}
+            alt={"Document"}
             style={{ height: "70px", width: "70px", alignItems: "center" }}
           />
         </div>

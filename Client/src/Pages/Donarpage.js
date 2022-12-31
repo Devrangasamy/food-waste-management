@@ -1,12 +1,11 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Sidebar from "../components/DonarSidebar";
-import { Route, Routes } from "react-router-dom";
 
 // import {AdminDashboard} from './AdminDashboard';
 // import Addfood from './Listfooddetails';
 // import Manage from './Listfooddetails';
-import { Requests, New, Pickcom, Rejected, All } from "./Requests";
+// import { Requests, New, Pickcom, Rejected, All } from "./Requests";
 // import Dashboard from "./DonarDashboard";
 
 export const Donarpage = () => {
@@ -16,7 +15,7 @@ export const Donarpage = () => {
     const currentuser = await fetch("/api/v1/users/me/");
     const current = await currentuser.json();
     console.log(current);
-    if (current.status === "failure"|| current.user.role!=="Donar") {
+    if (current.status === "failure" || current.user.role !== "Donar") {
       Navigate("/loginregister");
       alert(current.Error);
     }

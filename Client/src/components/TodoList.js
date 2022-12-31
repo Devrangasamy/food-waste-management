@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import TodoForm from "./TodoForm";
 import Todo from "./Todo";
-import { METHODS } from "http";
+
 // import { Formend } from "./TodoForm";
 
 function TodoList() {
@@ -18,7 +18,7 @@ function TodoList() {
   const Navigate = useNavigate();
   const changeHandler = (e) => {
     e.preventDefault();
-    const { name, value, type } = e.target;
+    const { name, value } = e.target;
     // console.log(name, value);
     setFood({ ...fooddetails, [name]: value });
   };

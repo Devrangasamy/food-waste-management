@@ -1,15 +1,10 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
 import { useState } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  BrowserRouter,
-} from "react-router-dom";
-import { Home } from "./Pages/Home";
+import { Routes, Route } from "react-router-dom";
+// import { Home } from "./Pages/Home";
 import About from "./Pages/About";
-import Loginregister from "./Pages/Loginregister";
+// import Loginregister from "./Pages/Loginregister";
 import { Contact } from "./Pages/Contact";
 import Ourmission from "./Pages/Ourmission";
 import Registernew from "./Pages/Registernew";
@@ -49,7 +44,7 @@ function App() {
   const [login, setLogin] = useState(false);
   useEffect(() => {
     Loginnot();
-  }, []);
+  });
   const Loginnot = async () => {
     const currentuser = await fetch("/api/v1/users/me/");
     const current = await currentuser.json();
