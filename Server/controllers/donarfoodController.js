@@ -1,12 +1,12 @@
 // const fs = require('fs');
 
-const Tour = require('./../models/tourModels');
-const APIFeatures = require('./../utils/apiFeatures');
-const catchAsync = require('./../utils/catchAsync');
-const AppError = require('./../utils/appError');
+const donarfood = require('./../models/donarfoodModels');
+const APIFeatures = require('../utils/apiFeatures');
+const catchAsync = require('../utils/catchAsync');
+const AppError = require('../utils/appError');
 const factory = require('./handlerFactory.js');
 
-exports.aliasTopTours = (req, res, next) => {
+exports.aliasTopdonarfoods = (req, res, next) => {
   req.query.limit = '5';
   req.query.sort = '-ratingsAverage,price';
   req.query.fields = 'name,price,ratingsAverage,summary,difficulty';
@@ -15,9 +15,9 @@ exports.aliasTopTours = (req, res, next) => {
 
 //
 // exports.checkID = (req, res, next, val) => {
-//   console.log(`Tour id is: ${val}`);
+//   console.log(`donarfood id is: ${val}`);
 
-//   if (req.params.id * 1 > tours.length) {
+//   if (req.params.id * 1 > donarfoods.length) {
 //     return res.status(404).json({
 //       status: 'fail',
 //       message: 'Invalid ID'
@@ -36,7 +36,7 @@ exports.aliasTopTours = (req, res, next) => {
 //   next();
 // };
 
-// exports.getAllTours = catchAsync(async (req, res, next) => {
+// exports.getAlldonarfoods = catchAsync(async (req, res, next) => {
 //   // try {
 //   // const queryObj = { ...req.query };
 //   // const excludedfields = ['page', 'sort', 'limit', 'fields'];
@@ -46,7 +46,7 @@ exports.aliasTopTours = (req, res, next) => {
 //   //   /\b(gte|gt|lte|lt)\b/g,
 //   //   match => `$${match}`
 //   // );
-//   // let query = Tour.find(JSON.parse(queryString));
+//   // let query = donarfood.find(JSON.parse(queryString));
 //   // console.log(JSON.parse(queryString));
 //   // console.log(queryString);
 //   // if (req.query.sort) {
@@ -69,33 +69,33 @@ exports.aliasTopTours = (req, res, next) => {
 //   // query = query.skip(skip).limit(limit);
 
 //   // if (req.query.page) {
-//   //   const numTours = await Tour.countDocuments();
-//   //   if (skip >= numTours) throw new Error('This page does not exist');
+//   //   const numdonarfoods = await donarfood.countDocuments();
+//   //   if (skip >= numdonarfoods) throw new Error('This page does not exist');
 //   // }
-//   // const tours = await Tour.find({
+//   // const donarfoods = await donarfood.find({
 //   //   duration: 5
 //   // });
-//   // const tours = await Tour.find()
+//   // const donarfoods = await donarfood.find()
 //   //   .where('duration')
 //   //   .equals(5)
 //   //   .where('difficulty')
 //   //   .equals('easy');
 //   // console.log(req.query);
-//   const features = new APIFeatures(Tour.find(), req.query)
+//   const features = new APIFeatures(donarfood.find(), req.query)
 //     .filter()
 //     .sort()
 //     .limitFields()
 //     .paginate();
-//   const tours = await features.query.populate({
+//   const donarfoods = await features.query.populate({
 //     path: 'guides',
 //     select: '-__v'
 //   });
 //   res.status(200).json({
 //     status: 'success',
 //     requestedAt: req.requestTime,
-//     results: tours.length,
+//     results: donarfoods.length,
 //     data: {
-//       tours
+//       donarfoods
 //     }
 //   });
 //   // } catch (err) {
@@ -106,17 +106,17 @@ exports.aliasTopTours = (req, res, next) => {
 //   // }
 // });
 
-// exports.getTour = catchAsync(async (req, res, next) => {
+// exports.getdonarfood = catchAsync(async (req, res, next) => {
 //   // try {
-//   const tours = await Tour.findById(req.params.id).populate('reviews');
-//   if (!tours) {
-//     return next(new AppError('No tour found with that ID', 404));
+//   const donarfoods = await donarfood.findById(req.params.id).populate('reviews');
+//   if (!donarfoods) {
+//     return next(new AppError('No donarfood found with that ID', 404));
 //   }
 //   res.status(200).json({
 //     status: 'success',
-//     results: tours.length,
+//     results: donarfoods.length,
 //     data: {
-//       tours
+//       donarfoods
 //     }
 //   });
 //   // } catch (err) {
@@ -127,43 +127,43 @@ exports.aliasTopTours = (req, res, next) => {
 //   // } // console.log(req.params);
 //   // const id = req.params.id * 1;
 
-//   // const tour = tours.find(el => el.id === id);
+//   // const donarfood = donarfoods.find(el => el.id === id);
 
 //   // res.status(200).json({
 //   //   status: 'success',
 //   //   data: {
-//   //     tour
+//   //     donarfood
 //   //   }
 //   // });
 // });
 
-// exports.createTour = catchAsync(async (req, res, next) => {
-//   const newTour = await Tour.create(req.body);
+// exports.createdonarfood = catchAsync(async (req, res, next) => {
+//   const newdonarfood = await donarfood.create(req.body);
 //   res.status(201).json({
 //     status: 'success',
 //     data: {
-//       tour: newTour
+//       donarfood: newdonarfood
 //     }
 //   });
 
 // try {
-//   const newTour = await Tour.create(req.body);
+//   const newdonarfood = await donarfood.create(req.body);
 
-//   // const newTour = new Tour({});
-//   // newTour.save();
+//   // const newdonarfood = new donarfood({});
+//   // newdonarfood.save();
 
 //   // console.log(req.body);
-//   // const newId = tours[tours.length - 1].id + 1;
-//   // const newTour = Object.assign({ id: newId }, req.body);
-//   // tours.push(newTour);
+//   // const newId = donarfoods[donarfoods.length - 1].id + 1;
+//   // const newdonarfood = Object.assign({ id: newId }, req.body);
+//   // donarfoods.push(newdonarfood);
 //   // fs.writeFile(
-//   //   `${__dirname}/dev-data/data/tours-simple.json`,
-//   //   JSON.stringify(tours),
+//   //   `${__dirname}/dev-data/data/donarfoods-simple.json`,
+//   //   JSON.stringify(donarfoods),
 //   //   err => {
 //   res.status(201).json({
 //     status: 'success',
 //     data: {
-//       tour: newTour
+//       donarfood: newdonarfood
 //     }
 //   });
 // } catch (err) {
@@ -176,21 +176,21 @@ exports.aliasTopTours = (req, res, next) => {
 // );
 // });
 
-// exports.updateTour = catchAsync(async (req, res, next) => {
+// exports.updatedonarfood = catchAsync(async (req, res, next) => {
 //   // try {
 
-//   const tour = await Tour.findByIdAndUpdate(req.params.id, req.body, {
+//   const donarfood = await donarfood.findByIdAndUpdate(req.params.id, req.body, {
 //     new: true,
 //     runValidators: true
 //   });
 
-//   if (!tour) {
-//     return next(new AppError('No tour found with that ID', 404));
+//   if (!donarfood) {
+//     return next(new AppError('No donarfood found with that ID', 404));
 //   }
 //   res.status(200).json({
 //     status: 'success',
 //     data: {
-//       tour
+//       donarfood
 //     }
 //   });
 //   // } catch (err) {
@@ -201,12 +201,12 @@ exports.aliasTopTours = (req, res, next) => {
 //   // }
 // });
 
-// exports.deleteTour = catchAsync(async (req, res, next) => {
+// exports.deletedonarfood = catchAsync(async (req, res, next) => {
 //   // try {
-//   const tours = await Tour.findByIdAndDelete(req.params.id);
+//   const donarfoods = await donarfood.findByIdAndDelete(req.params.id);
 
-//   if (!tours) {
-//     return next(new AppError('No tour found with that ID', 404));
+//   if (!donarfoods) {
+//     return next(new AppError('No donarfood found with that ID', 404));
 //   }
 //   res.status(200).json({
 //     status: 'success',
@@ -219,15 +219,15 @@ exports.aliasTopTours = (req, res, next) => {
 //   //   });
 //   // }
 // });
-exports.getAllTours = factory.getAll(Tour);
-exports.getTour = factory.getOne(Tour, { path: 'reviews' });
-exports.createTour = factory.createOne(Tour);
-exports.updateTour = factory.updateOne(Tour);
-exports.deleteTour = factory.deleteOne(Tour);
+exports.getAlldonarfoods = factory.getAll(donarfood);
+exports.getdonarfood = factory.getOne(donarfood, { path: 'reviews' });
+exports.createdonarfood = factory.createOne(donarfood);
+exports.updatedonarfood = factory.updateOne(donarfood);
+exports.deletedonarfood = factory.deleteOne(donarfood);
 
-exports.getTourstats = catchAsync(async (req, res, next) => {
+exports.getdonarfoodstats = catchAsync(async (req, res, next) => {
   // try {
-  const stats = await Tour.aggregate([
+  const stats = await donarfood.aggregate([
     {
       $match: { ratingsAverage: { $gte: 4.5 } }
     },
@@ -235,7 +235,7 @@ exports.getTourstats = catchAsync(async (req, res, next) => {
       $group: {
         // _id: '$ratingsAverage',
         _id: { $toUpper: '$difficulty' },
-        numTours: { $sum: 1 },
+        numdonarfoods: { $sum: 1 },
         numRatings: { $sum: '$ratingsQuantity' },
         avgRating: { $avg: '$ratingsAverage' },
 
@@ -271,7 +271,7 @@ exports.getTourstats = catchAsync(async (req, res, next) => {
 exports.getMonthlyPlan = catchAsync(async (req, res, next) => {
   // try {
   const year = req.params.year * 1;
-  const plan = await Tour.aggregate([
+  const plan = await donarfood.aggregate([
     {
       $unwind: '$startDates'
     },
@@ -287,8 +287,8 @@ exports.getMonthlyPlan = catchAsync(async (req, res, next) => {
     {
       $group: {
         _id: { $month: '$startDates' },
-        numTourStarts: { $sum: 1 },
-        tours: {
+        numdonarfoodStarts: { $sum: 1 },
+        donarfoods: {
           $push: '$name'
         }
       }
@@ -302,7 +302,7 @@ exports.getMonthlyPlan = catchAsync(async (req, res, next) => {
       }
     },
     {
-      $sort: { numTourStarts: -1 }
+      $sort: { numdonarfoodStarts: -1 }
     },
     {
       $limit: 12
@@ -322,7 +322,7 @@ exports.getMonthlyPlan = catchAsync(async (req, res, next) => {
   // }
 });
 
-exports.getToursWithin = catchAsync(async (req, res, next) => {
+exports.getdonarfoodsWithin = catchAsync(async (req, res, next) => {
   const { distance, latlng, unit } = req.params;
   const [lat, lng] = latlng.split(',');
   const radius = unit === 'mi' ? distance / 3963.2 : distance / 6378.1;
@@ -334,15 +334,15 @@ exports.getToursWithin = catchAsync(async (req, res, next) => {
       )
     );
   }
-  const tours = await Tour.find({
+  const donarfoods = await donarfood.find({
     startLocation: { $geoWithin: { $centerSphere: [[lng, lat], radius] } }
   });
   // console.log(distance, lat, lng, unit);
   res.status(200).json({
     status: 'sucess',
-    results: tours.length,
+    results: donarfoods.length,
     data: {
-      data: tours
+      data: donarfoods
     }
   });
 });
@@ -360,7 +360,7 @@ exports.getDistances = catchAsync(async (req, res, next) => {
     );
   }
 
-  const distances = await Tour.aggregate([
+  const distances = await donarfood.aggregate([
     {
       $geoNear: {
         near: {

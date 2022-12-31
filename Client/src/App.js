@@ -50,7 +50,7 @@ function App() {
     const current = await currentuser.json();
 
     if (current.status === "sucess") {
-      console.log(login);
+      // console.log(login);
       updateUI(true);
     }
   };
@@ -63,7 +63,7 @@ function App() {
 
       <div className="pages">
         <Routes>
-          <Route exact path="/" element={<Menu></Menu>} />
+          <Route exact="true" path="/" element={<Menu></Menu>} />
           <Route path="/about" element={<About></About>} />
           <Route path="/mission" element={<Ourmission></Ourmission>} />
           <Route
@@ -78,7 +78,7 @@ function App() {
 
           <Route
             path="/Donarpage/dashboard"
-            exact
+            exact="true"
             element={
               <div>
                 <Donarsidebar></Donarsidebar>
@@ -88,7 +88,7 @@ function App() {
           />
           <Route
             path="/Donarpage/listfooddetails/add"
-            exact
+            exact="true"
             element={
               <div>
                 <Donarsidebar></Donarsidebar>
@@ -98,7 +98,7 @@ function App() {
           />
           <Route
             path="/Donarpage/listfooddetails/manage"
-            exact
+            exact="true"
             element={
               <div>
                 <Donarsidebar></Donarsidebar>
@@ -108,7 +108,7 @@ function App() {
           />
           <Route
             path="/Donarpage/request"
-            exact
+            exact="true"
             element={
               <div>
                 <Donarsidebar></Donarsidebar>
@@ -118,7 +118,7 @@ function App() {
           />
           <Route
             path="/Donarpage/request/new"
-            exact
+            exact="true"
             element={
               <div>
                 <Donarsidebar></Donarsidebar>
@@ -128,7 +128,7 @@ function App() {
           />
           <Route
             path="/Donarpage/request/pickcom"
-            exact
+            exact="true"
             element={
               <div>
                 <Donarsidebar></Donarsidebar>
@@ -138,7 +138,7 @@ function App() {
           />
           <Route
             path="/Donarpage/request/reject"
-            exact
+            exact="true"
             element={
               <div>
                 <Donarsidebar></Donarsidebar>
@@ -146,9 +146,13 @@ function App() {
               </div>
             }
           />
-          <Route path="/Donarpage/request/all" exact element={<All></All>} />
           <Route
-            exact
+            path="/Donarpage/request/all"
+            exact="true"
+            element={<All></All>}
+          />
+          <Route
+            exact="true"
             path="/Adminpage/dashboard"
             element={
               <div>
@@ -159,7 +163,7 @@ function App() {
           />
           <Route
             path="/Adminpage/state/add"
-            exact
+            exact="true"
             element={
               <div>
                 <Adminsidebar></Adminsidebar>
@@ -169,7 +173,7 @@ function App() {
           />
           <Route
             path="/Adminpage/state/manage"
-            exact
+            exact="true"
             element={
               <div>
                 <Adminsidebar></Adminsidebar>
@@ -179,7 +183,7 @@ function App() {
           />
           <Route
             path="/Adminpage/city/add"
-            exact
+            exact="true"
             element={
               <div>
                 <Adminsidebar></Adminsidebar>
@@ -189,7 +193,7 @@ function App() {
           />
           <Route
             path="/Adminpage/city/manage"
-            exact
+            exact="true"
             element={
               <div>
                 <Adminsidebar></Adminsidebar>
@@ -199,7 +203,7 @@ function App() {
           />
           <Route
             path="/Adminpage/regfooddonors"
-            exact
+            exact="true"
             element={
               <div>
                 <Adminsidebar></Adminsidebar>
@@ -209,7 +213,7 @@ function App() {
           />
           <Route
             path="/Adminpage/listed/food"
-            exact
+            exact="true"
             element={
               <div>
                 <Adminsidebar></Adminsidebar>
@@ -219,7 +223,7 @@ function App() {
           />
           <Route
             path="/Adminpage/request"
-            exact
+            exact="true"
             element={
               <div>
                 <Adminsidebar></Adminsidebar>
@@ -229,7 +233,7 @@ function App() {
           />
           <Route
             path="/Adminpage/request/new"
-            exact
+            exact="true"
             element={
               <div>
                 <Adminsidebar></Adminsidebar>
@@ -239,7 +243,7 @@ function App() {
           />
           <Route
             path="/Adminpage/request/pickcom"
-            exact
+            exact="true"
             element={
               <div>
                 <Adminsidebar></Adminsidebar>
@@ -249,7 +253,7 @@ function App() {
           />
           <Route
             path="/Adminpage/request/reject"
-            exact
+            exact="true"
             element={
               <div>
                 <Adminsidebar></Adminsidebar>
@@ -259,7 +263,7 @@ function App() {
           />
           <Route
             path="/Adminpage/request/all"
-            exact
+            exact="true"
             element={
               <div>
                 <Adminsidebar></Adminsidebar>
@@ -268,7 +272,7 @@ function App() {
             }
           />
           <Route
-            exact
+            exact="true"
             path="/Userpage/Userdashboard"
             element={
               <div>
@@ -279,7 +283,7 @@ function App() {
           />
           <Route
             path="/Userpage/add/food"
-            exact
+            exact="true"
             element={
               <div>
                 <Usersidebar></Usersidebar>
@@ -289,7 +293,7 @@ function App() {
           />
           <Route
             path="/Userpage/listed/food"
-            exact
+            exact="true"
             element={
               <div>
                 <Usersidebar></Usersidebar>
@@ -299,7 +303,7 @@ function App() {
           />
           <Route
             path="/Userpage/request"
-            exact
+            exact="true"
             element={
               <div>
                 <Usersidebar></Usersidebar>
@@ -309,7 +313,7 @@ function App() {
           />
           <Route
             path="/Userpage/request/new"
-            exact
+            exact="true"
             element={
               <div>
                 <Usersidebar></Usersidebar>
@@ -319,7 +323,7 @@ function App() {
           />
           <Route
             path="/Userpage/request/pickcom"
-            exact
+            exact="true"
             element={
               <div>
                 <Usersidebar></Usersidebar>
@@ -329,7 +333,7 @@ function App() {
           />
           <Route
             path="/Userpage/request/reject"
-            exact
+            exact="true"
             element={
               <div>
                 <Usersidebar></Usersidebar>
@@ -339,7 +343,7 @@ function App() {
           />
           <Route
             path="/Userpage/request/all"
-            exact
+            exact="true"
             element={
               <div>
                 <Usersidebar></Usersidebar>

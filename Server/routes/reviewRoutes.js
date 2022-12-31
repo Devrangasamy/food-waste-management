@@ -9,7 +9,7 @@ router
   .get(reviewController.getAllReviews)
   .post(
     authController.restrictTo('user'),
-    reviewController.setTourUserIds,
+    reviewController.setdonarfoodUserIds,
     reviewController.createReview
   );
 

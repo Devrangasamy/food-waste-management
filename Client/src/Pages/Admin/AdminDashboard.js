@@ -1,51 +1,51 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import img from "../img.png";
 import { useNavigate } from "react-router-dom";
 import img2 from "../img2.png";
 import "../Dashboard.css";
+import Loading from "../../Pages/Loading";
 // import { RiPassportFill } from "react-icons/ri";
 export const AdminDashboard = () => {
+  const Navigate = useNavigate();
   const [foodcount, setfoodcount] = useState(0);
-
-  const Loginnot = async () => {
-    const Navigate = useNavigate();
-
-    const currentuser = await fetch("/api/v1/users/me/");
-    const current = await currentuser.json();
-    // console.log(current);
-    if (current.status === "failure") {
-      Navigate("/loginregister");
-      alert(current.Error);
-      return;
-    }
-  };
-  Loginnot();
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    var food = 0;
+    const Listfood = async () => {
+      setLoading(true);
+      const currentuser = await fetch("/api/v1/users/me/");
+      const current = await currentuser.json();
+      if (current.status === "failure" || current.user.role !== "Donar") {
+        Navigate("/loginregister");
+        alert(current.Error);
+      }
+      if (current.status === "failure") {
+        return;
+      }
+      const Listedfoods = await fetch("/api/v1/donarfoods/");
+      // console.log("/api/v1/donarfoods/" + userid);
+      const foods = await Listedfoods.json();
+      // console.log(foods);
+      for (var i = 0; i < foods.results; i++) {
+        const arrsize = foods.data.data[i].fooddetails.length;
+        for (var j = 0; j < arrsize; j++) {
+          food += parseInt(foods.data.data[i].fooddetails[j].number);
+        }
+        // console.log(foods.data.data[i].fooddetails.length);
+      }
+      // setloading(true);
+      // console.log(food);
+      setfoodcount(food);
+      setLoading(false);
+    };
+    // setfoodcount(food);
+    Listfood();
+  }, []);
 
   // const [foodcount, setfoodcount] = useState(0);
-  var food = 0;
-  const Listfood = async () => {
-    const currentuser = await fetch("/api/v1/users/me/");
-    const current = await currentuser.json();
-    if (current.status === "failure") {
-      return;
-    }
-    const Listedfoods = await fetch("/api/v1/tours/");
-    // console.log("/api/v1/tours/" + userid);
-    const foods = await Listedfoods.json();
-    // console.log(foods);
-    for (var i = 0; i < foods.results; i++) {
-      const arrsize = foods.data.data[i].fooddetails.length;
-      for (var j = 0; j < arrsize; j++) {
-        food += parseInt(foods.data.data[i].fooddetails[j].number);
-      }
-      // console.log(foods.data.data[i].fooddetails.length);
-    }
-    // setloading(true);
-    // console.log(food);
-    setfoodcount(food);
-  };
-  // setfoodcount(food);
-  Listfood();
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <div className="hiii">

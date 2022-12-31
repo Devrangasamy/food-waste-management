@@ -28,8 +28,8 @@ export const UserDashboard = () => {
       return;
     }
     // const userid = current.user._id;
-    const Listedfoods = await fetch("/api/v1/tours/");
-    // console.log("/api/v1/tours/" + userid);
+    const Listedfoods = await fetch("/api/v1/donarfoods/");
+    // console.log("/api/v1/donarfoods/" + userid);
     const foods = await Listedfoods.json();
     // console.log(foods);
     for (var i = 0; i < foods.results; i++) {

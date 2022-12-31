@@ -69,7 +69,7 @@ exports.getAll = Model =>
   catchAsync(async (req, res, next) => {
     let filter = {};
 
-    if (req.params.tourId) filter = { tour: req.params.tourId };
+    if (req.params.donarfoodId) filter = { donarfood: req.params.donarfoodId };
 
     const features = new APIFeatures(
       Model.find(filter).populate('userid'),

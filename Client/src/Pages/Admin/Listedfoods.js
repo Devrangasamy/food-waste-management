@@ -11,14 +11,16 @@ export const Listedfoods = () => {
       const datefind = new Date(
         new Date().getTime() - 5 * 60 * 60 * 1000
       ).toISOString();
-      console.log(datefind);
-      const response = await fetch("/api/v1/tours/?createdAt[gte]=" + datefind);
+      // console.log(datefind);
+      const response = await fetch(
+        "/api/v1/donarfoods/?createdAt[gte]=" + datefind
+      );
       const json = await response.json();
 
       setData(json.data.data);
 
-      let temp = json.data.data;
-      console.log(temp[0].fooddetails[0].text);
+      // let temp = json.data.data;
+      // console.log(temp[0].fooddetails[0].text);
       setLoading(false);
     };
 

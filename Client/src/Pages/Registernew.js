@@ -79,7 +79,7 @@ const Registernew = () => {
       return "";
     }
     const login = async (userData) => {
-      console.log(userData);
+      // console.log(userData);
       const response = await fetch(
         "http://127.0.0.1:3000/api/v1/users/signup/",
         {
@@ -100,7 +100,7 @@ const Registernew = () => {
         }
       );
       const json = await response.json();
-      console.log(json);
+      // console.log(json);
       alert(json.status);
 
       if (json.status === "sucess") {

@@ -11,14 +11,16 @@ export const UserListedfoods = () => {
       const datefind = new Date(
         new Date().getTime() - 5 * 60 * 60 * 1000
       ).toISOString();
-      console.log(datefind);
-      const response = await fetch("/api/v1/tours/?createdAt[gte]=" + datefind);
+      // console.log(datefind);
+      const response = await fetch(
+        "/api/v1/donarfoods/?createdAt[gte]=" + datefind
+      );
       const json = await response.json();
 
       setData(json.data.data);
 
       let temp = json.data.data;
-      console.log(temp[0].fooddetails[0].text);
+      // console.log(temp[0].fooddetails[0].text);
       setLoading(false);
     };
 
@@ -37,8 +39,8 @@ export const UserListedfoods = () => {
 
       <div className="car">
         {data.map((singleData) =>
-          singleData.fooddetails.map((food) => (
-            <div className="containe">
+          singleData.fooddetails.map((food, index) => (
+            <div className="containe" key={index}>
               <div className="cards">
                 <div className="card">
                   <h3>Name:{singleData.userid[0].name}</h3>

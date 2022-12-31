@@ -3,7 +3,7 @@ const fs = require('fs');
 const mongoose = require('mongoose');
 
 const dotenv = require('dotenv');
-const Tour = require('./../../models/tourModels');
+const donarfood = require('./../../models/donarfoodModels');
 const User = require('./../../models/userModels');
 const Review = require('./../../models/reviewModels');
 
@@ -17,7 +17,9 @@ const DB = process.env.DATABASE.replace(
 
 mongoose.connect(DB, {}).then(() => console.log('DB CONNECTED successfully'));
 
-const tours = JSON.parse(fs.readFileSync(`${__dirname}/tours.json`, 'utf-8'));
+const donarfoods = JSON.parse(
+  fs.readFileSync(`${__dirname}/donarfoods.json`, 'utf-8')
+);
 const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf-8'));
 const reviews = JSON.parse(
   fs.readFileSync(`${__dirname}/reviews.json`, 'utf-8')
@@ -25,7 +27,7 @@ const reviews = JSON.parse(
 
 const importData = async () => {
   try {
-    await Tour.create(tours);
+    await donarfood.create(donarfoods);
     await User.create(users, { validateBeforeSave: false });
     await Review.create(reviews);
     console.log('Data successfully loaded');
@@ -37,7 +39,7 @@ const importData = async () => {
 
 const deleteData = async () => {
   try {
-    await Tour.deleteMany();
+    await donarfood.deleteMany();
     await User.deleteMany();
     await Review.deleteMany();
     console.log('Data Succesfully deleted');

@@ -14,7 +14,7 @@ export const Donarpage = () => {
 
     const currentuser = await fetch("/api/v1/users/me/");
     const current = await currentuser.json();
-    console.log(current);
+    // console.log(current);
     if (current.status === "failure" || current.user.role !== "Donar") {
       Navigate("/loginregister");
       alert(current.Error);
@@ -25,15 +25,15 @@ export const Donarpage = () => {
     <div>
       <Sidebar />
       {/* <Routes>
-        <Route path="/dashboard" exact element={<Dashboard></Dashboard>} />
-        <Route path='/listfooddetails' exact component={Listfooddetails} />
-        <Route path='/listfooddetails/add' exact element={<Addfood></Addfood>} />
-        <Route path='/listfooddetails/manage' exact element={<Manage></Manage>} />
-        <Route path="/request" exact element={<Requests></Requests>} />
-        <Route path="/request/new" exact element={<New></New>} />
-        <Route path="/request/pickcom" exact element={<Pickcom></Pickcom>} />
-        <Route path="/request/reject" exact element={<Rejected></Rejected>} />
-        <Route path="/request/all" exact element={<All></All>} />
+        <Route path="/dashboard" exact="true" element={<Dashboard></Dashboard>} />
+        <Route path='/listfooddetails' exact="true" component={Listfooddetails} />
+        <Route path='/listfooddetails/add' exact="true" element={<Addfood></Addfood>} />
+        <Route path='/listfooddetails/manage' exact="true" element={<Manage></Manage>} />
+        <Route path="/request" exact="true" element={<Requests></Requests>} />
+        <Route path="/request/new" exact="true" element={<New></New>} />
+        <Route path="/request/pickcom" exact="true" element={<Pickcom></Pickcom>} />
+        <Route path="/request/reject" exact="true" element={<Rejected></Rejected>} />
+        <Route path="/request/all" exact="true" element={<All></All>} />
       </Routes> */}
     </div>
   );
