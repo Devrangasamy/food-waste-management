@@ -24,6 +24,8 @@ function TodoForm(props) {
       id: Math.floor(Math.random() * 10000),
       text: input,
       number: input1,
+      completed: 0,
+      remaining: input1,
     });
     setInput("");
     setInput1("");

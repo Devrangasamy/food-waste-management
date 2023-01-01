@@ -8,6 +8,8 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
     id: null,
     value: "",
     number: "",
+    completed: 0,
+    remaining: "",
   });
 
   const submitUpdate = (value, number) => {
@@ -16,6 +18,8 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
       id: null,
       value: "",
       number: "",
+      completed: 0,
+      remaining: "",
     });
   };
 

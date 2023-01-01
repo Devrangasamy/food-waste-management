@@ -30,6 +30,7 @@ const Option = (props) => {
 function TodoList() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [foodchange, setChange] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -46,15 +47,16 @@ function TodoList() {
       // setData(json.data.data);
       // console.log(json.data.data);
       let fooddetails = [];
-
+      setChange(json.data.data);
       json.data.data.map((singleData) =>
         singleData.fooddetails.map((food) =>
           fooddetails.push({
             donarid: singleData._id,
+            userid: singleData.userid[0]._id,
             value: food.text,
-            label: food.text + " - " + food.number,
-            label1: food.number,
-            id: singleData.userid[0]._id,
+            label: food.text + " - " + food.remaining,
+            label1: food.remaining,
+            id: singleData._id,
           })
         )
       );
@@ -79,7 +81,7 @@ function TodoList() {
   const change = (e) => {
     let x = [];
     for (var i = 0; i < e.length; i++) {
-      x.push([e[i].id, e[i].value, e[i].label1,e[i].donarid]);
+      x.push([e[i].id, e[i].value, e[i].label1, e[i].donarid]);
     }
     setFood({ ...fooddetails, fooditem: x });
     // console.log("gdfgd", x, "fgh", fooddetails.fooditem);
@@ -142,6 +144,38 @@ function TodoList() {
       const currentuser = await fetch("/api/v1/users/me/");
       const current = await currentuser.json();
       // console.log("food details", fooddetails);
+      foodchange.forEach(async (element) => {
+        element.fooddetails.forEach((ele) => {
+          console.log(ele);
+          for (let i = 0; i < fooddetails.fooditem.length; i++) {
+            console.log(
+              "important",
+              fooddetails.fooditem[i][1],
+              fooddetails.fooditem[i][0],
+              ele.text
+            );
+            if (
+              fooddetails.fooditem[i][0] === element._id &&
+              fooddetails.fooditem[i][1] === ele.text
+            ) {
+              console.log("important", fooddetails.fooditem[i][1], ele.number);
+              ele.completed =
+                parseInt(ele.completed) + parseInt(fooddetails.fooditem[i][2]);
+              ele.remaining -= parseInt(fooddetails.fooditem[i][2]);
+            }
+          }
+        });
+        const r = await fetch("/api/v1/donarfoods/" + element._id, {
+          method: "PATCH",
+          headers: { "Content-type": "application/json" },
+          body: JSON.stringify({
+            fooddetails: element.fooddetails,
+          }),
+        });
+        const j = await r.json();
+        console.log("response", j);
+      });
+
       const response = await fetch("/api/v1/reviews/", {
         method: "POST",
         headers: { "Content-type": "application/json" },
