@@ -47,22 +47,6 @@ export const DonarDashboard = () => {
     Listfood();
   }, []);
 
-  // const Loginnot = async () => {
-  //   const Navigate = useNavigate();
-
-  //   const currentuser = await fetch("/api/v1/users/me/");
-  //   const current = await currentuser.json();
-  //   // console.log(current.user.role);
-  //   if (current.status === "failure" || current.user.role !== "Donar") {
-  //     Navigate("/loginregister");
-  //     alert(current.Error);
-  //     return;
-  //   }
-  // };
-  // Loginnot();
-
-  // const [foodcount, setfoodcount] = useState(0);
-
   if (loading) {
     return <Loading />;
   }
