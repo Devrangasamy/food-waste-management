@@ -38,7 +38,7 @@ function Userprofile() {
           <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
             <img src={user}></img>
           </div>
-  
+          
           <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
             <h3>The Kiet<br/><span>Website Designer</span></h3>
             <ul>
