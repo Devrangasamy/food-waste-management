@@ -5,7 +5,7 @@ const User = require('./userModels');
 // const Reviews = require('./reviewModels');
 // const { Listedfoods } = require('../../Client/src/Pages/Admin/Listedfoods');
 
-const tourSchema = new Schema(
+const donarfoodSchema = new Schema(
   {
     userid: [{ type: Schema.Types.ObjectId, ref: User }],
     fooddetails: {
@@ -32,25 +32,25 @@ const tourSchema = new Schema(
 
     // name: {
     //   type: String,
-    //   required: [true, 'A tour must have a name'],
+    //   required: [true, 'A donarfood must have a name'],
     //   unique: true,
     //   trim: true,
-    //   maxlength: [40, 'A tour name must have less or equal than 40 characters'],
-    //   minlength: [10, 'A tour name must have more or equal than 10 characters']
-    //   // validate: [validator.isAlpha,"Tour name must only contain characters "
+    //   maxlength: [40, 'A donarfood name must have less or equal than 40 characters'],
+    //   minlength: [10, 'A donarfood name must have more or equal than 10 characters']
+    //   // validate: [validator.isAlpha,"donarfood name must only contain characters "
     // },
     // slug: String,
     // duration: {
     //   type: Number,
-    //   required: [true, 'A tour mush have a duration']
+    //   required: [true, 'A donarfood mush have a duration']
     // },
     // maxGroupSize: {
     //   type: Number,
-    //   required: [true, 'A tour must hava a group size']
+    //   required: [true, 'A donarfood must hava a group size']
     // },
     // difficulty: {
     //   type: String,
-    //   required: [true, ' a tour must have a difficulty'],
+    //   required: [true, ' a donarfood must have a difficulty'],
     //   enum: {
     //     values: ['easy', 'medium', 'difficult'],
     //     message: 'Dificulty is either: easy,medium,difficult '
@@ -69,7 +69,7 @@ const tourSchema = new Schema(
     // },
     // price: {
     //   type: Number,
-    //   required: [true, 'A tour must have a price']
+    //   required: [true, 'A donarfood must have a price']
     // },
 
     // priceDiscount: {
@@ -84,7 +84,7 @@ const tourSchema = new Schema(
     // summary: {
     //   type: String,
     //   trim: true,
-    //   required: [true, 'A tour must have description']
+    //   required: [true, 'A donarfood must have description']
     // },
     // description: {
     //   type: String,
@@ -92,7 +92,7 @@ const tourSchema = new Schema(
     // },
     // imageCover: {
     //   type: String,
-    //   required: [true, 'a tour must have a cover images']
+    //   required: [true, 'a donarfood must have a cover images']
     // },
     images: [String],
     createdAt: {
@@ -100,7 +100,7 @@ const tourSchema = new Schema(
       selected: false
     },
     startDates: [Date],
-    secretTour: {
+    secretdonarfood: {
       type: Boolean,
       default: false
     }
@@ -141,47 +141,47 @@ const tourSchema = new Schema(
     toObject: { virtuals: true }
   }
 );
-// tourSchema.index({ price: 1 });
-// tourSchema.index({ price: 1, ratingsAverage: -1 });
-// tourSchema.index({ slug: 1 });
-// tourSchema.index({ startLocation: '2dsphere' });
-// tourSchema.virtual('durationWeeks').get(function() {
+// donarfoodSchema.index({ price: 1 });
+// donarfoodSchema.index({ price: 1, ratingsAverage: -1 });
+// donarfoodSchema.index({ slug: 1 });
+// donarfoodSchema.index({ startLocation: '2dsphere' });
+// donarfoodSchema.virtual('durationWeeks').get(function() {
 //   return this.duration / 7;
 // });
 // // Virtual populate
-// tourSchema.virtual('reviews', {
+// donarfoodSchema.virtual('reviews', {
 //   ref: Reviews,
-//   foreignField: 'tour',
+//   foreignField: 'donarfood',
 //   localField: '_id'
 // });
 
-// tourSchema.pre('save', function(next) {
+// donarfoodSchema.pre('save', function(next) {
 //   this.slug = slugify(this.name, { lower: true });
 //   next();
 // });
 
-// tourSchema.pre('save', async function(next) {
+// donarfoodSchema.pre('save', async function(next) {
 //   const guidesPromises = this.guides.map(async id => User.findById(id));
 //   this.guides = await Promise.all(guidesPromises);
 // });
 
-// tourSchema.pre('save', function(next) {
+// donarfoodSchema.pre('save', function(next) {
 //   console.log('will save document');
 //   next();
 // });
 
-// tourSchema.post('save', function(doc, next) {
+// donarfoodSchema.post('save', function(doc, next) {
 //   console.log(doc);
 //   next();
 // });
 
-// tourSchema.pre('find', function(next) {
-// tourSchema.pre(/^find/, function(next) {
-//   this.find({ secretTour: { $ne: true } });
+// donarfoodSchema.pre('find', function(next) {
+// donarfoodSchema.pre(/^find/, function(next) {
+//   this.find({ secretdonarfood: { $ne: true } });
 //   this.start = Date.now();
 //   next();
 // });
-// tourSchema.pre(/^find/, function(next) {
+// donarfoodSchema.pre(/^find/, function(next) {
 //   this.populate({
 //     path: 'guides',
 //     select: '-__v -passwordChangedAt'
@@ -189,7 +189,7 @@ const tourSchema = new Schema(
 //   next();
 // });
 
-// tourSchema.post(/^find/, function(docs, next) {
+// donarfoodSchema.post(/^find/, function(docs, next) {
 //   console.log(`Query took ${Date.now() - this.start} milliseconds`);
 //   // console.log(docs);
 //   next();
@@ -197,10 +197,10 @@ const tourSchema = new Schema(
 
 //AGGREGATION MIDDLEWARE
 
-// tourSchema.pre('aggregate', function(next) {
-//   this.pipeline().unshift({ secretTour: { $ne: true } });
+// donarfoodSchema.pre('aggregate', function(next) {
+//   this.pipeline().unshift({ secretdonarfood: { $ne: true } });
 //   console.log(this.pipeline());
 //   next();
 // });
-const Tour = mongoose.model('Tour', tourSchema);
-module.exports = Tour;
+const donarfood = mongoose.model('donarfood', donarfoodSchema);
+module.exports = donarfood;

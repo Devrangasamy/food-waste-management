@@ -6,13 +6,13 @@ const factory = require('./handlerFactory.js');
 // exports.getReview = catchAsync(async (req, res, next) => {
 //   let filter = {};
 
-//   if (req.params.tourId) filter = { tour: req.params.tourId };
+//   if (req.params.donarfoodId) filter = { donarfood: req.params.donarfoodId };
 //   const reviews = await Review.find(filter);
 //   // .populate({
 //   //   path: 'user'
 //   // })
 //   // .populate({
-//   //   path: 'tour'
+//   //   path: 'donarfood'
 //   // });
 
 //   res.status(200).json({
@@ -25,8 +25,8 @@ const factory = require('./handlerFactory.js');
 //   });
 // });
 
-exports.setTourUserIds = (req, res, next) => {
-  if (!req.body.tour) req.body.tour = req.params.tourId;
+exports.setdonarfoodUserIds = (req, res, next) => {
+  if (!req.body.donarfood) req.body.donarfood = req.params.donarfoodId;
   if (!req.body.user) req.body.user = req.user.id;
   next();
 };

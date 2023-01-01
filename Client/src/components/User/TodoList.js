@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import TodoForm from "./TodoForm";
-import Todo from "./Todo";
-import { METHODS } from "http";
+import { useNavigate } from "react-router-dom";
 import "./add.css";
 import { default as ReactSelect } from "react-select";
 import { components } from "react-select";
@@ -20,7 +17,6 @@ const Option = (props) => {
         />{" "}
         <label>{props.label}</label>
       </components.Option>
-      
     </div>
   );
 };
@@ -36,9 +32,8 @@ function TodoList() {
     { value: "green", label: "Green" },
     { value: "forest", label: "Forest" },
     { value: "slate", label: "Slate" },
-    { value: "silver", label: "Silver" }
+    { value: "silver", label: "Silver" },
   ];
-  
 
   const [fooddetails, setFood] = useState({
     description: "",
@@ -49,7 +44,7 @@ function TodoList() {
   const Navigate = useNavigate();
   const changeHandler = (e) => {
     e.preventDefault();
-    const { name, value, type } = e.target;
+    const { name, value } = e.target;
     // console.log(name, value);
     setFood({ ...fooddetails, [name]: value });
   };
@@ -74,20 +69,19 @@ function TodoList() {
       return;
     }
 
-
-    console.log(fooddetails);
-    console.log({
-      description: fooddetails["description"],
-      data: fooddetails["date"],
-      address: fooddetails["address"],
-      mobile: fooddetails["mobile"],
-    });
+    // console.log(fooddetails);
+    // console.log({
+    //   description: fooddetails["description"],
+    //   data: fooddetails["date"],
+    //   address: fooddetails["address"],
+    //   mobile: fooddetails["mobile"],
+    // });
 
     const addfood = async (todos, fooddetails) => {
       const currentuser = await fetch("/api/v1/users/me/");
       const current = await currentuser.json();
-      console.log("food details", fooddetails);
-      const response = await fetch("/api/v1/tours/", {
+      // console.log("food details", fooddetails);
+      const response = await fetch("/api/v1/donarfoods/", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({
@@ -109,14 +103,12 @@ function TodoList() {
       // console.log(json);
       // alert(json.status);
     };
-
-
   };
   const Loginnot = async () => {
     const currentuser = await fetch("/api/v1/users/me/");
     const current = await currentuser.json();
     console.log(current);
-    if (current.status === "failure" || current.user.role!=="User") {
+    if (current.status === "failure" || current.user.role !== "User") {
       Navigate("/loginregister");
       alert(current.Error);
     }
@@ -125,32 +117,28 @@ function TodoList() {
 
   return (
     <>
-      
       <form onSubmit={OnSubmit}>
-      <div className="name">
-          <label className="label" >Available foods</label>
+        <div className="name">
+          <label className="label">Available foods</label>
           <span
-        class="d-inline-block"
-        data-toggle="popover"
-        data-trigger="focus"
-        data-content="Please selecet account(s)"
-      >
-        <ReactSelect 
-          options={colourOptions}
-          isMulti
-          closeMenuOnSelect={false}
-          hideSelectedOptions={false}
-          components={{
-            Option
-          }}
-          // onChange={this.handleChange}
-          allowSelectAll={true}
-          // value={this.state.optionSelected}
-        />
-      </span>
-          
-
-
+            className="d-inline-block"
+            data-toggle="popover"
+            data-trigger="focus"
+            data-content="Please selecet account(s)"
+          >
+            <ReactSelect
+              options={colourOptions}
+              isMulti
+              closeMenuOnSelect={false}
+              hideSelectedOptions={false}
+              components={{
+                Option,
+              }}
+              // onChange={this.handleChange}
+              allowSelectAll={true}
+              // value={this.state.optionSelected}
+            />
+          </span>
         </div>
         <div className="name">
           <label className="label">Persons Required Food:</label>
@@ -182,7 +170,7 @@ function TodoList() {
             onChange={(e) => changeHandler(e)}
           />
         </div>
-      
+
         <div className="name">
           <label className="label">Contact</label>
           <input
@@ -192,7 +180,7 @@ function TodoList() {
             onChange={(e) => changeHandler(e)}
           />
         </div>
-       
+
         <div>
           <button className="submit" value="Submit">
             Submit

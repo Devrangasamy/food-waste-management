@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import TodoForm from "./TodoForm";
 import Todo from "./Todo";
-import { METHODS } from "http";
+
 // import { Formend } from "./TodoForm";
 
 function TodoList() {
@@ -18,7 +18,7 @@ function TodoList() {
   const Navigate = useNavigate();
   const changeHandler = (e) => {
     e.preventDefault();
-    const { name, value, type } = e.target;
+    const { name, value } = e.target;
     // console.log(name, value);
     setFood({ ...fooddetails, [name]: value });
   };
@@ -53,24 +53,24 @@ function TodoList() {
       alert("Pls enter State !!");
       return;
     }
-    console.log(fooddetails);
-    console.log(todos);
-    console.log({
-      fooddetails: todos,
-      description: fooddetails["description"],
-      data: fooddetails["date"],
-      address: fooddetails["address"],
-      state: fooddetails["state"],
-      city: fooddetails["city"],
-      mobile: fooddetails["mobile"],
-    });
+    // console.log(fooddetails);
+    // console.log(todos);
+    // console.log({
+    //   fooddetails: todos,
+    //   description: fooddetails["description"],
+    //   data: fooddetails["date"],
+    //   address: fooddetails["address"],
+    //   state: fooddetails["state"],
+    //   city: fooddetails["city"],
+    //   mobile: fooddetails["mobile"],
+    // });
 
     const addfood = async (todos, fooddetails) => {
       const currentuser = await fetch("/api/v1/users/me/");
       const current = await currentuser.json();
-      console.log("todos", todos);
-      console.log("food details", fooddetails);
-      const response = await fetch("/api/v1/tours/", {
+      // console.log("todos", todos);
+      // console.log("food details", fooddetails);
+      const response = await fetch("/api/v1/donarfoods/", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({
@@ -110,7 +110,7 @@ function TodoList() {
     const newTodos = [todo, ...todos];
 
     setTodos(newTodos);
-    console.log(...todos);
+    // console.log(...todos);
     // alert(...todos);
   };
 
@@ -143,7 +143,7 @@ function TodoList() {
   const Loginnot = async () => {
     const currentuser = await fetch("/api/v1/users/me/");
     const current = await currentuser.json();
-    console.log(current);
+    // console.log(current);
     if (current.status === "failure" || current.user.role !== "Donar") {
       Navigate("/loginregister");
       alert(current.Error);

@@ -15,7 +15,7 @@ class APIFeatures {
     );
     this.query = this.query.find(JSON.parse(queryString));
     return this;
-    // let query = Tour.find(JSON.parse(queryString));
+    // let query = donarfood.find(JSON.parse(queryString));
   }
 
   sort() {
@@ -46,8 +46,8 @@ class APIFeatures {
     this.query = this.query.skip(skip).limit(limit);
 
     // if (this.queryString.page) {
-    //   const numTours = await Tour.countDocuments();
-    //   if (skip >= numTours) throw new Error('This page does not exist');
+    //   const numdonarfoods = await donarfood.countDocuments();
+    //   if (skip >= numdonarfoods) throw new Error('This page does not exist');
     // }
     return this;
   }

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Tour = require('./tourModels');
+const donarfood = require('./donarfoodModels');
 const User = require('../models/userModels');
 
 const reviewSchema = new mongoose.Schema(
@@ -18,9 +18,9 @@ const reviewSchema = new mongoose.Schema(
       type: Date,
       default: Date.now
     },
-    tour: {
+    donarfood: {
       type: mongoose.Schema.ObjectId,
-      ref: 'Tour',
+      ref: 'donarfood',
       required: [true, 'Review must belong to a user']
     },
     user: {
@@ -34,7 +34,7 @@ const reviewSchema = new mongoose.Schema(
     toObject: { virtuals: true }
   }
 );
-reviewSchema.index({ tour: 1, user: 1 }, { unique: true });
+reviewSchema.index({ donarfood: 1, user: 1 }, { unique: true });
 
 reviewSchema.pre(/^find/, function(next) {
   this.populate({
@@ -45,7 +45,7 @@ reviewSchema.pre(/^find/, function(next) {
 });
 // reviewSchema.pre(/^find/, function(next) {
 //   this populate({
-//     path: Tours,
+//     path: donarfoods,
 //     select: 'name'}).
 //     .populate({
 //       path: User,
@@ -54,28 +54,28 @@ reviewSchema.pre(/^find/, function(next) {
 //   next();
 // });
 
-reviewSchema.statics.calcAverageRatings = async function(tourId) {
+reviewSchema.statics.calcAverageRatings = async function(donarfoodId) {
   const stats = await this.aggregate([
     {
-      $match: { tour: tourId }
+      $match: { donarfood: donarfoodId }
     },
     {
       $group: {
-        _id: '$tour',
+        _id: '$donarfood',
         nRating: { $sum: 1 },
         avgRating: { $avg: '$rating' }
       }
     }
   ]);
   // console.log(stats);
-  // console.log(tourId);
+  // console.log(donarfoodId);
   // if (stats.length > 0) {
-  //   await Tour.findByIdAndUpdate(tourId, {
+  //   await donarfood.findByIdAndUpdate(donarfoodId, {
   //     ratingsQuantity: stats[0].nRating,
   //     ratingsAverage: stats[0].avgRating
   //   });
   // } else {
-  //   await Tour.findByIdAndUpdate(tourId, {
+  //   await donarfood.findByIdAndUpdate(donarfoodId, {
   //     ratingsQuantity: 0,
   //     ratingsAverage: 4.5
   //   });
@@ -83,7 +83,7 @@ reviewSchema.statics.calcAverageRatings = async function(tourId) {
 };
 
 reviewSchema.post('save', function() {
-  this.constructor.calcAverageRatings(this.tour);
+  this.constructor.calcAverageRatings(this.donarfood);
 });
 
 // reviewSchema.pre(/^findOneAnd/, async function(next) {
@@ -93,7 +93,7 @@ reviewSchema.post('save', function() {
 // });
 
 // reviewSchema.post(/^findOneAnd/, async function(next) {
-//   await this.r.constructor.calcAverageRatings(this.r.tour);
+//   await this.r.constructor.calcAverageRatings(this.r.donarfood);
 //   next();
 // });
 const Review = mongoose.model('Review', reviewSchema);

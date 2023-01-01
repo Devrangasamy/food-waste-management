@@ -1,10 +1,8 @@
-import React, { Component } from "react";
-import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 const Registernew = () => {
   const [userData, setUserData] = useState({
-    
     username: "",
     email: "",
     password: "",
@@ -19,7 +17,7 @@ const Registernew = () => {
 
   const Navigate = useNavigate();
   const changeHandler = (e) => {
-    const { name, value, type } = e.target;
+    const { name, value } = e.target;
     setUserData({ ...userData, [name]: value });
   };
   const onSubmit = (event) => {
@@ -81,7 +79,7 @@ const Registernew = () => {
       return "";
     }
     const login = async (userData) => {
-      console.log(userData);
+      // console.log(userData);
       const response = await fetch(
         "http://127.0.0.1:3000/api/v1/users/signup/",
         {
@@ -102,7 +100,7 @@ const Registernew = () => {
         }
       );
       const json = await response.json();
-      console.log(json);
+      // console.log(json);
       alert(json.status);
 
       if (json.status === "sucess") {

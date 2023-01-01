@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 // styling
 
@@ -11,20 +11,18 @@ import Registernew from "./Registernew";
 
 const Loginregister = () => {
   return (
+    <div className="App">
+      <Menu />
 
-      <div className="App">
-
-        <Menu />
-
-  
-<Routes>
-          <Route exact path="/register" element={<Registernew></Registernew>} />
-          <Route exact path="/login" element={<Login></Login>} />
- 
-          </Routes>
-
-      </div>
-
+      <Routes>
+        <Route
+          exact="true"
+          path="/register"
+          element={<Registernew></Registernew>}
+        />
+        <Route exact="true" path="/login" element={<Login></Login>} />
+      </Routes>
+    </div>
   );
 };
 

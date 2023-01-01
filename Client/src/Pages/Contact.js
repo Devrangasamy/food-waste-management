@@ -13,12 +13,19 @@ export const Contact = () => {
     <div>
       <Sidebar />
       <Routes>
-        
-        <Route path="/request" exact element={<Requests></Requests>} />
-        <Route path="/request/new" exact element={<New></New>} />
-        <Route path="/request/pickcom" exact element={<Pickcom></Pickcom>} />
-        <Route path="/request/reject" exact element={<Rejected></Rejected>} />
-        <Route path="/request/all" exact element={<All></All>} />
+        <Route path="/request" exact="true" element={<Requests></Requests>} />
+        <Route path="/request/new" exact="true" element={<New></New>} />
+        <Route
+          path="/request/pickcom"
+          exact="true"
+          element={<Pickcom></Pickcom>}
+        />
+        <Route
+          path="/request/reject"
+          exact="true"
+          element={<Rejected></Rejected>}
+        />
+        <Route path="/request/all" exact="true" element={<All></All>} />
       </Routes>
     </div>
   );

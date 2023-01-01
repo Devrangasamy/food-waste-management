@@ -2,8 +2,8 @@ import React from "react";
 import "./Loading.css";
 const Loading = () => {
   return (
-    <div class="loadercontainer">
-      <div class="loader"></div>
+    <div className="loadercontainer">
+      <div className="loader"></div>
     </div>
   );
 };
