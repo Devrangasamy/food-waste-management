@@ -1,15 +1,15 @@
 const express = require('express');
 const reviewController = require('../controllers/reviewController.js');
 const authController = require('../controllers/authController');
-const router = express.Router({ mergeParams: true });
-
+// const router = express.Router({ mergeParams: true });
+const router = express.Router();
 router.use(authController.protect);
 router
   .route('/')
   .get(reviewController.getAllReviews)
   .post(
-    authController.restrictTo('user'),
-    reviewController.setdonarfoodUserIds,
+    // authController.restrictTo('user'),
+    // reviewController.setdonarfoodUserIds,
     reviewController.createReview
   );
 
