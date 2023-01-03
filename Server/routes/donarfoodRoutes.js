@@ -51,11 +51,7 @@ router
 router
   .route('/:id')
   .get(donarfoodController.getdonarfood)
-  .patch(
-    authController.protect,
-    authController.restrictTo('admin', 'lead-guide'),
-    donarfoodController.updatedonarfood
-  )
+  .patch(authController.protect, donarfoodController.updatedonarfood)
   .delete(
     authController.protect,
     authController.restrictTo('admin', 'lead-guide'),

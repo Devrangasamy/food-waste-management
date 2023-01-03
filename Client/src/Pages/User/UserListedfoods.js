@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Loading from "../Loading";
+import { useNavigate } from "react-router-dom";
 import "./List.css";
 export const UserListedfoods = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
+  const Navigate = useNavigate;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -45,7 +47,7 @@ export const UserListedfoods = () => {
                 <div className="card">
                   <h3>Name:{singleData.userid[0].name}</h3>
                   <p>Food:{food.text}</p>
-                  <p>Quantity:{food.number}</p>
+                  <p>Quantity:{food.remaining}</p>
                   <p>Contact:{singleData.mobile}</p>
                   <p>
                     Date:{new Date(singleData.createdAt).toLocaleDateString()}
@@ -53,7 +55,14 @@ export const UserListedfoods = () => {
                   <p>
                     Time:{new Date(singleData.createdAt).toLocaleTimeString()}
                   </p>
-                  <button className="btn">Request</button>
+                  <button
+                    className="btn"
+                    onClick={(event) =>
+                      (window.location.href = "/Userpage/add/food")
+                    }
+                  >
+                    Request
+                  </button>
                 </div>
               </div>
             </div>
