@@ -49,11 +49,7 @@ export const SidebarData = [
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
-      {
-        title: 'Rejected',
-        path: '/Userpage/request/reject',
-        icon: <IoIcons.IoIosPaper />
-      },
+
       {
         title: 'All',
         path: '/Userpage/request/all',

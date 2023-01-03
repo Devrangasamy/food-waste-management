@@ -1,5 +1,7 @@
 import React from 'react';
-
+import { UsernewRequests } from './UsernewRequest';
+import { Userall } from './Userall';
+import { Userpick } from './Userpick';
 export const UserRequests = () => {
   return (
     <div className='sidebar'>
@@ -11,7 +13,7 @@ export const UserRequests = () => {
 export const UserNew = () => {
   return (
     <div className='sidebar'>
-      <h1>Requests/New</h1>
+      <UsernewRequests></UsernewRequests>
     </div>
   );
 };
@@ -19,22 +21,15 @@ export const UserNew = () => {
 export const UserPickcom = () => {
   return (
     <div className='sidebar'>
-      <h1>Requests/Picked/completed</h1>
+      <Userpick></Userpick>
     </div>
   );
 };
 
-export const UserRejected = () => {
-  return (
-    <div className='sidebar'>
-      <h1>Requests/Rejected</h1>
-    </div>
-  );
-};
 export const UserAll = () => {
   return (
     <div className='sidebar'>
-      <h1>Requests/All</h1>
+      <Userall></Userall>
     </div>
   );
 };
