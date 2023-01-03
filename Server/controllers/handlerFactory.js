@@ -49,9 +49,19 @@ exports.createOne = Model =>
 
 exports.getOne = Model =>
   catchAsync(async (req, res, next) => {
-    const query = Model.find({ userid: req.params.id }).populate('userid');
+    let filter = {};
+    if (req.params.id) filter = { userid: req.params.id };
+    const features = new APIFeatures(
+      Model.find(filter).populate('userid'),
+      req.query
+    )
+      .filter()
+      .sort()
+      .limitFields()
+      .paginate();
+    const doc = await features.query; //.ex
     // if (popOptions) query.populate(popOptions);
-    const doc = await query;
+    // doc = await query;
 
     if (!doc) {
       return next(new AppError('No document found with that ID', 404));

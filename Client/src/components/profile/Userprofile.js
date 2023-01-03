@@ -6,9 +6,22 @@ import help from "./img/question.png";
 import logout from "./img/log-out.png";
 import "./profile.css";
 import Loading from "../../Pages/Loading";
+// import { useNavigate } from "react-router-dom";
 
 import React, { useState, useEffect, useRef } from "react";
+// import { useNavigate } from "react-router-dom";
 
+const clearCacheData = () => {
+  localStorage.clear();
+  caches.keys().then((names) => {
+    names.forEach((name) => {
+      caches.delete(name);
+    });
+  });
+  // const Navigate = useNavigate();
+  // Navigate("/loginregister");
+  alert("Complete Cache Cleared");
+};
 function Userprofile() {
   const [userf, setUser] = useState([
     { user: { name: "user", address: "address" } },
@@ -75,7 +88,7 @@ function Userprofile() {
             <DropdownItem img={inbox} text={"Inbox"} />
             <DropdownItem img={settings} text={"Settings"} />
             <DropdownItem img={help} text={"Helps"} />
-            <DropdownItem onClick={"gfd"} img={logout} text={"Logout"} />
+            <DropdownItem img={logout} text={"Logout"} />
           </ul>
         </div>
       </div>
@@ -84,6 +97,14 @@ function Userprofile() {
 }
 
 function DropdownItem(props) {
+  if (props.text === "Logout") {
+    return (
+      <li className="dropdownItem" onClick={() => clearCacheData()}>
+        <img src={props.img} alt={"img"}></img>
+        <a href="/"> {props.text} </a>
+      </li>
+    );
+  }
   return (
     <li className="dropdownItem">
       <img src={props.img} alt={"img"}></img>

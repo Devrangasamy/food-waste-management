@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Loading from "../Loading";
-import { useNavigate } from "react-router-dom";
+
 import "./List.css";
 export const UserListedfoods = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
-  const Navigate = useNavigate;
 
   useEffect(() => {
     const fetchData = async () => {
