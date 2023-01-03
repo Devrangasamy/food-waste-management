@@ -30,7 +30,6 @@ import {
   UserRequests,
   UserNew,
   UserPickcom,
-  UserRejected,
   UserAll,
 } from "./Pages/User/UserRequests";
 import { DonarDashboard } from "./Pages/DonarDashboard";
@@ -328,16 +327,6 @@ function App() {
               <div>
                 <Usersidebar></Usersidebar>
                 <UserPickcom></UserPickcom>
-              </div>
-            }
-          />
-          <Route
-            path="/Userpage/request/reject"
-            exact="true"
-            element={
-              <div>
-                <Usersidebar></Usersidebar>
-                <UserRejected></UserRejected>
               </div>
             }
           />

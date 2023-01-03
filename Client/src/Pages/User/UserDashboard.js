@@ -7,9 +7,11 @@ import Loading from "../Loading";
 export const UserDashboard = () => {
   const Navigate = useNavigate();
   const [foodcount, setfoodcount] = useState(0);
+  const [requestcount, setrequestcount] = useState(0);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     var food = 0;
+    var foodrequest = 0;
     const Listfood = async () => {
       setLoading(true);
       const currentuser = await fetch("/api/v1/users/me/");
@@ -36,8 +38,20 @@ export const UserDashboard = () => {
         }
         // console.log(foods.data.data[i].fooddetails.length);
       }
+      const Listedrequest = await fetch("/api/v1/reviews/"+ current.user._id);
+      // console.log("/api/v1/donarfoods/" + userid);
+      const request = await Listedrequest.json();
+      // console.log(foods);
+      for (var i = 0; i < request.results; i++) {
+        const arrsize = request.data.data[i].availablefood.length;
+        for (var j = 0; j < arrsize; j++) {
+          foodrequest += parseInt(request.data.data[i].availablefood[j][2]);
+        }
+        // console.log(foods.data.data[i].fooddetails.length);
+      }
       // setloading(true);
       // console.log(food);
+      setrequestcount(foodrequest);
       setfoodcount(food);
       setLoading(false);
     };
@@ -91,7 +105,7 @@ export const UserDashboard = () => {
         </div>
         <div>
           <h2>Request Completed</h2>
-          <h1 style={{ color: "black" }}>0</h1>
+          <h1 style={{ color: "black" }}>{requestcount}</h1>
         </div>
       </div>
       <div
@@ -133,7 +147,7 @@ export const UserDashboard = () => {
         </div>
         <div>
           <h2>All Requests</h2>
-          <h1 style={{ color: "black" }}>0</h1>
+          <h1 style={{ color: "black" }}>{requestcount}</h1>
         </div>
       </div>
       <div
