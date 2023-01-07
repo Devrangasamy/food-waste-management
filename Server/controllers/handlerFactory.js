@@ -51,6 +51,8 @@ exports.getOne = Model =>
   catchAsync(async (req, res, next) => {
     let filter = {};
     if (req.params.id) filter = { userid: req.params.id };
+    // if (req.params.donarfoodId) filter = { donarfood: req.params.donarfoodId };
+
     const features = new APIFeatures(
       Model.find(filter).populate('userid'),
       req.query

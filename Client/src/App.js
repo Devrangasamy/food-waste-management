@@ -40,7 +40,10 @@ import { useEffect } from "react";
 // import Manage from './Listfooddetails';
 
 function App() {
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(document.cookie.indexOf("jwt") !== -1);
+  const setLoginFalse = () => {
+    setLogin(false);
+  };
   useEffect(() => {
     Loginnot();
   });
@@ -58,7 +61,7 @@ function App() {
   };
   return (
     <>
-      <NavBar isLogin={login} />
+      <NavBar isLogin={login} setLoginFalse={setLoginFalse} />
 
       <div className="pages">
         <Routes>

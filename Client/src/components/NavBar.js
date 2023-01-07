@@ -70,7 +70,9 @@ function NavBar(props) {
                 {!props.isLogin ? (
                   "login/register"
                 ) : (
-                  <Userprofile></Userprofile>
+                  <Userprofile
+                    setLoginFalse={props.setLoginFalse}
+                  ></Userprofile>
                 )}
               </NavLink>
             </li>

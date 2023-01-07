@@ -9,25 +9,13 @@ import Loading from "../../Pages/Loading";
 // import { useNavigate } from "react-router-dom";
 
 import React, { useState, useEffect, useRef } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const clearCacheData = () => {
-  localStorage.clear();
-  caches.keys().then((names) => {
-    names.forEach((name) => {
-      caches.delete(name);
-    });
-  });
-  // const Navigate = useNavigate();
-  // Navigate("/loginregister");
-  alert("Complete Cache Cleared");
-};
-function Userprofile() {
-  const [userf, setUser] = useState([
-    { user: { name: "user", address: "address" } },
-  ]);
+function Userprofile(props) {
+  const [userf, setUser] = useState();
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const userfind = async () => {
@@ -56,7 +44,7 @@ function Userprofile() {
       document.removeEventListener("mousedown", handler);
     };
   });
-  if (loading) {
+  if (loading || !userf) {
     return <Loading />;
   }
 
@@ -74,13 +62,9 @@ function Userprofile() {
 
         <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
           <h3>
-            Donar
-            {/* {userf ? userf.user.name : "dfvfsd"} */}
+            {userf.user.name}
             <br />
-            <span>
-              {/* {userf.user.address} */}
-              Salem
-            </span>
+            <span>{userf.user.address}</span>
           </h3>
           <ul>
             <DropdownItem img={user} text={"My Profile"} />
@@ -88,7 +72,11 @@ function Userprofile() {
             <DropdownItem img={inbox} text={"Inbox"} />
             <DropdownItem img={settings} text={"Settings"} />
             <DropdownItem img={help} text={"Helps"} />
-            <DropdownItem img={logout} text={"Logout"} />
+            <DropdownItem
+              setLoginFalse={props.setLoginFalse}
+              img={logout}
+              text={"Logout"}
+            />
           </ul>
         </div>
       </div>
@@ -97,9 +85,22 @@ function Userprofile() {
 }
 
 function DropdownItem(props) {
+  const navigate = useNavigate();
+  const clearCacheData = async () => {
+    const response = await fetch("/api/v1/users/logout/");
+    console.log(response);
+    props.setLoginFalse();
+    navigate("/loginregister");
+  };
   if (props.text === "Logout") {
     return (
-      <li className="dropdownItem" onClick={() => clearCacheData()}>
+      <li
+        className="dropdownItem"
+        onClick={() => {
+          clearCacheData();
+          console.log("clicked");
+        }}
+      >
         <img src={props.img} alt={"img"}></img>
         <a href="/"> {props.text} </a>
       </li>

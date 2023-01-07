@@ -13,7 +13,9 @@ export const UsernewRequests = () => {
       const currentuser = await fetch("/api/v1/users/me/");
       const current = await currentuser.json();
       // console.log(current);
-      const response = await fetch("/api/v1/reviews/" + current.user._id);
+      const response = await fetch(
+        "/api/v1/reviews/" + current.user._id + "?createdAt[gte]=" + datefind
+      );
       const json = await response.json();
 
       setData(json.data.data);

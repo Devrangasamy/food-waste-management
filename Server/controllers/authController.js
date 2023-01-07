@@ -68,6 +68,8 @@ exports.login = catchAsync(async (req, res, next) => {
     }
   });
 });
+
+
 exports.getuser = async (req, res) => {
   const userid = req.params.id;
   const user = await User.findById(userid);

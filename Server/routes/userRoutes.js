@@ -4,6 +4,10 @@ const authController = require('./../controllers/authController');
 
 const router = express.Router();
 
+router.get('/logout', (req, res) => {
+  res.clearCookie('jwt');
+  res.status(200).json({ success: true });
+});
 router.get('/me', authController.me);
 router.get('/:id', authController.getuser);
 router.post('/signup', authController.signup);
